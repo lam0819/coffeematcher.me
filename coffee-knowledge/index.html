@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title data-i18n-title="true">咖啡知識 - 咖啡風味探索器</title>
+    <meta name="description" data-i18n-desc="true" content="探索咖啡的奧秘：從咖啡豆產地、品種、處理方法到沖煮技巧，深入了解影響咖啡風味的關鍵因素。">
+    <meta name="keywords" data-i18n-keywords="true" content="咖啡知識, 咖啡產地, 咖啡處理, 咖啡沖煮, 咖啡豆品種, 咖啡風味, 精品咖啡">
+    <meta name="author" content="Coffee Explorer Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Protocol Tags (Social Media) -->
+    <meta property="og:title" data-i18n-og-title="true" content="咖啡知識 - 探索影響咖啡風味的關鍵因素">
+    <meta property="og:description" data-i18n-og-desc="true" content="了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。成為真正的咖啡專家。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coffeematcher.me/blog">
+    <meta property="og:image" content="https://coffeematcher.me/images/coffee-knowledge-banner.jpg">
+    <meta property="og:site_name" content="Coffee Explorer">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-i18n-twitter-title="true" content="咖啡知識 - 探索影響咖啡風味的關鍵因素">
+    <meta name="twitter:description" data-i18n-twitter-desc="true" content="了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。">
+    <meta name="twitter:image" content="https://coffeematcher.me/images/coffee-knowledge-banner.jpg">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URLs -->
+    <link rel="alternate" hreflang="zh-HK" href="https://coffeematcher.me/blog">
+    <link rel="alternate" hreflang="en" href="https://coffeematcher.me/en/blog">
+    <link rel="canonical" id="canonical-link" href="https://coffeematcher.me/blog">
+    
+    <!-- Preconnect to required origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/coffee-explorer.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    
+    <!-- Structured Data Markup (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Understanding Coffee: From Bean to Cup",
+        "image": "https://coffeematcher.me/images/coffee-knowledge-banner.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Coffee Explorer Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Coffee Explorer",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://coffeematcher.me/images/logo.png"
+            }
+        },
+        "datePublished": "2025-03-01",
+        "dateModified": "2025-03-10"
+    }
+    </script>
+    
+    <!-- Custom CSS for blog page -->
+    <style>
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .blog-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        
+        .blog-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .table-of-contents {
+            background-color: rgba(121, 85, 72, 0.05);
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        .table-of-contents h2 {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        
+        .toc-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .toc-list li {
+            margin-bottom: 12px;
+        }
+        
+        .toc-list a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-block;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .toc-list a:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        
+        .toc-list a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .toc-list a:hover:before {
+            transform: translateY(-50%) scale(1.3);
+        }
+        
+        .blog-section {
+            margin-bottom: 60px;
+        }
+        
+        .blog-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(121, 85, 72, 0.2);
+        }
+        
+        .blog-section h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin: 25px 0 15px;
+        }
+        
+        .blog-section p {
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+        
+        .coffee-image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .coffee-image {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .fact-box {
+            background-color: rgba(255, 152, 0, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .fact-box h4 {
+            margin-top: 0;
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+        }
+        
+        .fact-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .flavor-wheel-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        .brewing-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .brewing-method-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .brewing-method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .brewing-method-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .brewing-method-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .brewing-icon {
+            width: 100%;
+            height: 120px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .icon-pourover {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M403.6 77.8c-1-1.8-2.9-2.9-4.9-2.9h-285c-2.1 0-4 1.1-5 2.9-1 1.8-1 4 0 5.8l40.3 72.8c13.1 23.7 37.5 39.8 64.5 42.9v269.2c0 19.5 15.8 35.3 35.3 35.3h50.1c19.5 0 35.3-15.8 35.3-35.3V199.3c27-3.1 51.4-19.2 64.5-42.9l40.3-72.8c1-1.8 1-4 0-5.8zM299.7 173.3h-87.4c-17.5-1.5-33.3-10.7-44.3-24.7h176c-11 14-26.8 23.2-44.3 24.7zm4.1 295.3c0 3.6-2.9 6.5-6.5 6.5h-82.4c-3.6 0-6.5-2.9-6.5-6.5V202h95.3v266.6z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-frenchpress {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M398.6 160H113.4c-9.9 0-17.9 8-17.9 17.9v256c0 9.9 8 17.9 17.9 17.9h285.1c9.9 0 17.9-8 17.9-17.9v-256c.1-9.9-8-17.9-17.8-17.9zm-142.5 256c-61 0-110.7-46.8-110.7-104.3 0-5.9 4.8-10.7 10.7-10.7h200c5.9 0 10.7 4.8 10.7 10.7 0 57.5-49.7 104.3-110.7 104.3zM417.9 128H94.1C88.3 128 83.6 123.3 83.6 117.5s4.7-10.5 10.5-10.5h323.7c5.8 0 10.5 4.7 10.5 10.5 0 5.7-4.7 10.5-10.4 10.5zM352 96H160c-5.5 0-10-4.5-10-10V74.1c0-5.5 4.5-10 10-10h192c5.5 0 10 4.5 10 10V86c0 5.5-4.5 10-10 10z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-espresso {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M399.2 96H112.8c-8.8 0-16 7.2-16 16v48h318.4v-48c0-8.8-7.2-16-16-16zm-17.6 352H130.4c-8.8 0-16-7.2-16-16V224h318.4v208c-.1 8.8-7.2 16-16.1 16zm28.7-288H101.7c-9.7 0-17.7 7.9-17.7 17.7v209.7c0 61.8 50.2 112 112 112h120c61.8 0 112-50.2 112-112V177.7c0-9.8-7.9-17.7-17.7-17.7z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-aeropress {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M425.6 64H86.4C73.6 64 64 73.6 64 86.4v22.4c0 12.8 9.6 22.4 22.4 22.4h4.5v265.6c0 28.3 23 51.2 51.2 51.2h228.8c28.3 0 51.2-23 51.2-51.2V131.2h3.2c12.8 0 22.4-9.6 22.4-22.4V86.4c0-12.8-9.6-22.4-22.4-22.4zm-96 131.2v169.6c0 9.6-8 17.6-17.6 17.6H200c-9.6 0-17.6-8-17.6-17.6V195.2c0-9.6 8-17.6 17.6-17.6h112c9.6 0 17.6 8 17.6 17.6z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-coldbrew {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M384 48H128c-8.8 0-16 7.2-16 16v33.6c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16zM315.7 475.2L286.8 128h-61.6l-28.9 347.2c64.5 10.6 55.9 10.6 119.4 0z'/%3E%3C/svg%3E");
+        }
+        
+        .processing-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .process-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .process-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .process-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .process-tag {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: white;
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .region-map {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            margin: 30px auto;
+            background-color: #f0e8e0;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coffee-bean-variety {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .variety-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .variety-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .variety-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        
+        .variety-card h5 {
+            color: var(--text-light);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .variety-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .flavor-characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            gap: 8px;
+        }
+        
+        .flavor-characteristic {
+            background-color: rgba(121, 85, 72, 0.1);
+            color: var(--primary-dark);
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-header p {
+                font-size: 1rem;
+            }
+            
+            .blog-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .blog-section h3 {
+                font-size: 1.2rem;
+            }
+            
+            .brewing-methods, .processing-methods, .coffee-bean-variety {
+                grid-template-columns: 1fr;
+            }
+        }
+
+.language-switcher {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.coffee-beans {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+    </style>
+   
+</head>
+<body>
+
+    <div class="coffee-beans" id="coffee-beans-bg"></div>
+    
+    <div class="language-switcher">
+        <a href="/" class="active" data-lang="zh" data-i18n="lang-zh">中文</a> | 
+        <a href="/en/" data-lang="en" data-i18n="lang-en">English</a>
+    </div>
+    
+    
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1 data-i18n="coffee-knowledge-title">咖啡知識：從咖啡豆到杯中風味</h1>
+            <p data-i18n="coffee-knowledge-subtitle">了解影響咖啡風味的因素，包括產地、處理方法、烘焙程度和沖煮技巧，成為一個精通咖啡的鑑賞家。</p>
+        </div>
+        
+        <div class="table-of-contents">
+            <h2 data-i18n="table-of-contents">目錄</h2>
+            <ul class="toc-list">
+                <li><a href="#coffee-origins" data-i18n="toc-origins">咖啡產地與風味特性</a></li>
+                <li><a href="#processing-methods" data-i18n="toc-processing">咖啡處理方法</a></li>
+                <li><a href="#coffee-varieties" data-i18n="toc-varieties">咖啡豆品種</a></li>
+                <li><a href="#roasting" data-i18n="toc-roasting">烘焙程度與風味變化</a></li>
+                <li><a href="#brewing-methods" data-i18n="toc-brewing">咖啡沖煮方法</a></li>
+                <li><a href="#tasting-coffee" data-i18n="toc-tasting">如何品嚐咖啡</a></li>
+            </ul>
+        </div>
+        
+        <section id="coffee-origins" class="blog-section">
+            <h2 data-i18n="origins-title">咖啡產地與風味特性</h2>
+            <p data-i18n="origins-intro">咖啡豆的產地對其風味有著決定性的影響。不同產區的土壤、氣候、海拔和種植方式都會形成獨特的風味特徵。讓我們探索世界主要咖啡產區及其特色：</p>
+            
+            <div class="coffee-image-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'%3E%3C!-- Background --%3E%3Crect width='800' height='450' fill='%23f5f1e6'/%3E%3C!-- Simplified World Map --%3E%3Cpath d='M50,100 L120,100 L140,120 L160,110 L200,110 L210,130 L230,130 L250,150 L200,180 L180,210 L170,240 L190,250 L190,280 L140,300 L110,280 L80,240 L50,200 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M200,180 L240,180 L270,200 L280,250 L260,300 L220,330 L200,380 L180,380 L160,350 L170,310 L160,280 L140,300 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M300,100 L350,100 L380,120 L430,120 L450,140 L480,100 L540,100 L580,110 L630,110 L650,140 L620,180 L590,180 L560,200 L520,210 L490,200 L430,220 L400,200 L380,220 L300,220 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M320,220 L350,220 L370,240 L400,240 L420,220 L440,240 L430,290 L410,320 L380,340 L350,330 L330,340 L310,310 L320,280 L330,250 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M450,140 L490,140 L510,160 L540,160 L560,180 L580,200 L560,240 L530,260 L510,240 L480,250 L450,230 L440,240 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M580,200 L620,180 L650,200 L680,200 L700,220 L730,220 L730,260 L700,280 L680,270 L650,280 L620,270 L600,240 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3Cpath d='M580,290 L620,290 L660,310 L670,340 L650,370 L600,380 L560,360 L550,330 L560,300 Z' fill='%23d5cdb8' stroke='%23a99879' stroke-width='1'/%3E%3C!-- Equator line --%3E%3Cpath d='M0,225 L800,225' stroke='%23966842' stroke-width='1.5' stroke-dasharray='5,5'/%3E%3Ctext x='20' y='220' font-family='Arial' font-size='12' fill='%23966842'%3E%E8%B5%A4%E9%81%93%E7%B7%9A Equator%3C/text%3E%3C!-- Tropic lines --%3E%3Cpath d='M0,165 L800,165' stroke='%23966842' stroke-width='0.8' stroke-dasharray='4,4'/%3E%3Cpath d='M0,285 L800,285' stroke='%23966842' stroke-width='0.8' stroke-dasharray='4,4'/%3E%3Ctext x='690' y='180' font-family='Arial' font-size='12' fill='%23966842'%3E%E5%8C%97%E5%9B%9E%E6%AD%B8%E7%B7%9A Tropic of Cancer%3C/text%3E%3Ctext x='690' y='280' font-family='Arial' font-size='12' fill='%23966842'%3E%E5%8D%97%E5%9B%9E%E6%AD%B8%E7%B7%9A Tropic of Capricorn%3C/text%3E%3C!-- Coffee Belt Highlight --%3E%3Cpath fill='%23a58b68' fill-opacity='0.15' d='M0,165 L800,165 L800,285 L0,285 Z'/%3E%3C!-- Coffee Growing Regions --%3E%3C!-- Central/South America --%3E%3Cpath d='M140,200 L170,200 L190,240 L180,280 L160,300 L130,280 L140,240 Z' fill='%23c87f0a' fill-opacity='0.3' stroke='%23966842' stroke-width='1.5'/%3E%3C!-- Africa --%3E%3Cpath d='M380,240 L410,240 L420,270 L410,300 L380,310 L350,290 L360,260 Z' fill='%23c87f0a' fill-opacity='0.3' stroke='%23966842' stroke-width='1.5'/%3E%3C!-- Asia/Indonesia --%3E%3Cpath d='M520,200 L550,220 L540,250 L510,230 Z' fill='%23c87f0a' fill-opacity='0.3' stroke='%23966842' stroke-width='1.5'/%3E%3Cpath d='M600,210 L630,230 L620,260 L590,240 Z' fill='%23c87f0a' fill-opacity='0.3' stroke='%23966842' stroke-width='1.5'/%3E%3C!-- Coffee bean icons --%3E%3Cg transform='translate(160,240) scale(0.5)'%3E%3Cellipse cx='0' cy='0' rx='22' ry='14' fill='%23795548' transform='rotate(45)'/%3E%3Cpath d='M-7,-7 C-3,-11 3,-11 7,-7 C11,-3 11,3 7,7 C3,11 -3,11 -7,7 C-11,3 -11,-3 -7,-7' fill='%235D4037' transform='rotate(45)'/%3E%3C/g%3E%3Cg transform='translate(380,270) scale(0.5)'%3E%3Cellipse cx='0' cy='0' rx='22' ry='14' fill='%23795548' transform='rotate(45)'/%3E%3Cpath d='M-7,-7 C-3,-11 3,-11 7,-7 C11,-3 11,3 7,7 C3,11 -3,11 -7,7 C-11,3 -11,-3 -7,-7' fill='%235D4037' transform='rotate(45)'/%3E%3C/g%3E%3Cg transform='translate(530,230) scale(0.5)'%3E%3Cellipse cx='0' cy='0' rx='22' ry='14' fill='%23795548' transform='rotate(45)'/%3E%3Cpath d='M-7,-7 C-3,-11 3,-11 7,-7 C11,-3 11,3 7,7 C3,11 -3,11 -7,7 C-11,3 -11,-3 -7,-7' fill='%235D4037' transform='rotate(45)'/%3E%3C/g%3E%3Cg transform='translate(610,240) scale(0.5)'%3E%3Cellipse cx='0' cy='0' rx='22' ry='14' fill='%23795548' transform='rotate(45)'/%3E%3Cpath d='M-7,-7 C-3,-11 3,-11 7,-7 C11,-3 11,3 7,7 C3,11 -3,11 -7,7 C-11,3 -11,-3 -7,-7' fill='%235D4037' transform='rotate(45)'/%3E%3C/g%3E%3C!-- Region labels --%3E%3Cg%3E%3Crect x='130' y='190' width='100' height='40' rx='5' fill='white' fill-opacity='0.8' stroke='none'/%3E%3Ctext x='180' y='210' font-family='Arial' font-size='14' font-weight='bold' fill='%23000' text-anchor='middle'%3E%E7%BE%8E%E6%B4%B2%E5%92%96%E5%95%A1%E5%B8%A6%3C/text%3E%3Ctext x='180' y='225' font-family='Arial' font-size='10' fill='%23333' text-anchor='middle'%3EAmerican Coffee Belt%3C/text%3E%3C/g%3E%3Cg%3E%3Crect x='330' y='240' width='100' height='40' rx='5' fill='white' fill-opacity='0.8' stroke='none'/%3E%3Ctext x='380' y='260' font-family='Arial' font-size='14' font-weight='bold' fill='%23000' text-anchor='middle'%3E%E9%9D%9E%E6%B4%B2%E5%92%96%E5%95%A1%E5%B8%A6%3C/text%3E%3Ctext x='380' y='275' font-family='Arial' font-size='10' fill='%23333' text-anchor='middle'%3EAfrican Coffee Belt%3C/text%3E%3C/g%3E%3Cg%3E%3Crect x='535' y='185' width='100' height='40' rx='5' fill='white' fill-opacity='0.8' stroke='none'/%3E%3Ctext x='585' y='205' font-family='Arial' font-size='14' font-weight='bold' fill='%23000' text-anchor='middle'%3E%E4%BA%9E%E6%B4%B2%E5%92%96%E5%95%A1%E5%B8%A6%3C/text%3E%3Ctext x='585' y='220' font-family='Arial' font-size='10' fill='%23333' text-anchor='middle'%3EAsian Coffee Belt%3C/text%3E%3C/g%3E%3C!-- Major countries --%3E%3Cg%3E%3Ccircle cx='150' cy='240' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='150' y='238' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E5%93%A5%E5%80%AB%E6%AF%94%E4%BA%9E%3C/text%3E%3Ctext x='150' y='246' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EColombia%3C/text%3E%3C/g%3E%3Cg%3E%3Ccircle cx='180' cy='280' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='180' y='278' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E5%B7%B4%E8%A5%BF%3C/text%3E%3Ctext x='180' y='286' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EBrazil%3C/text%3E%3C/g%3E%3Cg%3E%3Ccircle cx='380' cy='250' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='380' y='248' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E8%A1%A3%E7%B4%A2%E6%AF%94%E4%BA%9E%3C/text%3E%3Ctext x='380' y='256' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EEthiopia%3C/text%3E%3C/g%3E%3Cg%3E%3Ccircle cx='365' cy='280' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='365' y='278' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E8%82%AF%E4%BA%9E%3C/text%3E%3Ctext x='365' y='286' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EKenya%3C/text%3E%3C/g%3E%3Cg%3E%3Ccircle cx='530' cy='220' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='530' y='218' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E8%B6%8A%E5%8D%97%3C/text%3E%3Ctext x='530' y='226' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EVietnam%3C/text%3E%3C/g%3E%3Cg%3E%3Ccircle cx='610' cy='230' r='15' fill='white' fill-opacity='0.8' stroke='%23966842' stroke-width='0.5'/%3E%3Ctext x='610' y='228' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3E%E5%8D%B0%E5%B0%BC%3C/text%3E%3Ctext x='610' y='236' font-family='Arial' font-size='6' fill='%23333' text-anchor='middle'%3EIndonesia%3C/text%3E%3C/g%3E%3C!-- Title --%3E%3Ctext x='400' y='45' font-family='Arial' font-size='20' font-weight='bold' fill='%23333' text-anchor='middle'%3E%E4%B8%96%E7%95%8C%E5%92%96%E5%95%A1%E7%94%A2%E5%8D%80%E5%88%86%E5%B8%83%E5%9C%96%3C/text%3E%3Ctext x='400' y='70' font-family='Arial' font-size='14' fill='%23333' text-anchor='middle'%3EWorld Coffee Growing Regions%3C/text%3E%3C!-- Coffee belt label --%3E%3Ctext x='400' y='130' font-family='Arial' font-size='16' font-weight='bold' fill='%23966842' text-anchor='middle'%3E%E5%92%96%E5%95%A1%E5%B8%B6 (Coffee Belt)%3C/text%3E%3C!-- Legend --%3E%3Crect x='600' y='320' width='180' height='110' rx='5' fill='white' fill-opacity='0.9' stroke='%23966842' stroke-width='1'/%3E%3Ctext x='610' y='340' font-family='Arial' font-size='12' font-weight='bold' fill='%23333'%3E%E5%92%96%E5%95%A1%E7%94%A2%E5%8D%80%E7%89%B9%E6%80%A7:%3C/text%3E%3Ctext x='610' y='360' font-family='Arial' font-size='10' fill='%23333'%3E%E8%B5%A4%E9%81%93%E9%99%84%E8%BF%91 (23.5%C2%B0N - 23.5%C2%B0S)%3C/text%3E%3Ctext x='610' y='375' font-family='Arial' font-size='10' fill='%23333'%3E%E9%AB%98%E6%B5%B7%E6%8B%94: 800-2000m%3C/text%3E%3Ctext x='610' y='390' font-family='Arial' font-size='10' fill='%23333'%3E%E6%BA%AB%E6%9A%96%E6%B0%A3%E5%80%99%E3%80%81%E5%85%85%E8%B6%B3%E9%99%8D%E9%9B%A8%3C/text%3E%3Ctext x='610' y='405' font-family='Arial' font-size='10' fill='%23333'%3E%E6%8E%92%E6%B0%B4%E8%89%AF%E5%A5%BD%E3%80%81%E8%82%A5%E6%B2%83%E5%9C%9F%E5%A3%A4%3C/text%3E%3Ctext x='610' y='420' font-family='Arial' font-size='10' fill='%23333'%3E%E7%94%A2%E5%8D%80%E9%A2%A8%E5%91%B3%E5%90%84%E5%85%B7%E7%89%B9%E8%89%B2%3C/text%3E%3C!-- Altitude note --%3E%3Crect x='20' y='320' width='150' height='70' rx='5' fill='white' fill-opacity='0.9' stroke='%23966842' stroke-width='1'/%3E%3Ctext x='95' y='340' font-family='Arial' font-size='12' fill='%23966842' text-anchor='middle' font-weight='bold'%3E%E9%AB%98%E6%B5%B7%E6%8B%94%E5%92%96%E5%95%A1%3C/text%3E%3Ctext x='95' y='355' font-family='Arial' font-size='10' fill='%23966842' text-anchor='middle'%3E%E9%85%B8%E5%BA%A6%E9%AB%98%E3%80%81%E9%A2%A8%E5%91%B3%E8%A4%87%E9%9B%9C%3C/text%3E%3Ctext x='95' y='370' font-family='Arial' font-size='10' fill='%23966842' text-anchor='middle'%3EHigh Altitude Coffee:%3C/text%3E%3Ctext x='95' y='385' font-family='Arial' font-size='10' fill='%23966842' text-anchor='middle'%3EBrighter Acidity, Complex Flavor%3C/text%3E%3C/svg%3E" alt="世界咖啡產區地圖" class="coffee-image">
+                <p class="image-caption" data-i18n="origins-image-caption">世界主要咖啡產區：分布在赤道南北23.5度之間的咖啡帶，包括非洲、亞洲和美洲</p>
+            </div>
+            
+            <h3 data-i18n="africa-title">非洲產區</h3>
+            <p data-i18n="africa-description">非洲被認為是咖啡的發源地，尤其是衣索比亞。非洲咖啡通常具有明亮的酸度和豐富的水果風味。</p>
+            <ul>
+                <li><strong data-i18n="ethiopia">衣索比亞：</strong> <span data-i18n="ethiopia-desc">具有獨特的花香、柑橘和漿果風味，酸度明亮且複雜。著名產區包括耶加雪菲、西達摩和古吉。</span></li>
+                <li><strong data-i18n="kenya">肯亞：</strong> <span data-i18n="kenya-desc">以明亮的酸度和黑醋栗、葡萄柚風味聞名，口感清爽且酒香濃郁。</span></li>
+                <li><strong data-i18n="rwanda">盧旺達：</strong> <span data-i18n="rwanda-desc">具有橙花香氣和紅色水果風味，酸度平衡且甜感明顯。</span></li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-1">咖啡小知識：衣索比亞的咖啡文化</h4>
+                <p data-i18n="fact-box-content-1">在衣索比亞，咖啡儀式是社交活動的重要部分。傳統儀式包括將生豆在小鍋中烘焙，然後手工研磨並在特殊的陶壺（jebena）中沖煮。整個過程可持續數小時，象徵著友誼和尊重。</p>
+            </div>
+            
+            <h3 data-i18n="americas-title">美洲產區</h3>
+            <p data-i18n="americas-description">中南美洲是世界上最大的咖啡產區，尤其是巴西和哥倫比亞。這些地區的咖啡通常平衡且具有中等酸度。</p>
+            <ul>
+                <li><strong data-i18n="colombia">哥倫比亞：</strong> <span data-i18n="colombia-desc">以平衡的風味著稱，帶有溫和的酸度、焦糖甜感和中等濃郁度，口感乾淨。</span></li>
+                <li><strong data-i18n="brazil">巴西：</strong> <span data-i18n="brazil-desc">口感醇厚，帶有堅果和巧克力風味，酸度低且甜感明顯。</span></li>
+                <li><strong data-i18n="guatemala">瓜地馬拉：</strong> <span data-i18n="guatemala-desc">具有巧克力風味、濃郁的口感和些微的煙燻味，酸度明亮但不過於突出。</span></li>
+                <li><strong data-i18n="costa-rica">哥斯達黎加：</strong> <span data-i18n="costa-rica-desc">平衡且乾淨，帶有柑橘和焦糖風味，酸甜平衡。</span></li>
+            </ul>
+            
+            <h3 data-i18n="asia-title">亞洲產區</h3>
+            <p data-i18n="asia-description">亞洲咖啡產區包括印尼、越南和印度。這些地區的咖啡通常具有濃郁的口感和獨特的土壤風味。</p>
+            <ul>
+                <li><strong data-i18n="indonesia">印尼：</strong> <span data-i18n="indonesia-desc">以獨特的土壤風味和香料味聞名，口感濃郁且酸度低。蘇門答臘、爪哇和蘇拉威西是主要產區。</span></li>
+                <li><strong data-i18n="vietnam">越南：</strong> <span data-i18n="vietnam-desc">主要種植羅布斯塔咖啡，口感濃郁且具苦味，是製作越南滴漏咖啡的理想選擇。</span></li>
+                <li><strong data-i18n="india">印度：</strong> <span data-i18n="india-desc">獨特的季風馬拉巴爾處理法創造出低酸度、濃郁和香料風味的咖啡。</span></li>
+            </ul>
+        </section>
+        
+        <section id="processing-methods" class="blog-section">
+            <h2 data-i18n="processing-title">咖啡處理方法</h2>
+            <p data-i18n="processing-intro">咖啡豆採摘後的處理方法對最終風味有重大影響。不同的處理方法會創造出不同的風味特徵。以下是主要的處理方法：</p>
+            
+            <div class="processing-methods">
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="washed-tag">水洗處理</span>
+                    <h4 data-i18n="washed-title">水洗處理法</h4>
+                    <p data-i18n="washed-desc">咖啡果實的果肉和果膠被機械或手工完全去除，然後在水中發酵移除剩餘的果膠，最後在陽光下乾燥。水洗法創造出乾淨、明亮的風味，突顯咖啡豆的原始風味特徵。</p>
+                    <p data-i18n="washed-flavors"><strong>典型風味：</strong> 明亮的酸度，清爽的口感，花香和水果風味更為突出。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="natural-tag">日曬處理</span>
+                    <h4 data-i18n="natural-title">日曬處理法</h4>
+                    <p data-i18n="natural-desc">整顆咖啡果實（包括果肉和果皮）在陽光下直接乾燥，然後才去除外層。在這個過程中，水果的甜味和風味會滲入豆子，創造出更多的複雜性和甜感。</p>
+                    <p data-i18n="natural-flavors"><strong>典型風味：</strong> 濃郁的水果風味，發酵感，葡萄酒般的特質，醇厚的口感和較低的酸度。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="honey-tag">蜜處理</span>
+                    <h4 data-i18n="honey-title">蜜處理法</h4>
+                    <p data-i18n="honey-desc">果皮和部分果肉被去除，但留下果膠（一種黏性物質）包覆在豆子上，然後進行乾燥。根據留下的果膠量，可分為白蜜、黃蜜、紅蜜和黑蜜處理。</p>
+                    <p data-i18n="honey-flavors"><strong>典型風味：</strong> 明亮的酸度與溫和的水果甜感平衡，口感滑順如蜂蜜，複雜度介於水洗與日曬之間。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="anaerobic-tag">厭氧發酵</span>
+                    <h4 data-i18n="anaerobic-title">厭氧發酵處理法</h4>
+                    <p data-i18n="anaerobic-desc">咖啡豆在密封容器中發酵，不接觸氧氣。這種環境下，微生物活動創造出獨特的風味化合物。發酵時間和溫度的調整可創造各種獨特風味。</p>
+                    <p data-i18n="anaerobic-flavors"><strong>典型風味：</strong> 酒香濃郁，熱帶水果風味，複雜的酸度，常帶有熟成水果和發酵特性。</p>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-2">為什麼處理方法如此重要？</h4>
+                <p data-i18n="fact-box-content-2">處理方法不僅影響風味，還會影響咖啡豆的保存性和穩定性。水洗處理的咖啡豆通常更加穩定且一致，而日曬和蜜處理則能帶來更多風味變化和複雜性。農民會根據氣候條件、可用資源和目標市場選擇最適合的處理方法。</p>
+            </div>
+        </section>
+        
+        <section id="coffee-varieties" class="blog-section">
+            <h2 data-i18n="varieties-title">咖啡豆品種</h2>
+            <p data-i18n="varieties-intro">咖啡主要分為阿拉比卡（Arabica）和羅布斯塔（Robusta）兩大種，其中阿拉比卡佔全球咖啡產量的約60%，以其複雜的風味和較低的咖啡因含量聞名。在這些主要種類下，還衍生出許多子品種，每種都有獨特的特性和風味：</p>
+            
+            <div class="coffee-bean-variety">
+                <div class="variety-card">
+                    <h4>波旁 (Bourbon)</h4>
+                    <h5 data-i18n="bourbon-origin">起源：留尼旺島，由典型種演變而來</h5>
+                    <p data-i18n="bourbon-desc">波旁是一種古老且受歡迎的阿拉比卡變種，以其甜感和平衡的特性而聞名。它的產量比典型種高約30%，但比現代品種如卡杜拉低。有紅波旁和黃波旁兩種變種。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-sweet">甜感</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-caramel">焦糖</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-fruit">漿果</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-chocolate">巧克力</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>帝比卡 (Typica)</h4>
+                    <h5 data-i18n="typica-origin">起源：衣索比亞，最古老的阿拉比卡品種之一</h5>
+                    <p data-i18n="typica-desc">帝比卡是最古老的阿拉比卡咖啡品種之一，也是許多現代品種的祖先。它的產量較低，但風味優雅且複雜。這個品種培育出了許多重要的子品種，包括印尼中的爪哇和蘇門答臘品種。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-clean">乾淨</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-sweet">甜感</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-floral">花香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-bright">明亮</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>卡杜拉 (Caturra)</h4>
+                    <h5 data-i18n="caturra-origin">起源：巴西，波旁的自然突變種</h5>
+                    <p data-i18n="caturra-desc">卡杜拉是波旁的自然突變種，形成了較矮小的植株（矮化突變），使其更容易採摘和種植在密度較高的環境中。它在拉丁美洲特別受歡迎，尤其是在哥倫比亞和中美洲。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-bright">明亮</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-citrus">柑橘</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-clean">乾淨</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-balanced">平衡</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>藝伎 (Gesha/Geisha)</h4>
+                    <h5 data-i18n="geisha-origin">起源：衣索比亞Gesha森林，1936年被發現</h5>
+                    <p data-i18n="geisha-desc">藝伎咖啡因其卓越的風味和稀有性而聞名，在2004年巴拿馬翡翠莊園的藝伎咖啡獲獎後引起全球關注。它的特點是高雅的花香、熱帶水果風味和茶般的口感，常被形容為咖啡界的香檳。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-jasmine">茉莉花</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-bergamot">佛手柑</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tropical">熱帶水果</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tea-like">茶感</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>SL28 與 SL34</h4>
+                    <h5 data-i18n="sl-origin">起源：肯亞，由Scott農業實驗室開發</h5>
+                    <p data-i18n="sl-desc">這兩個品種是肯亞咖啡產業的核心，由英國殖民時期的Scott農業實驗室選育而來。SL28以其優雅的黑醋栗風味而聞名，而SL34則具有更濃郁的酒香和水果特性。這兩個品種共同造就了肯亞咖啡的標誌性風味。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-blackcurrant">黑醋栗</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-winey">酒香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tomato">番茄</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-grapefruit">葡萄柚</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>帕卡馬拉 (Pacamara)</h4>
+                    <h5 data-i18n="pacamara-origin">起源：薩爾瓦多，Pacas和Maragogipe的雜交種</h5>
+                    <p data-i18n="pacamara-desc">帕卡馬拉是1958年在薩爾瓦多開發的雜交品種，結合了Pacas的高產量和Maragogipe的大豆型特性。它以其巨大的豆粒和複雜的風味聞名，在專業咖啡比賽中常獲殊榮。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-complex">複雜</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-floral">花香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-citrus">柑橘</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-chocolate">巧克力</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="roasting" class="blog-section">
+            <h2 data-i18n="roasting-title">烘焙程度與風味變化</h2>
+            <p data-i18n="roasting-intro">烘焙是將生咖啡豆轉變為可沖泡咖啡的關鍵過程。烘焙過程中，咖啡豆經歷溫度上升、豆內水分蒸發、美拉德反應和焦糖化反應等多種化學變化。不同的烘焙程度會顯著影響咖啡的風味特性：</p>
+            
+            <div class="coffee-image-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='280' viewBox='0 0 800 280'%3E%3Crect width='800' height='280' fill='%23f9f4e8'/%3E%3Cg transform='translate(100,70)'%3E%3Cellipse cx='0' cy='0' rx='60' ry='48' fill='%23C2A887'/%3E%3Cellipse cx='0' cy='0' rx='52' ry='40' fill='%23D4BC9C'/%3E%3Cpath d='M-20,-25 C-15,-40 15,-40 20,-25 C35,-10 35,20 20,35 C0,45 -25,35 -30,15 C-35,-5 -25,-15 -20,-25 Z' fill='%23B49A7E'/%3E%3C/g%3E%3Cg transform='translate(300,70)'%3E%3Cellipse cx='0' cy='0' rx='60' ry='48' fill='%23A67C52'/%3E%3Cellipse cx='0' cy='0' rx='52' ry='40' fill='%23C49A6C'/%3E%3Cpath d='M-20,-25 C-15,-40 15,-40 20,-25 C35,-10 35,20 20,35 C0,45 -25,35 -30,15 C-35,-5 -25,-15 -20,-25 Z' fill='%2391663F'/%3E%3C/g%3E%3Cg transform='translate(500,70)'%3E%3Cellipse cx='0' cy='0' rx='60' ry='48' fill='%23795548'/%3E%3Cellipse cx='0' cy='0' rx='52' ry='40' fill='%238D6E63'/%3E%3Cpath d='M-20,-25 C-15,-40 15,-40 20,-25 C35,-10 35,20 20,35 C0,45 -25,35 -30,15 C-35,-5 -25,-15 -20,-25 Z' fill='%236D4C41'/%3E%3C/g%3E%3Cg transform='translate(700,70)'%3E%3Cellipse cx='0' cy='0' rx='60' ry='48' fill='%235D4037'/%3E%3Cellipse cx='0' cy='0' rx='52' ry='40' fill='%234E342E'/%3E%3Cpath d='M-20,-25 C-15,-40 15,-40 20,-25 C35,-10 35,20 20,35 C0,45 -25,35 -30,15 C-35,-5 -25,-15 -20,-25 Z' fill='%233E2723'/%3E%3C/g%3E%3Cline x1='100' y1='150' x2='700' y2='150' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-dasharray='1,3'/%3E%3Ctext x='100' y='170' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333'%3E%E6%B7%BA%E7%83%98%E7%84%99%3C/text%3E%3Ctext x='100' y='190' font-family='Arial' font-size='12' text-anchor='middle' fill='%23333'%3E(Light Roast)%3C/text%3E%3Ctext x='300' y='170' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333'%3E%E4%B8%AD%E6%B7%BA%E7%83%98%E7%84%99%3C/text%3E%3Ctext x='300' y='190' font-family='Arial' font-size='12' text-anchor='middle' fill='%23333'%3E(Medium-Light)%3C/text%3E%3Ctext x='500' y='170' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333'%3E%E4%B8%AD%E7%83%98%E7%84%99%3C/text%3E%3Ctext x='500' y='190' font-family='Arial' font-size='12' text-anchor='middle' fill='%23333'%3E(Medium Roast)%3C/text%3E%3Ctext x='700' y='170' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333'%3E%E6%B7%B1%E7%83%98%E7%84%99%3C/text%3E%3Ctext x='700' y='190' font-family='Arial' font-size='12' text-anchor='middle' fill='%23333'%3E(Dark Roast)%3C/text%3E%3Cpath d='M50,240 L750,240' stroke='%23795548' stroke-width='2'/%3E%3Cpath d='M100,245 L100,235' stroke='%23795548' stroke-width='2'/%3E%3Cpath d='M700,245 L700,235' stroke='%23795548' stroke-width='2'/%3E%3Ctext x='100' y='260' font-family='Arial' font-size='14' text-anchor='middle' fill='%236D4C41'%3E%E9%AB%98%E9%85%B8%E5%BA%A6 / %E8%8A%B1%E9%A6%99%E5%91%B3%E6%98%8E%E9%A1%AF%3C/text%3E%3Ctext x='700' y='260' font-family='Arial' font-size='14' text-anchor='middle' fill='%236D4C41'%3E%E4%BD%8E%E9%85%B8%E5%BA%A6 / %E9%9B%95%E5%8E%9A%E5%8F%A3%E6%84%9F%3C/text%3E%3Ctext x='400' y='30' font-family='Arial' font-size='18' font-weight='bold' text-anchor='middle' fill='%23333'%3E%E5%92%96%E5%95%A1%E7%83%98%E7%84%99%E7%A8%8B%E5%BA%A6%E5%B0%8D%E6%AF%94%3C/text%3E%3C/svg%3E" alt="不同烘焙程度的咖啡豆" class="coffee-image">
+                <p class="image-caption" data-i18n="roasting-image-caption">不同烘焙程度的咖啡豆：從淺烘焙到深烘焙，以及烘焙對風味的影響</p>
+            </div>
+            
+            <h3 data-i18n="light-roast-title">淺烘焙 (Light Roast)</h3>
+            <p data-i18n="light-roast-desc">淺烘焙通常在第一爆裂（一聲爆）剛結束時停止。這種烘焙保留了咖啡豆的原始特性，突顯其獨特的產地風味。</p>
+            <ul>
+                <li data-i18n="light-roast-characteristics">特徵：淺褐色豆，表面無油脂，密度較高</li>
+                <li data-i18n="light-roast-flavors">風味：高酸度，明亮的風味，花香和水果風味明顯</li>
+                <li data-i18n="light-roast-best-for">最適合：單一產地的高品質咖啡豆，尤其是非洲和中美洲產區</li>
+            </ul>
+            
+            <h3 data-i18n="medium-roast-title">中烘焙 (Medium Roast)</h3>
+            <p data-i18n="medium-roast-desc">中烘焙是在第一爆裂結束後繼續，但在第二爆裂（二聲爆）開始前停止。這種烘焙程度平衡了咖啡的酸度和甜度。</p>
+            <ul>
+                <li data-i18n="medium-roast-characteristics">特徵：中褐色豆，表面開始出現少許油脂，平衡的風味</li>
+                <li data-i18n="medium-roast-flavors">風味：平衡的酸度和甜感，焦糖和堅果風味更為明顯</li>
+                <li data-i18n="medium-roast-best-for">最適合：來自拉丁美洲的咖啡豆，如哥倫比亞、巴西等</li>
+            </ul>
+            
+            <h3 data-i18n="dark-roast-title">深烘焙 (Dark Roast)</h3>
+            <p data-i18n="dark-roast-desc">深烘焙持續到第二爆裂期間或之後。烘焙風味開始主導，而原豆的特性則退居次位。</p>
+            <ul>
+                <li data-i18n="dark-roast-characteristics">特徵：深褐色至黑色豆，表面有明顯油脂，低酸度</li>
+                <li data-i18n="dark-roast-flavors">風味：濃郁、苦味明顯，帶有巧克力、焦糖和煙燻味</li>
+                <li data-i18n="dark-roast-best-for">最適合：印尼咖啡豆，特濃咖啡，濃郁的意式拼配</li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-3">烘焙與咖啡因含量的迷思</h4>
+                <p data-i18n="fact-box-content-3">有一個常見的誤解是深烘焙的咖啡因含量高於淺烘焙。事實上，咖啡因非常穩定，在烘焙過程中基本不會分解。淺烘焙咖啡的咖啡因含量實際上比深烘焙略高，因為深烘焙會使豆子體積增大，但質量減輕。因此，如果按重量計算，淺烘焙的咖啡因密度更高。不過，差異通常很小，對飲用者幾乎無感。</p>
+            </div>
+        </section>
+        
+        <section id="brewing-methods" class="blog-section">
+            <h2 data-i18n="brewing-title">咖啡沖煮方法</h2>
+            <p data-i18n="brewing-intro">咖啡的沖煮方法大致可分為浸泡式、濾過式和加壓式三大類。每種方法都會影響咖啡的風味特徵、濃度和口感。以下是一些主要的沖煮方法：</p>
+            
+            <div class="brewing-methods">
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-pourover"></div>
+                    <h4 data-i18n="pourover-title">手沖咖啡</h4>
+                    <p data-i18n="pourover-desc">手動將熱水倒在放置在濾杯中的咖啡粉上，水透過咖啡粉和濾紙流入底下的容器。這種方法可以突顯咖啡的清爽口感和複雜風味。</p>
+                    <p data-i18n="pourover-best-for"><strong>最適合：</strong> 單一產地的淺烘焙至中烘焙咖啡，尤其是風味複雜的精品咖啡。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-frenchpress"></div>
+                    <h4 data-i18n="frenchpress-title">法式濾壓壺</h4>
+                    <p data-i18n="frenchpress-desc">一種浸泡式沖煮方法，將粗研磨的咖啡粉與熱水一起放入玻璃或金屬容器中，浸泡4-5分鐘後，用金屬濾網將咖啡粉壓下，分離咖啡液。</p>
+                    <p data-i18n="frenchpress-best-for"><strong>最適合：</strong> 中至深烘焙咖啡，可呈現醇厚的口感和完整的風味油脂。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-espresso"></div>
+                    <h4 data-i18n="espresso-title">義式濃縮咖啡</h4>
+                    <p data-i18n="espresso-desc">使用高壓（9巴左右）將熱水快速壓過細密壓實的咖啡粉。這種方法產生濃縮的咖啡液和特徵性的crema（奶油層）。</p>
+                    <p data-i18n="espresso-best-for"><strong>最適合：</strong> 中至深烘焙的咖啡豆，特別是專為義式濃縮設計的拼配。也是拿鐵、卡布奇諾等咖啡飲品的基底。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-aeropress"></div>
+                    <h4 data-i18n="aeropress-title">愛樂壓</h4>
+                    <p data-i18n="aeropress-desc">結合浸泡和加壓原理的創新沖煮裝置。咖啡粉與熱水短時間浸泡後，通過手動加壓使咖啡液通過濾紙。</p>
+                    <p data-i18n="aeropress-best-for"><strong>最適合：</strong> 各種烘焙度的咖啡，非常靈活且便攜，可根據參數調整產生不同風味特徵。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-coldbrew"></div>
+                    <h4 data-i18n="coldbrew-title">冷萃咖啡</h4>
+                    <p data-i18n="coldbrew-desc">使用常溫或冷水長時間（12-24小時）浸泡咖啡粉。低溫萃取減少了酸度和苦味，同時提取了甜感和風味。</p>
+                    <p data-i18n="coldbrew-best-for"><strong>最適合：</strong> 中至深烘焙的咖啡豆，尤其是具有巧克力和堅果風味的豆子。</p>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-4">沖煮參數：影響咖啡風味的關鍵因素</h4>
+                <p data-i18n="fact-box-content-4">無論選擇哪種沖煮方法，以下參數都會顯著影響最終的咖啡風味：</p>
+                <ul>
+                    <li data-i18n="brewing-parameter-1"><strong>研磨度：</strong> 影響萃取速率和萃取量。粗磨粒萃取較慢，細磨粒萃取較快。</li>
+                    <li data-i18n="brewing-parameter-2"><strong>咖啡粉與水的比例：</strong> 典型比例為1:15至1:18（咖啡粉:水），影響濃度和風味強度。</li>
+                    <li data-i18n="brewing-parameter-3"><strong>水溫：</strong> 通常為90-96°C，溫度越高萃取越快，但可能增加苦味。</li>
+                    <li data-i18n="brewing-parameter-4"><strong>沖煮時間：</strong> 影響萃取量，時間過短可能導致酸度過高，時間過長則可能增加苦味。</li>
+                    <li data-i18n="brewing-parameter-5"><strong>水質：</strong> 理想的水應該乾淨且含有適量的礦物質，pH值約為7。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="tasting-coffee" class="blog-section">
+            <h2 data-i18n="tasting-title">如何品嚐咖啡</h2>
+            <p data-i18n="tasting-intro">品嚐咖啡是感官評估的過程，涉及視覺、嗅覺和味覺。專業咖啡品鑒（杯測）有特定的方法和詞彙，但普通咖啡愛好者也可以通過以下步驟來深入欣賞咖啡的風味：</p>
+            
+            <h3 data-i18n="tasting-process-title">品嚐過程</h3>
+            <ol>
+                <li data-i18n="tasting-step-1"><strong>觀察：</strong> 注意咖啡的顏色和透明度。好的咖啡應該有清澈的外觀，不應該渾濁。</li>
+                <li data-i18n="tasting-step-2"><strong>聞香：</strong> 輕輕吸入咖啡的香氣。先聞熱咖啡，然後等它稍微冷卻後再聞一次，因為香氣會隨溫度變化。</li>
+                <li data-i18n="tasting-step-3"><strong>啜飲：</strong> 將少量咖啡吸入口中，讓它覆蓋整個舌頭。用力吸氣，讓空氣通過咖啡，這會增強風味感知。</li>
+                <li data-i18n="tasting-step-4"><strong>評估：</strong> 專注於風味、酸度、甜度、口感和餘韻。風味可能包括水果、堅果、巧克力或花香等。</li>
+            </ol>
+            
+            <h3 data-i18n="flavor-wheel-title">咖啡風味輪</h3>
+            <p data-i18n="flavor-wheel-desc">風味輪是幫助識別和描述咖啡風味的視覺工具。它從中心向外擴展，從基本類別到具體的風味描述。專業的風味輪由美國特種咖啡協會(SCA)開發，包含數十種風味描述。</p>
+            
+            <div class="flavor-wheel-container">
+                <svg id="wheel" preserveAspectRatio="xMidYMid" viewBox="0 0 840 840"><svg width="810" height="810"><g transform="translate(390,390)"><path id="path-0" d="M0,69.27416531557695A69.27416531557695,69.27416531557695 0 1,1 0,-69.27416531557695A69.27416531557695,69.27416531557695 0 1,1 0,69.27416531557695Z" style="fill: rgb(255, 255, 255);"></path><path id="path-1" d="M1.0444584121623025e-14,-170.57300323480945A170.57300323480945,170.57300323480945 0 0,1 162.74625806295603,-51.07646149693647L66.09551905482319,-20.74348912414182A69.27416531557695,69.27416531557695 0 0,0 4.2418192408662956e-15,-69.27416531557695Z" style="fill: rgb(218, 29, 35);"></path><path id="path-2" d="M1.7693338604814446e-14,-288.95414771235653A288.95414771235653,288.95414771235653 0 0,1 80.26688099333938,-277.5819289791312L47.38247593854996,-163.85984989153093A170.57300323480945,170.57300323480945 0 0,0 1.0444584121623025e-14,-170.57300323480945Z" style="fill: rgb(221, 76, 81);"></path><path id="path-3" d="M1.8982025386783973e-14,-310A310,310 0 0,1 21.797218388644186,-309.23272994707037L20.317408587067053,-288.23896750522914A288.95414771235653,288.95414771235653 0 0,0 1.7693338604814446e-14,-288.95414771235653Z" style="fill: rgb(62, 3, 23);"></path><path id="path-4" d="M21.797218388644186,-309.23272994707037A310,310 0 0,1 43.486537726276914,-306.9347178743081L40.534243373088984,-286.09696711839774A288.95414771235653,288.95414771235653 0 0,0 20.317408587067053,-288.23896750522914Z" style="fill: rgb(229, 41, 104);"></path><path id="path-5" d="M43.486537726276914,-306.9347178743081A310,310 0 0,1 64.96059307614857,-303.11733923877574L60.55042841034747,-282.53874973089574A288.95414771235653,288.95414771235653 0 0,0 40.534243373088984,-286.09696711839774Z" style="fill: rgb(100, 105, 176);"></path><path id="path-6" d="M64.96059307614857,-303.11733923877574A310,310 0 0,1 86.11308508609842,-297.7994905585877L80.26688099333938,-277.5819289791312A288.95414771235653,288.95414771235653 0 0,0 60.55042841034747,-282.53874973089574Z" style="fill: rgb(239, 45, 54);"></path><path id="path-7" d="M80.26688099333938,-277.5819289791312A288.95414771235653,288.95414771235653 0 0,1 118.41215967427418,-263.5774268055756L69.90007880166179,-155.59282893521728A170.57300323480945,170.57300323480945 0 0,0 47.38247593854996,-163.85984989153093Z" style="fill: rgb(201, 74, 68);"></path><path id="path-8" d="M86.11308508609842,-297.7994905585877A310,310 0 0,1 106.83930618410027,-291.007495872701L99.58600213098772,-271.2510417671078A288.95414771235653,288.95414771235653 0 0,0 80.26688099333938,-277.5819289791312Z" style="fill: rgb(181, 59, 84);"></path><path id="path-9" d="M106.83930618410027,-291.007495872701A310,310 0 0,1 127.03665889429024,-282.7749764335164L118.41215967427418,-263.5774268055756A288.95414771235653,288.95414771235653 0 0,0 99.58600213098772,-271.2510417671078Z" style="fill: rgb(165, 68, 111);"></path><path id="path-10" d="M118.41215967427418,-263.5774268055756A288.95414771235653,288.95414771235653 0 0,1 240.80992426551165,-159.70309907892485L142.15290666671686,-94.27460187529827A170.57300323480945,170.57300323480945 0 0,0 69.90007880166179,-155.59282893521728Z" style="fill: rgb(242, 104, 76);"></path><path id="path-11" d="M127.03665889429024,-282.7749764335164A310,310 0 0,1 146.60516370774585,-273.14268427732975L136.65216170774906,-254.5990694813584A288.95414771235653,288.95414771235653 0 0,0 118.41215967427418,-263.5774268055756Z" style="fill: rgb(208, 124, 54);"></path><path id="path-12" d="M146.60516370774585,-273.14268427732975A310,310 0 0,1 165.44795399398984,-262.1583004964798L154.21571786156937,-244.36041382477478A288.95414771235653,288.95414771235653 0 0,0 136.65216170774906,-254.5990694813584Z" style="fill: rgb(231, 52, 81);"></path><path id="path-13" d="M165.44795399398984,-262.1583004964798A310,310 0 0,1 183.4717555033431,-249.87619921177264L171.01588626051088,-232.912142505938A288.95414771235653,288.95414771235653 0 0,0 154.21571786156937,-244.36041382477478Z" style="fill: rgb(230, 86, 86);"></path><path id="path-14" d="M183.4717555033431,-249.87619921177264A310,310 0 0,1 200.58734808652775,-236.35717841354884L186.9695038974981,-220.31092594898195A288.95414771235653,288.95414771235653 0 0,0 171.01588626051088,-232.912142505938Z" style="fill: rgb(248, 154, 28);"></path><path id="path-15" d="M200.58734808652775,-236.35717841354884A310,310 0 0,1 216.71000734594867,-221.66815900376596L201.9975983012488,-206.61914180613007A288.95414771235653,288.95414771235653 0 0,0 186.9695038974981,-220.31092594898195Z" style="fill: rgb(174, 185, 44);"></path><path id="path-16" d="M216.71000734594867,-221.66815900376596A310,310 0 0,1 231.75992403242316,-205.88185352887575L216.02577846022365,-191.90456618024683A288.95414771235653,288.95414771235653 0 0,0 201.9975983012488,-206.61914180613007Z" style="fill: rgb(78, 185, 71);"></path><path id="path-17" d="M231.75992403242316,-205.88185352887575A310,310 0 0,1 245.66259911128904,-189.07640624331233L228.98460306775755,-176.24003812436A288.95414771235653,288.95414771235653 0 0,0 216.02577846022365,-191.90456618024683Z" style="fill: rgb(246, 138, 92);"></path><path id="path-18" d="M245.66259911128904,-189.07640624331233A310,310 0 0,1 258.3492125422649,-171.3350062853228L240.80992426551165,-159.70309907892485A288.95414771235653,288.95414771235653 0 0,0 228.98460306775755,-176.24003812436Z" style="fill: rgb(186, 166, 53);"></path><path id="path-19" d="M240.80992426551165,-159.70309907892485A288.95414771235653,288.95414771235653 0 0,1 275.69548170070493,-86.52456789831797L162.74625806295603,-51.0764614969365A170.57300323480945,170.57300323480945 0 0,0 142.15290666671686,-94.27460187529827Z" style="fill: rgb(247, 161, 41);"></path><path id="path-20" d="M258.3492125422649,-171.3350062853228A310,310 0 0,1 269.7569639475529,-152.74547587997048L251.44320518367107,-142.3756090316619A288.95414771235653,288.95414771235653 0 0,0 240.80992426551165,-159.70309907892485Z" style="fill: rgb(242, 99, 85);"></path><path id="path-21" d="M269.7569639475529,-152.74547587997048A310,310 0 0,1 279.8293834818333,-133.39983560775883L260.8318097060236,-124.34334130002719A288.95414771235653,288.95414771235653 0 0,0 251.44320518367107,-142.3756090316619Z" style="fill: rgb(226, 99, 30);"></path><path id="path-22" d="M279.8293834818333,-133.39983560775883A310,310 0 0,1 288.51661136530487,-113.3938488908532L268.9292630255447,-105.6955579421943A288.95414771235653,288.95414771235653 0 0,0 260.8318097060236,-124.34334130002719Z" style="fill: rgb(253, 228, 2);"></path><path id="path-23" d="M288.51661136530487,-113.3938488908532A310,310 0 0,1 295.7756446960452,-92.82654795175158L275.69548170070493,-86.52456789831797A288.95414771235653,288.95414771235653 0 0,0 268.9292630255447,-105.6955579421943Z" style="fill: rgb(126, 177, 56);"></path><path id="path-24" d="M162.74625806295603,-51.07646149693647A170.57300323480945,170.57300323480945 0 0,1 157.13399456270224,66.36307094545113L63.81623181629129,26.951781702500774A69.27416531557695,69.27416531557695 0 0,0 66.09551905482319,-20.74348912414182Z" style="fill: rgb(235, 180, 13);"></path><path id="path-25" d="M275.69548170070493,-86.52456789831791A288.95414771235653,288.95414771235653 0 0,1 286.94056567360724,34.053065223040214L169.38436227454528,20.101921534716997A170.57300323480945,170.57300323480945 0 0,0 162.74625806295603,-51.07646149693647Z" style="fill: rgb(225, 195, 21);"></path><path id="path-26" d="M295.7756446960452,-92.82654795175151A310,310 0 0,1 301.57055031993895,-71.79974359097108L281.09697207369123,-66.925270049338A288.95414771235653,288.95414771235653 0 0,0 275.69548170070493,-86.52456789831791Z" style="fill: rgb(158, 167, 24);"></path><path id="path-27" d="M301.57055031993895,-71.79974359097108A310,310 0 0,1 305.8726427044391,-50.417521210413994L285.1069960683463,-46.9946834552414A288.95414771235653,288.95414771235653 0 0,0 281.09697207369123,-66.925270049338Z" style="fill: rgb(148, 167, 112);"></path><path id="path-28" d="M305.8726427044391,-50.417521210413994A310,310 0 0,1 308.66062593566465,-28.78572557716212L287.70570354710475,-26.83146709816343A288.95414771235653,288.95414771235653 0 0,0 285.1069960683463,-46.9946834552414Z" style="fill: rgb(208, 179, 79);"></path><path id="path-29" d="M308.66062593566465,-28.78572557716212A310,310 0 0,1 309.9206991359293,-7.011436878186394L288.88023057174235,-6.535431507662371A288.95414771235653,288.95414771235653 0 0,0 287.70570354710475,-26.83146709816343Z" style="fill: rgb(142, 182, 70);"></path><path id="path-30" d="M309.9206991359293,-7.011436878186394A310,310 0 0,1 309.6466247798713,14.7975593404323L288.62476308153407,13.792955314314955A288.95414771235653,288.95414771235653 0 0,0 288.88023057174235,-6.535431507662371Z" style="fill: rgb(250, 239, 8);"></path><path id="path-31" d="M309.6466247798713,14.7975593404323A310,310 0 0,1 307.8397595710111,36.5333057259002L286.94056567360724,34.05306522304015A288.95414771235653,288.95414771235653 0 0,0 288.62476308153407,13.792955314314955Z" style="fill: rgb(193, 186, 9);"></path><path id="path-32" d="M286.94056567360724,34.053065223040214A288.95414771235653,288.95414771235653 0 0,1 266.1881928232229,112.4203961996268L157.13399456270218,66.3630709454512A170.57300323480945,170.57300323480945 0 0,0 169.38436227454528,20.101921534716997Z" style="fill: rgb(176, 151, 51);"></path><path id="path-33" d="M307.8397595710111,36.53330572590027A310,310 0 0,1 304.5090477258935,58.08820752157458L283.83597534302214,54.14460805333897A288.95414771235653,288.95414771235653 0 0,0 286.94056567360724,34.053065223040214Z" style="fill: rgb(143, 27, 83);"></path><path id="path-34" d="M304.5090477258935,58.08820752157458A310,310 0 0,1 299.6709766990585,79.35556517492847L279.32636021356745,73.96812806888327A288.95414771235653,288.95414771235653 0 0,0 283.83597534302214,54.14460805333897Z" style="fill: rgb(179, 64, 57);"></path><path id="path-35" d="M299.6709766990585,79.35556517492847A310,310 0 0,1 293.34949556800836,100.23010251414024L273.4340434635599,93.42549628095328A288.95414771235653,288.95414771235653 0 0,0 279.32636021356745,73.96812806888327Z" style="fill: rgb(186, 146, 50);"></path><path id="path-36" d="M293.34949556800836,100.23010251414024A310,310 0 0,1 285.57589648217527,120.60848787876377L266.18819282322295,112.42039619962667A288.95414771235653,288.95414771235653 0 0,0 273.4340434635599,93.42549628095328Z" style="fill: rgb(139, 100, 57);"></path><path id="path-37" d="M157.13399456270224,66.36307094545113A170.57300323480945,170.57300323480945 0 0,1 65.17643343819235,157.62988916071467L26.46985712306221,64.01762760407915A69.27416531557695,69.27416531557695 0 0,0 63.81623181629129,26.951781702500774Z" style="fill: rgb(25, 122, 47);"></path><path id="path-38" d="M266.18819282322295,112.42039619962667A288.95414771235653,288.95414771235653 0 0,1 254.25482140801978,137.2916067024868L150.08958624697905,81.0448365582469A170.57300323480945,170.57300323480945 0 0,0 157.13399456270224,66.36307094545113Z" style="fill: rgb(162, 176, 40);"></path><path id="path-39" d="M254.25482140801978,137.2916067024868A288.95414771235653,288.95414771235653 0 0,1 240.0041301455045,160.9115191441374L141.67723700034685,94.98794633262615A170.57300323480945,170.57300323480945 0 0,0 150.08958624697905,81.0448365582469Z" style="fill: rgb(112, 137, 51);"></path><path id="path-40" d="M240.0041301455045,160.9115191441374A288.95414771235653,288.95414771235653 0 0,1 135.37068625483985,255.28273890544983L79.91089481584815,150.6963779334884A170.57300323480945,170.57300323480945 0 0,0 141.67723700034685,94.98794633262615Z" style="fill: rgb(58, 162, 85);"></path><path id="path-41" d="M257.48472875070195,172.6314411113382A310,310 0 0,1 244.70909796325907,190.30884733508339L228.09583496591318,177.38880898009677A288.95414771235653,288.95414771235653 0 0,0 240.0041301455045,160.9115191441374Z" style="fill: rgb(162, 188, 43);"></path><path id="path-42" d="M244.70909796325907,190.30884733508339A310,310 0 0,1 230.72212548196686,207.04420014355276L215.0584358936294,192.98800126215113A288.95414771235653,288.95414771235653 0 0,0 228.09583496591318,177.38880898009677Z" style="fill: rgb(98, 170, 60);"></path><path id="path-43" d="M230.72212548196686,207.04420014355276A310,310 0 0,1 215.59304863015475,222.7546573752292L200.95646974075805,207.63187797037853A288.95414771235653,288.95414771235653 0 0,0 215.0584358936294,192.98800126215113Z" style="fill: rgb(3, 166, 83);"></path><path id="path-44" d="M215.59304863015475,222.7546573752292A310,310 0 0,1 199.39675829554443,237.36245023429512L185.85974306417998,221.24795002053997A288.95414771235653,288.95414771235653 0 0,0 200.95646974075805,207.63187797037853Z" style="fill: rgb(4, 133, 73);"></path><path id="path-45" d="M199.39675829554443,237.36245023429512A310,310 0 0,1 182.2134282106669,250.79526825623353L169.84298661406424,233.76881609442512A288.95414771235653,288.95414771235653 0 0,0 185.85974306417998,221.24795002053997Z" style="fill: rgb(39, 180, 75);"></path><path id="path-46" d="M182.2134282106669,250.79526825623353A310,310 0 0,1 164.12811808251396,262.9866172539819L152.98548540698656,245.13249628509692A288.95414771235653,288.95414771235653 0 0,0 169.84298661406424,233.76881609442512Z" style="fill: rgb(163, 168, 48);"></path><path id="path-47" d="M164.12811808251396,262.9866172539819A310,310 0 0,1 145.2303525359842,273.87614847276086L135.37068625483997,255.28273890544978A288.95414771235653,288.95414771235653 0 0,0 152.98548540698656,245.13249628509692Z" style="fill: rgb(122, 193, 65);"></path><path id="path-48" d="M135.37068625483985,255.28273890544983A288.95414771235653,288.95414771235653 0 0,1 110.4102080511455,267.02824839008537L65.17643343819242,157.62988916071467A170.57300323480945,170.57300323480945 0 0,0 79.91089481584815,150.6963779334884Z" style="fill: rgb(94, 154, 128);"></path><path id="path-49" d="M65.17643343819235,157.62988916071467A170.57300323480945,170.57300323480945 0 0,1 -114.24177159999229,126.6647822176216L-46.39657637303774,51.44188644510192A69.27416531557695,69.27416531557695 0 0,0 26.46985712306221,64.01762760407915Z" style="fill: rgb(10, 163, 181);"></path><path id="path-50" d="M110.41020805114537,267.02824839008537A288.95414771235653,288.95414771235653 0 0,1 -88.60078376043927,275.0352715511417L-52.30207593358518,162.356528312168A170.57300323480945,170.57300323480945 0 0,0 65.17643343819235,157.62988916071467Z" style="fill: rgb(157, 178, 183);"></path><path id="path-51" d="M118.45188853259508,286.47713713848384A310,310 0 0,1 98.01547140890116,294.09686731499005L91.36121614059319,274.13067625766763A288.95414771235653,288.95414771235653 0 0,0 110.41020805114537,267.02824839008537Z" style="fill: rgb(139, 140, 144);"></path><path id="path-52" d="M98.01547140890116,294.09686731499005A310,310 0 0,1 77.0938650211051,300.2607799498756L71.85997439040284,279.8761218124637A288.95414771235653,288.95414771235653 0 0,0 91.36121614059319,274.13067625766763Z" style="fill: rgb(189, 177, 117);"></path><path id="path-53" d="M77.0938650211051,300.2607799498756A310,310 0 0,1 55.79063402753311,304.93836287814935L52.00301647018654,284.23614435566753A288.95414771235653,288.95414771235653 0 0,0 71.85997439040284,279.8761218124637Z" style="fill: rgb(254, 254, 244);"></path><path id="path-54" d="M55.79063402753311,304.93836287814935A310,310 0 0,1 34.21123217768172,308.10646145915985L31.888636890617967,287.18916121161794A288.95414771235653,288.95414771235653 0 0,0 52.00301647018654,284.23614435566753Z" style="fill: rgb(116, 79, 2);"></path><path id="path-55" d="M34.21123217768172,308.10646145915985A310,310 0 0,1 12.462480302515782,309.74939319506245L11.616404432888642,288.7205545648351A288.95414771235653,288.95414771235653 0 0,0 31.888636890617967,287.18916121161794Z" style="fill: rgb(163, 163, 111);"></path><path id="path-56" d="M12.462480302515782,309.74939319506245A310,310 0 0,1 -9.347962462465434,309.8590253612122L-8.713330729641294,288.8227438200985A288.95414771235653,288.95414771235653 0 0,0 11.616404432888642,288.7205545648351Z" style="fill: rgb(201, 181, 131);"></path><path id="path-57" d="M-9.347962462465434,309.8590253612122A310,310 0 0,1 -31.112131603876445,308.43481526420305L-28.999933777783195,287.49522312737395A288.95414771235653,288.95414771235653 0 0,0 -8.713330729641294,288.8227438200985Z" style="fill: rgb(152, 136, 71);"></path><path id="path-58" d="M-31.112131603876445,308.43481526420305A310,310 0 0,1 -52.72229166875547,305.48381292827065L-49.142983401895194,284.74456388583684A288.95414771235653,288.95414771235653 0 0,0 -28.999933777783195,287.49522312737395Z" style="fill: rgb(157, 151, 127);"></path><path id="path-59" d="M-52.72229166875547,305.48381292827065A310,310 0 0,1 -74.07146956899398,301.02062619676013L-69.04276890035615,280.5843822145958A288.95414771235653,288.95414771235653 0 0,0 -49.142983401895194,284.74456388583684Z" style="fill: rgb(204, 123, 106);"></path><path id="path-60" d="M-74.07146956899398,301.02062619676013A310,310 0 0,1 -95.05398411196309,295.06734842141157L-88.60078376043927,275.0352715511417A288.95414771235653,288.95414771235653 0 0,0 -69.04276890035615,280.5843822145958Z" style="fill: rgb(219, 100, 106);"></path><path id="path-61" d="M-88.60078376043927,275.0352715511417A288.95414771235653,288.95414771235653 0 0,1 -193.52789198641997,214.57272544167145L-114.24177159999229,126.6647822176216A170.57300323480945,170.57300323480945 0 0,0 -52.30207593358518,162.356528312168Z" style="fill: rgb(118, 192, 203);"></path><path id="path-62" d="M-95.05398411196309,295.06734842141157A310,310 0 0,1 -115.56596913608861,287.65344909741066L-107.7202132782935,268.1247007111678A288.95414771235653,288.95414771235653 0 0,0 -88.60078376043927,275.0352715511417Z" style="fill: rgb(128, 168, 157);"></path><path id="path-63" d="M-115.56596913608861,287.65344909741066A310,310 0 0,1 -135.50588766178888,278.8156279855752L-126.30641380425334,259.8868779143785A288.95414771235653,288.95414771235653 0 0,0 -107.7202132782935,268.1247007111678Z" style="fill: rgb(222, 242, 253);"></path><path id="path-64" d="M-135.50588766178888,278.8156279855752A310,310 0 0,1 -154.7750345126599,268.59763344379064L-144.26738124114905,250.36258144937574A288.95414771235653,288.95414771235653 0 0,0 -126.30641380425334,259.8868779143785Z" style="fill: rgb(122, 155, 174);"></path><path id="path-65" d="M-154.7750345126599,268.59763344379064A310,310 0 0,1 -173.27802491886825,257.05004586697913L-161.51420647649047,239.5989578158552A288.95414771235653,288.95414771235653 0 0,0 -144.26738124114905,250.36258144937574Z" style="fill: rgb(3, 159, 184);"></path><path id="path-66" d="M-173.27802491886825,257.05004586697913A310,310 0 0,1 -190.92326668410212,244.23002730760038L-177.9615154940764,227.64928834333298A288.95414771235653,288.95414771235653 0 0,0 -161.51420647649047,239.5989578158552Z" style="fill: rgb(94, 119, 123);"></path><path id="path-67" d="M-190.92326668410212,244.23002730760038A310,310 0 0,1 -207.62341357879274,230.20103851609704L-193.5278919864199,214.57272544167154A288.95414771235653,288.95414771235653 0 0,0 -177.9615154940764,227.64928834333298Z" style="fill: rgb(18, 12, 12);"></path><path id="path-68" d="M-114.24177159999229,126.6647822176216A170.57300323480945,170.57300323480945 0 0,1 -166.32359446840877,37.83664038535417L-67.54836908877388,15.366450911536525A69.27416531557695,69.27416531557695 0 0,0 -46.39657637303774,51.44188644510192Z" style="fill: rgb(201, 73, 48);"></path><path id="path-69" d="M-193.52789198641997,214.57272544167145A288.95414771235653,288.95414771235653 0 0,1 -213.1074742529142,195.14021599280318L-125.79982735285013,115.19354526420054A170.57300323480945,170.57300323480945 0 0,0 -114.24177159999229,126.6647822176216Z" style="fill: rgb(202, 164, 101);"></path><path id="path-70" d="M-213.1074742529142,195.14021599280318A288.95414771235653,288.95414771235653 0 0,1 -230.744760294849,173.92916683709794L-136.21132299290926,102.6724155801531A170.57300323480945,170.57300323480945 0 0,0 -125.79982735285013,115.19354526420054Z" style="fill: rgb(223, 189, 126);"></path><path id="path-71" d="M-230.744760294849,173.92916683709794A288.95414771235653,288.95414771235653 0 0,1 -269.9782232505376,102.98669064814753L-159.3712937240277,60.794244540680054A170.57300323480945,170.57300323480945 0 0,0 -136.21132299290926,102.6724155801531Z" style="fill: rgb(190, 134, 99);"></path><path id="path-72" d="M-247.55095664039266,186.5972236300059A310,310 0 0,1 -260.0585759906302,168.72918257884623L-242.40323929245693,157.27418434281648A288.95414771235653,288.95414771235653 0 0,0 -230.744760294849,173.92916683709794Z" style="fill: rgb(185, 164, 73);"></path><path id="path-73" d="M-260.0585759906302,168.72918257884623A310,310 0 0,1 -271.2788717449636,150.02591024479597L-252.86179089495369,139.84067428888875A288.95414771235653,288.95414771235653 0 0,0 -242.40323929245693,157.27418434281648Z" style="fill: rgb(137, 152, 147);"></path><path id="path-74" d="M-271.2788717449636,150.02591024479597A310,310 0 0,1 -281.1563019877976,130.57999024562065L-262.06864391884505,121.71493480551983A288.95414771235653,288.95414771235653 0 0,0 -252.86179089495369,139.84067428888875Z" style="fill: rgb(161, 116, 59);"></path><path id="path-75" d="M-281.1563019877976,130.57999024562065A310,310 0 0,1 -289.6419721615496,110.48768240110813L-269.9782232505376,102.98669064814753A288.95414771235653,288.95414771235653 0 0,0 -262.06864391884505,121.71493480551983Z" style="fill: rgb(137, 72, 16);"></path><path id="path-76" d="M-269.9782232505376,102.98669064814753A288.95414771235653,288.95414771235653 0 0,1 -281.75556256059934,64.0960408007745L-166.32359446840874,37.83664038535432A170.57300323480945,170.57300323480945 0 0,0 -159.3712937240277,60.794244540680054Z" style="fill: rgb(221, 175, 97);"></path><path id="path-77" d="M-289.6419721615496,110.48768240110813A310,310 0 0,1 -296.69387710103695,89.84844623450522L-276.5513754490477,83.74864904829337A288.95414771235653,288.95414771235653 0 0,0 -269.9782232505376,102.98669064814753Z" style="fill: rgb(183, 144, 111);"></path><path id="path-78" d="M-296.69387710103695,89.84844623450522A310,310 0 0,1 -302.27710896447775,68.76444863501229L-281.75556256059934,64.0960408007745A288.95414771235653,288.95414771235653 0 0,0 -276.5513754490477,83.74864904829337Z" style="fill: rgb(235, 157, 94);"></path><path id="path-79" d="M-166.32359446840877,37.83664038535417A170.57300323480945,170.57300323480945 0 0,1 -165.32022931069648,-42.004418972306325L-67.1408762118878,-17.05909498390357A69.27416531557695,69.27416531557695 0 0,0 -67.54836908877388,15.366450911536525Z" style="fill: rgb(173, 33, 62);"></path><path id="path-80" d="M-281.7555625605994,64.09604080077425A288.95414771235653,288.95414771235653 0 0,1 -286.5837330234408,36.935937060314984L-169.17371979969934,21.80371440087969A170.57300323480945,170.57300323480945 0 0,0 -166.32359446840877,37.83664038535417Z" style="fill: rgb(121, 70, 82);"></path><path id="path-81" d="M-286.5837330234408,36.935937060314984A288.95414771235653,288.95414771235653 0 0,1 -288.79993267379456,9.439193174528516L-170.48196829906016,5.572065812654858A170.57300323480945,170.57300323480945 0 0,0 -169.17371979969934,21.80371440087969Z" style="fill: rgb(204, 60, 66);"></path><path id="path-82" d="M-288.79993267379456,9.439193174528516A288.95414771235653,288.95414771235653 0 0,1 -280.0558415115895,-71.15634276302993L-165.32022931069648,-42.004418972306325A170.57300323480945,170.57300323480945 0 0,0 -170.48196829906016,5.572065812654858Z" style="fill: rgb(177, 77, 87);"></path><path id="path-83" d="M-309.83455277478214,10.12669278939272A310,310 0 0,1 -309.7797365185827,-11.683956627679493L-288.7488378847917,-10.890734610513766A288.95414771235653,288.95414771235653 0 0,0 -288.79993267379456,9.439193174528516Z" style="fill: rgb(199, 137, 53);"></path><path id="path-84" d="M-309.7797365185827,-11.683956627679493A310,310 0 0,1 -308.1914704892533,-33.436768947847256L-287.2683989917421,-31.166751850258684A288.95414771235653,288.95414771235653 0 0,0 -288.7488378847917,-10.890734610513766Z" style="fill: rgb(140, 41, 44);"></path><path id="path-85" d="M-308.1914704892533,-33.436768947847256A310,310 0 0,1 -305.07761680911904,-55.024064935883615L-284.36594435869637,-51.288489636185844A288.95414771235653,288.95414771235653 0 0,0 -287.2683989917421,-31.166751850258684Z" style="fill: rgb(229, 118, 46);"></path><path id="path-86" d="M-305.07761680911904,-55.024064935883615A310,310 0 0,1 -300.4535894567475,-76.33898468381803L-280.0558415115895,-71.15634276302993A288.95414771235653,288.95414771235653 0 0,0 -284.36594435869637,-51.288489636185844Z" style="fill: rgb(161, 108, 90);"></path><path id="path-87" d="M-165.32022931069648,-42.004418972306325A170.57300323480945,170.57300323480945 0 0,1 -140.71517086819043,-96.40741734990253L-57.148117370682414,-39.15357788448703A69.27416531557695,69.27416531557695 0 0,0 -67.1408762118878,-17.05909498390357Z" style="fill: rgb(168, 123, 100);"></path><path id="path-88" d="M-280.0558415115895,-71.15634276302993A288.95414771235653,288.95414771235653 0 0,1 -258.9271719040424,-128.26230595911193L-152.84772923465331,-75.71473502794834A170.57300323480945,170.57300323480945 0 0,0 -165.32022931069648,-42.004418972306325Z" style="fill: rgb(199, 136, 105);"></path><path id="path-89" d="M-300.4535894567475,-76.33898468381803A310,310 0 0,1 -294.3422779657606,-97.27601658130789L-274.3594260171287,-90.6719627874351A288.95414771235653,288.95414771235653 0 0,0 -280.0558415115895,-71.15634276302993Z" style="fill: rgb(212, 173, 19);"></path><path id="path-90" d="M-294.3422779657606,-97.27601658130789A310,310 0 0,1 -286.7739341186821,-117.73151961175799L-267.3048958689783,-109.73874486547135A288.95414771235653,288.95414771235653 0 0,0 -274.3594260171287,-90.6719627874351Z" style="fill: rgb(157, 84, 51);"></path><path id="path-91" d="M-286.7739341186821,-117.73151961175799A310,310 0 0,1 -277.7860221966998,-137.60423638876316L-258.9271719040424,-128.26230595911193A288.95414771235653,288.95414771235653 0 0,0 -267.3048958689783,-109.73874486547135Z" style="fill: rgb(200, 159, 131);"></path><path id="path-92" d="M-258.9271719040424,-128.26230595911193A288.95414771235653,288.95414771235653 0 0,1 -238.37437048841798,-163.31613200913375L-140.71517086819043,-96.40741734990253A170.57300323480945,170.57300323480945 0 0,0 -152.84772923465331,-75.71473502794834Z" style="fill: rgb(187, 118, 76);"></path><path id="path-93" d="M-277.7860221966998,-137.60423638876316A310,310 0 0,1 -267.4230335266274,-156.79579439326912L-249.26772493980505,-146.15095204448053A288.95414771235653,288.95414771235653 0 0,0 -258.9271719040424,-128.26230595911193Z" style="fill: rgb(105, 42, 25);"></path><path id="path-94" d="M-267.4230335266274,-156.79579439326912A310,310 0 0,1 -255.73626624308034,-175.2111929302701L-238.37437048841798,-163.31613200913375A288.95414771235653,288.95414771235653 0 0,0 -249.26772493980505,-146.15095204448053Z" style="fill: rgb(71, 6, 3);"></path><path id="path-95" d="M-140.71517086819043,-96.40741734990253A170.57300323480945,170.57300323480945 0 0,1 -51.48532571197011,-162.61737505222086L-20.909539593364517,-66.04317628766356A69.27416531557695,69.27416531557695 0 0,0 -57.148117370682414,-39.15357788448703Z" style="fill: rgb(230, 88, 50);"></path><path id="path-96" d="M-238.37437048841798,-163.31613200913375A288.95414771235653,288.95414771235653 0 0,1 -183.6261616839997,-223.10520438881733L-108.3966647265438,-131.70160404757252A170.57300323480945,170.57300323480945 0 0,0 -140.71517086819043,-96.40741734990253Z" style="fill: rgb(212, 90, 89);"></path><path id="path-97" d="M-255.73626624308034,-175.2111929302701A310,310 0 0,1 -242.78357135607277,-192.7592733945392L-226.30103206372937,-179.67287599152323A288.95414771235653,288.95414771235653 0 0,0 -238.37437048841798,-163.31613200913375Z" style="fill: rgb(49, 12, 15);"></path><path id="path-98" d="M-242.78357135607277,-192.7592733945392A310,310 0 0,1 -228.6290663810343,-209.35317051751713L-213.10747425291467,-195.1402159928026A288.95414771235653,288.95414771235653 0 0,0 -226.30103206372937,-179.67287599152323Z" style="fill: rgb(174, 52, 31);"></path><path id="path-99" d="M-228.6290663810343,-209.35317051751713A310,310 0 0,1 -213.3428179488122,-224.910742361631L-198.85900687403702,-209.64158667889836A288.95414771235653,288.95414771235653 0 0,0 -213.10747425291467,-195.1402159928026Z" style="fill: rgb(215, 136, 35);"></path><path id="path-100" d="M-213.3428179488122,-224.910742361631A310,310 0 0,1 -197.00049496678557,-239.35497693351078L-183.6261616839997,-223.10520438881733A288.95414771235653,288.95414771235653 0 0,0 -198.85900687403702,-209.64158667889836Z" style="fill: rgb(218, 92, 31);"></path><path id="path-101" d="M-183.6261616839997,-223.10520438881733A288.95414771235653,288.95414771235653 0 0,1 -161.5142064764913,-239.59895781585465L-95.34371969357306,-141.438059048955A170.57300323480945,170.57300323480945 0 0,0 -108.3966647265438,-131.70160404757252Z" style="fill: rgb(248, 154, 128);"></path><path id="path-102" d="M-161.5142064764913,-239.59895781585465A288.95414771235653,288.95414771235653 0 0,1 -137.93018448882037,-253.90896732304344L-81.42179647273957,-149.88542454719902A170.57300323480945,170.57300323480945 0 0,0 -95.34371969357306,-141.438059048955Z" style="fill: rgb(243, 118, 116);"></path><path id="path-103" d="M-137.93018448882037,-253.90896732304344A288.95414771235653,288.95414771235653 0 0,1 -113.08904433800409,-265.90480915337224L-66.75778173944165,-156.96670987751315A170.57300323480945,170.57300323480945 0 0,0 -81.42179647273957,-149.88542454719902Z" style="fill: rgb(231, 91, 104);"></path><path id="path-104" d="M-113.08904433800409,-265.90480915337224A288.95414771235653,288.95414771235653 0 0,1 -87.21719222071748,-275.47715125089553L-51.485325711970255,-162.6173750522208A170.57300323480945,170.57300323480945 0 0,0 -66.75778173944165,-156.96670987751315Z" style="fill: rgb(208, 84, 95);"></path><path id="path-105" d="M-51.48532571197011,-162.61737505222086A170.57300323480945,170.57300323480945 0 0,1 -3.343322732780639e-13,-170.57300323480945L-1.3578109507466763e-13,-69.27416531557695A69.27416531557695,69.27416531557695 0 0,0 -20.909539593364517,-66.04317628766356Z" style="fill: rgb(218, 13, 104);"></path><path id="path-106" d="M-87.21719222071724,-275.47715125089564A288.95414771235653,288.95414771235653 0 0,1 -60.550428410347884,-282.5387497308957L-35.743624041655174,-166.78591898871775A170.57300323480945,170.57300323480945 0 0,0 -51.48532571197011,-162.61737505222086Z" style="fill: rgb(151, 94, 109);"></path><path id="path-107" d="M-60.550428410347884,-282.5387497308957A288.95414771235653,288.95414771235653 0 0,1 -5.663656923763581e-13,-288.95414771235653L-3.343322732780639e-13,-170.57300323480945A170.57300323480945,170.57300323480945 0 0,0 -35.743624041655174,-166.78591898871775Z" style="fill: rgb(224, 113, 156);"></path><path id="path-108" d="M-64.96059307614901,-303.1173392387756A310,310 0 0,1 -43.48653772627723,-306.93471787430803L-40.53424337308927,-286.0969671183977A288.95414771235653,288.95414771235653 0 0,0 -60.550428410347884,-282.5387497308957Z" style="fill: rgb(249, 158, 27);"></path><path id="path-109" d="M-43.48653772627723,-306.93471787430803A310,310 0 0,1 -21.797218388644637,-309.23272994707037L-20.317408587067472,-288.2389675052291A288.95414771235653,288.95414771235653 0 0,0 -40.53424337308927,-286.0969671183977Z" style="fill: rgb(239, 90, 120);"></path><path id="path-110" d="M-21.797218388644637,-309.23272994707037A310,310 0 0,1 -6.076166963744296e-13,-310L-5.663656923763581e-13,-288.95414771235653A288.95414771235653,288.95414771235653 0 0,0 -20.317408587067472,-288.2389675052291Z" style="fill: rgb(247, 241, 189);"></path><text text-anchor="start" dy=".2em" transform="rotate(89.5)translate(10)rotate(0)" style="fill-opacity: 1; fill: rgb(51, 51, 51);"><tspan x="0"></tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-53.212)translate(79.27416531557695)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Fruity</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-81.436)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Berry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-87.484)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(62, 3, 23);"><tspan x="0">Blackberry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-83.452)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(229, 41, 104);"><tspan x="0">Raspberry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-79.42)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(100, 105, 176);"><tspan x="0">Blueberry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-75.388)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(239, 45, 54);"><tspan x="0">Strawberry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-69.34)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Dried fruit</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-71.35600000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(181, 59, 84);"><tspan x="0">Raisin</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-67.32400000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(165, 68, 111);"><tspan x="0">Prune</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-49.18000000000001)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Other fruit</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-63.292000000000016)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(208, 124, 54);"><tspan x="0">Coconut</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-59.26000000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(231, 52, 81);"><tspan x="0">Cherry</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-55.22800000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(230, 86, 86);"><tspan x="0">Pomegranate</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-51.196000000000005)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(121, 75, 13);"><tspan x="0">Pineapple</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-47.16400000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(85, 90, 21);"><tspan x="0">Grape</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-43.132000000000005)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(78, 185, 71);"><tspan x="0">Apple</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-39.1)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(120, 67, 45);"><tspan x="0">Peach</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-35.068000000000005)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(186, 166, 53);"><tspan x="0">Pear</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-24.988000000000014)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Citrus fruit</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-31.03600000000001)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(242, 99, 85);"><tspan x="0">Grapefruit</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-27.004000000000026)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(226, 99, 30);"><tspan x="0">Orange</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-22.972000000000023)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(123, 111, 0);"><tspan x="0">Lemon</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-18.940000000000026)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(126, 177, 56);"><tspan x="0">Lime</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(3.23599999999999)translate(79.27416531557695)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Sour/Fermented</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-4.828000000000017)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Sour</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-14.908000000000015)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(158, 167, 24);"><tspan x="0">Sour aromatics</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-10.876000000000019)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(148, 167, 112);"><tspan x="0">Acetic acid</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-6.8440000000000225)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(101, 87, 38);"><tspan x="0">Butyric acid</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(-2.8120000000000402)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(142, 182, 70);"><tspan x="0">Isovaleric acid</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(1.2199999999999847)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(122, 117, 3);"><tspan x="0">Citric acid</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(5.251999999999981)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(94, 91, 4);"><tspan x="0">Malic acid</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(15.331999999999994)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Alcohol/Fermented</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(9.283999999999992)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(143, 27, 83);"><tspan x="0">Winey</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(13.315999999999988)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(179, 64, 57);"><tspan x="0">Whiskey</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(17.348)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(186, 146, 50);"><tspan x="0">Fermented</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(21.37999999999998)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(139, 100, 57);"><tspan x="0">Overripe</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(45.71599999999998)translate(79.27416531557695)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Green/Vegetative</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(26.131999999999977)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Olive oil</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(31.60399999999997)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Raw</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(48.45199999999997)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Green/Vegetative</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(36.355999999999966)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(79, 92, 21);"><tspan x="0">Under-ripe</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(40.38799999999998)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(98, 170, 60);"><tspan x="0">Peapod</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(44.41999999999996)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(3, 166, 83);"><tspan x="0">Fresh</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(48.45199999999997)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(4, 133, 73);"><tspan x="0">Dark green</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(52.48399999999995)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(39, 180, 75);"><tspan x="0">Vegetative</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(56.515999999999934)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(163, 168, 48);"><tspan x="0">Hay-like</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(60.547999999999945)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(122, 193, 65);"><tspan x="0">Herb-like</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(65.29999999999998)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Beany</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(99.29199999999997)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Other</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(88.19599999999997)translate(180.57300323480945)rotate(0)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Papery/Musty</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(70.05199999999996)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(139, 140, 144);"><tspan x="0">Stale</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(74.08399999999995)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(92, 86, 57);"><tspan x="0">Cardboard</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(78.11599999999996)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(124, 124, 119);"><tspan x="0">Papery</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(82.14799999999997)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(116, 79, 2);"><tspan x="0">Woody</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(86.17999999999998)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(163, 163, 111);"><tspan x="0">Moldy/Damp</tspan></text><text text-anchor="start" dy=".2em" transform="rotate(90.21199999999996)translate(313.95414771235653)rotate(0)" style="fill-opacity: 1; fill: rgb(98, 88, 64);"><tspan x="0">Musty/Dusty</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(93.24399999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(152, 136, 71);"><tspan x="0">Musty/Earthy</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(97.27599999999998)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(157, 151, 127);"><tspan x="0">Animalic</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(101.30799999999996)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(204, 123, 106);"><tspan x="0">Meaty/Brothy</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(105.33999999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(219, 100, 106);"><tspan x="0">Phenolic</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(119.45199999999994)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Chemical</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(109.37199999999999)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(128, 168, 157);"><tspan x="0">Bitter</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(113.40399999999994)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(108, 118, 123);"><tspan x="0">Salty</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(117.43599999999995)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(122, 155, 174);"><tspan x="0">Medicinal</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(121.46799999999996)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(3, 159, 184);"><tspan x="0">Petroleum</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(125.49999999999994)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(94, 119, 123);"><tspan x="0">Skunky</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(129.53199999999995)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(18, 12, 12);"><tspan x="0">Rubber</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(149.11599999999996)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Roasted</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(134.28399999999996)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Pipe tobacco</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(139.756)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Tobacco</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(150.55599999999993)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Burnt</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(144.50799999999995)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(185, 164, 73);"><tspan x="0">Acrid</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(148.54)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(137, 152, 147);"><tspan x="0">Ashy</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(152.57199999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(161, 116, 59);"><tspan x="0">Smoky</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(156.60399999999998)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(137, 72, 16);"><tspan x="0">Brown, Roast</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(162.65199999999993)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Cereal</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(160.63599999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(183, 144, 111);"><tspan x="0">Grain</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(164.66799999999995)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(115, 76, 46);"><tspan x="0">Malt</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(180.21999999999997)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Spices</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(169.42000000000002)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Pungent</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(174.892)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Pepper</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(185.69199999999995)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Brown spice</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(179.644)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(199, 137, 53);"><tspan x="0">Anise</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(183.676)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(140, 41, 44);"><tspan x="0">Nutmeg</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(187.70799999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(229, 118, 46);"><tspan x="0">Cinnamon</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(191.73999999999995)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(161, 108, 90);"><tspan x="0">Clove</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(203.83599999999996)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Nutty/Cocoa</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(199.80399999999997)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Nutty</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(195.77199999999993)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(103, 84, 9);"><tspan x="0">Peanuts</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(199.80399999999997)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(157, 84, 51);"><tspan x="0">Hazelnut</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(203.83599999999996)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(97, 77, 64);"><tspan x="0">Almond</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(209.88399999999996)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Cocoa</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(207.86799999999994)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(105, 42, 25);"><tspan x="0">Chocolate</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(211.89999999999998)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(71, 6, 3);"><tspan x="0">Dark chocolate</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(232.92399999999992)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Sweet</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(221.9799999999999)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Brown sugar</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(215.93199999999996)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(49, 12, 15);"><tspan x="0">Molasses</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(219.96399999999988)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(174, 52, 31);"><tspan x="0">Mapple syrup</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(223.99599999999992)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(215, 136, 35);"><tspan x="0">Caramelized</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(228.0279999999999)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(218, 92, 31);"><tspan x="0">Honey</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(232.77999999999997)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Vanilla</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(238.2519999999999)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Vanillin</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(243.72399999999993)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Overall sweet</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(249.1959999999999)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Sweet Aromatics</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(260.71599999999995)translate(79.27416531557695)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Floral</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(254.66799999999995)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Black Tea</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(263.45199999999994)translate(180.57300323480945)rotate(-180)" style="fill-opacity: 1; fill: rgb(255, 255, 255);"><tspan x="0">Floral</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(259.4199999999999)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(122, 77, 13);"><tspan x="0">Chamomile</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(263.45199999999994)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(239, 90, 120);"><tspan x="0">Rose</tspan></text><text text-anchor="end" dy=".2em" transform="rotate(267.4839999999999)translate(313.95414771235653)rotate(-180)" style="fill-opacity: 1; fill: rgb(121, 118, 92);"><tspan x="0">Jasmine</tspan></text></g></svg></svg>
+                <p class="image-caption" data-i18n="flavor-wheel-caption">咖啡品鑒風味輪：基於SCAA制定的標準咖啡品鑒風味輪，展示了咖啡感官評估中的主要風味類別和子類別</p>
+            </div>
+            
+            <h3 data-i18n="cupping-title">專業杯測</h3>
+            <p data-i18n="cupping-desc">杯測是專業評估咖啡的標準化方法，廣泛用於咖啡行業的品質控制和採購。專業杯測師評估以下特性：</p>
+            <ul>
+                <li data-i18n="cupping-fragrance"><strong>香氣 (Fragrance/Aroma)：</strong> 乾燥咖啡粉和沖泡後的香氣</li>
+                <li data-i18n="cupping-flavor"><strong>風味 (Flavor)：</strong> 綜合的味道和香氣感知</li>
+                <li data-i18n="cupping-aftertaste"><strong>餘韻 (Aftertaste)：</strong> 咖啡吞下後留在口中的風味持續性</li>
+                <li data-i18n="cupping-acidity"><strong>酸度 (Acidity)：</strong> 咖啡的亮度或鮮明度</li>
+                <li data-i18n="cupping-body"><strong>口感 (Body)：</strong> 咖啡在口中的質感和重量感</li>
+                <li data-i18n="cupping-balance"><strong>平衡度 (Balance)：</strong> 各種風味元素如何協調工作</li>
+                <li data-i18n="cupping-sweetness"><strong>甜度 (Sweetness)：</strong> 愉悅的甜味感知</li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-5">品嚐溫度的影響</h4>
+                <p data-i18n="fact-box-content-5">咖啡的風味會隨著溫度變化而顯著改變。熱咖啡（70-80°C）往往強調酸度和芳香化合物，而當咖啡冷卻到適宜溫度（50-65°C）時，甜度和更複雜的風味會變得更加明顯。再冷卻一些（40°C以下），苦味和缺陷會更加突出。品嚐時，嘗試在不同溫度下評估同一杯咖啡，可以發現風味的演變過程。</p>
+            </div>
+        </section>
+    </div>
+    
+     <!-- Footer with SEO-friendly links -->
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="about-us">關於我們</h3>
+                <p data-i18n="footer-about">咖啡風味探索器是一個幫助咖啡愛好者發現他們最喜愛咖啡風味的平台。我們致力於連接咖啡愛好者與世界各地的優質咖啡豆。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="quick-links">快速連結</h3>
+                <ul>
+                    <li><a href="/" data-i18n="home">首頁</a></li>
+                    <li><a href="/" data-i18n="about">關於</a></li>
+                    <li><a href="/" data-i18n="contact">聯絡我們</a></li>
+                    <li><a href="/sitemap.xml" data-i18n="sitemap">網站地圖</a></li>
+                    <li><a target="_blank" href="https://github.com/lam0819/coffeematcher.me" data-i18n="github-opensource">開源</a></li>
+                    <li><a target="_blank" href="https://dashboard.simpleanalytics.com/coffeematcher.me" data-i18n="site-analytics">網站數據</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="coffee-resources">咖啡資源</h3>
+                <ul>
+                    <li><a href="/coffee-knowledge" data-i18n="coffee-knowledge">咖啡知識</a></li>
+                    <li><a href="#" data-i18n="brewing-guides">沖煮指南</a></li>
+                    <li><a href="#" data-i18n="origin-stories">產地故事</a></li>
+                    <li><a href="#" data-i18n="coffee-glossary">咖啡術語</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2025</span> Coffee Explorer | <a href="/" data-i18n="privacy-policy">隱私政策</a> | <a href="/" data-i18n="terms-of-service">服務條款</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        // 語言定義
+        const translations = {
+            'zh': {
+                'lang-zh': '中文',
+                'lang-en': 'English',
+                'home': '首頁',
+                'about': '關於',
+                'blog': '咖啡知識',
+                'contact': '聯絡我們',
+                'coffee-knowledge-title': '咖啡知識：從咖啡豆到杯中風味',
+                'coffee-knowledge-subtitle': '了解影響咖啡風味的因素，包括產地、處理方法、烘焙程度和沖煮技巧，成為一個精通咖啡的鑑賞家。',
+                'table-of-contents': '目錄',
+                'toc-origins': '咖啡產地與風味特性',
+                'toc-processing': '咖啡處理方法',
+                'toc-varieties': '咖啡豆品種',
+                'toc-roasting': '烘焙程度與風味變化',
+                'toc-brewing': '咖啡沖煮方法',
+                'toc-tasting': '如何品嚐咖啡',
+                'origins-title': '咖啡產地與風味特性',
+                'origins-intro': '咖啡豆的產地對其風味有著決定性的影響。不同產區的土壤、氣候、海拔和種植方式都會形成獨特的風味特徵。讓我們探索世界主要咖啡產區及其特色：',
+                'origins-image-caption': '世界主要咖啡產區：非洲、亞洲和美洲',
+                'africa-title': '非洲產區',
+                'africa-description': '非洲被認為是咖啡的發源地，尤其是衣索比亞。非洲咖啡通常具有明亮的酸度和豐富的水果風味。',
+                'ethiopia': '衣索比亞：',
+                'ethiopia-desc': '具有獨特的花香、柑橘和漿果風味，酸度明亮且複雜。著名產區包括耶加雪菲、西達摩和古吉。',
+                'kenya': '肯亞：',
+                'kenya-desc': '以明亮的酸度和黑醋栗、葡萄柚風味聞名，口感清爽且酒香濃郁。',
+                'rwanda': '盧旺達：',
+                'rwanda-desc': '具有橙花香氣和紅色水果風味，酸度平衡且甜感明顯。',
+                'fact-box-title-1': '咖啡小知識：衣索比亞的咖啡文化',
+                'fact-box-content-1': '在衣索比亞，咖啡儀式是社交活動的重要部分。傳統儀式包括將生豆在小鍋中烘焙，然後手工研磨並在特殊的陶壺（jebena）中沖煮。整個過程可持續數小時，象徵著友誼和尊重。',
+                'americas-title': '美洲產區',
+                'americas-description': '中南美洲是世界上最大的咖啡產區，尤其是巴西和哥倫比亞。這些地區的咖啡通常平衡且具有中等酸度。',
+                'colombia': '哥倫比亞：',
+                'colombia-desc': '以平衡的風味著稱，帶有溫和的酸度、焦糖甜感和中等濃郁度，口感乾淨。',
+                'brazil': '巴西：',
+                'brazil-desc': '口感醇厚，帶有堅果和巧克力風味，酸度低且甜感明顯。',
+                'guatemala': '瓜地馬拉：',
+                'guatemala-desc': '具有巧克力風味、濃郁的口感和些微的煙燻味，酸度明亮但不過於突出。',
+                'costa-rica': '哥斯達黎加：',
+                'costa-rica-desc': '平衡且乾淨，帶有柑橘和焦糖風味，酸甜平衡。',
+                'asia-title': '亞洲產區',
+                'asia-description': '亞洲咖啡產區包括印尼、越南和印度。這些地區的咖啡通常具有濃郁的口感和獨特的土壤風味。',
+                'indonesia': '印尼：',
+                'indonesia-desc': '以獨特的土壤風味和香料味聞名，口感濃郁且酸度低。蘇門答臘、爪哇和蘇拉威西是主要產區。',
+                'vietnam': '越南：',
+                'vietnam-desc': '主要種植羅布斯塔咖啡，口感濃郁且具苦味，是製作越南滴漏咖啡的理想選擇。',
+                'india': '印度：',
+                'india-desc': '獨特的季風馬拉巴爾處理法創造出低酸度、濃郁和香料風味的咖啡。',
+                'processing-title': '咖啡處理方法',
+                'processing-intro': '咖啡豆採摘後的處理方法對最終風味有重大影響。不同的處理方法會創造出不同的風味特徵。以下是主要的處理方法：',
+                'washed-tag': '水洗處理',
+                'washed-title': '水洗處理法',
+                'washed-desc': '咖啡果實的果肉和果膠被機械或手工完全去除，然後在水中發酵移除剩餘的果膠，最後在陽光下乾燥。水洗法創造出乾淨、明亮的風味，突顯咖啡豆的原始風味特徵。',
+                'washed-flavors': '典型風味：明亮的酸度，清爽的口感，花香和水果風味更為突出。',
+                'natural-tag': '日曬處理',
+                'natural-title': '日曬處理法',
+                'natural-desc': '整顆咖啡果實（包括果肉和果皮）在陽光下直接乾燥，然後才去除外層。在這個過程中，水果的甜味和風味會滲入豆子，創造出更多的複雜性和甜感。',
+                'natural-flavors': '典型風味：濃郁的水果風味，發酵感，葡萄酒般的特質，醇厚的口感和較低的酸度。',
+                'honey-tag': '蜜處理',
+                'honey-title': '蜜處理法',
+                'honey-desc': '果皮和部分果肉被去除，但留下果膠（一種黏性物質）包覆在豆子上，然後進行乾燥。根據留下的果膠量，可分為白蜜、黃蜜、紅蜜和黑蜜處理。',
+                'honey-flavors': '典型風味：明亮的酸度與溫和的水果甜感平衡，口感滑順如蜂蜜，複雜度介於水洗與日曬之間。',
+                'anaerobic-tag': '厭氧發酵',
+                'anaerobic-title': '厭氧發酵處理法',
+                'anaerobic-desc': '咖啡豆在密封容器中發酵，不接觸氧氣。這種環境下，微生物活動創造出獨特的風味化合物。發酵時間和溫度的調整可創造各種獨特風味。',
+                'anaerobic-flavors': '典型風味：酒香濃郁，熱帶水果風味，複雜的酸度，常帶有熟成水果和發酵特性。',
+                'fact-box-title-2': '為什麼處理方法如此重要？',
+                'fact-box-content-2': '處理方法不僅影響風味，還會影響咖啡豆的保存性和穩定性。水洗處理的咖啡豆通常更加穩定且一致，而日曬和蜜處理則能帶來更多風味變化和複雜性。農民會根據氣候條件、可用資源和目標市場選擇最適合的處理方法。',
+                'varieties-title': '咖啡豆品種',
+                'varieties-intro': '咖啡主要分為阿拉比卡（Arabica）和羅布斯塔（Robusta）兩大種，其中阿拉比卡佔全球咖啡產量的約60%，以其複雜的風味和較低的咖啡因含量聞名。在這些主要種類下，還衍生出許多子品種，每種都有獨特的特性和風味：',
+                'bourbon-origin': '起源：留尼旺島，由典型種演變而來',
+                'bourbon-desc': '波旁是一種古老且受歡迎的阿拉比卡變種，以其甜感和平衡的特性而聞名。它的產量比典型種高約30%，但比現代品種如卡杜拉低。有紅波旁和黃波旁兩種變種。',
+                'typica-origin': '起源：衣索比亞，最古老的阿拉比卡品種之一',
+                'typica-desc': '帝比卡是最古老的阿拉比卡咖啡品種之一，也是許多現代品種的祖先。它的產量較低，但風味優雅且複雜。這個品種培育出了許多重要的子品種，包括印尼中的爪哇和蘇門答臘品種。',
+                'caturra-origin': '起源：巴西，波旁的自然突變種',
+                'caturra-desc': '卡杜拉是波旁的自然突變種，形成了較矮小的植株（矮化突變），使其更容易採摘和種植在密度較高的環境中。它在拉丁美洲特別受歡迎，尤其是在哥倫比亞和中美洲。',
+                'geisha-origin': '起源：衣索比亞Gesha森林，1936年被發現',
+                'geisha-desc': '藝伎咖啡因其卓越的風味和稀有性而聞名，在2004年巴拿馬翡翠莊園的藝伎咖啡獲獎後引起全球關注。它的特點是高雅的花香、熱帶水果風味和茶般的口感，常被形容為咖啡界的香檳。',
+                'sl-origin': '起源：肯亞，由Scott農業實驗室開發',
+                'sl-desc': '這兩個品種是肯亞咖啡產業的核心，由英國殖民時期的Scott農業實驗室選育而來。SL28以其優雅的黑醋栗風味而聞名，而SL34則具有更濃郁的酒香和水果特性。這兩個品種共同造就了肯亞咖啡的標誌性風味。',
+                'pacamara-origin': '起源：薩爾瓦多，Pacas和Maragogipe的雜交種',
+                'pacamara-desc': '帕卡馬拉是1958年在薩爾瓦多開發的雜交品種，結合了Pacas的高產量和Maragogipe的大豆型特性。它以其巨大的豆粒和複雜的風味聞名，在專業咖啡比賽中常獲殊榮。',
+                'flavor-sweet': '甜感',
+                'flavor-caramel': '焦糖',
+                'flavor-fruit': '漿果',
+                'flavor-chocolate': '巧克力',
+                'flavor-clean': '乾淨',
+                'flavor-floral': '花香',
+                'flavor-bright': '明亮',
+                'flavor-citrus': '柑橘',
+                'flavor-balanced': '平衡',
+                'flavor-jasmine': '茉莉花',
+                'flavor-bergamot': '佛手柑',
+                'flavor-tropical': '熱帶水果',
+                'flavor-tea-like': '茶感',
+                'flavor-blackcurrant': '黑醋栗',
+                'flavor-winey': '酒香',
+                'flavor-tomato': '番茄',
+                'flavor-grapefruit': '葡萄柚',
+                'flavor-complex': '複雜',
+                'roasting-title': '烘焙程度與風味變化',
+                'roasting-intro': '烘焙是將生咖啡豆轉變為可沖泡咖啡的關鍵過程。烘焙過程中，咖啡豆經歷溫度上升、豆內水分蒸發、美拉德反應和焦糖化反應等多種化學變化。不同的烘焙程度會顯著影響咖啡的風味特性：',
+                'roasting-image-caption': '不同烘焙程度的咖啡豆：從淺烘焙到深烘焙',
+                'light-roast-title': '淺烘焙 (Light Roast)',
+                'light-roast-desc': '淺烘焙通常在第一爆裂（一聲爆）剛結束時停止。這種烘焙保留了咖啡豆的原始特性，突顯其獨特的產地風味。',
+                'light-roast-characteristics': '特徵：淺褐色豆，表面無油脂，密度較高',
+                'light-roast-flavors': '風味：高酸度，明亮的風味，花香和水果風味明顯',
+                'light-roast-best-for': '最適合：單一產地的高品質咖啡豆，尤其是非洲和中美洲產區',
+                'medium-roast-title': '中烘焙 (Medium Roast)',
+                'medium-roast-desc': '中烘焙是在第一爆裂結束後繼續，但在第二爆裂（二聲爆）開始前停止。這種烘焙程度平衡了咖啡的酸度和甜度。',
+                'medium-roast-characteristics': '特徵：中褐色豆，表面開始出現少許油脂，平衡的風味',
+                'medium-roast-flavors': '風味：平衡的酸度和甜感，焦糖和堅果風味更為明顯',
+                'medium-roast-best-for': '最適合：來自拉丁美洲的咖啡豆，如哥倫比亞、巴西等',
+                'dark-roast-title': '深烘焙 (Dark Roast)',
+                'dark-roast-desc': '深烘焙持續到第二爆裂期間或之後。烘焙風味開始主導，而原豆的特性則退居次位。',
+                'dark-roast-characteristics': '特徵：深褐色至黑色豆，表面有明顯油脂，低酸度',
+                'dark-roast-flavors': '風味：濃郁、苦味明顯，帶有巧克力、焦糖和煙燻味',
+                'dark-roast-best-for': '最適合：印尼咖啡豆，特濃咖啡，濃郁的意式拼配',
+                'fact-box-title-3': '烘焙與咖啡因含量的迷思',
+                'fact-box-content-3': '有一個常見的誤解是深烘焙的咖啡因含量高於淺烘焙。事實上，咖啡因非常穩定，在烘焙過程中基本不會分解。淺烘焙咖啡的咖啡因含量實際上比深烘焙略高，因為深烘焙會使豆子體積增大，但質量減輕。因此，如果按重量計算，淺烘焙的咖啡因密度更高。不過，差異通常很小，對飲用者幾乎無感。',
+                'brewing-title': '咖啡沖煮方法',
+                'brewing-intro': '咖啡的沖煮方法大致可分為浸泡式、濾過式和加壓式三大類。每種方法都會影響咖啡的風味特徵、濃度和口感。以下是一些主要的沖煮方法：',
+                'pourover-title': '手沖咖啡',
+                'pourover-desc': '手動將熱水倒在放置在濾杯中的咖啡粉上，水透過咖啡粉和濾紙流入底下的容器。這種方法可以突顯咖啡的清爽口感和複雜風味。',
+                'pourover-best-for': '最適合：單一產地的淺烘焙至中烘焙咖啡，尤其是風味複雜的精品咖啡。',
+                'frenchpress-title': '法式濾壓壺',
+                'frenchpress-desc': '一種浸泡式沖煮方法，將粗研磨的咖啡粉與熱水一起放入玻璃或金屬容器中，浸泡4-5分鐘後，用金屬濾網將咖啡粉壓下，分離咖啡液。',
+                'frenchpress-best-for': '最適合：中至深烘焙咖啡，可呈現醇厚的口感和完整的風味油脂。',
+                'espresso-title': '義式濃縮咖啡',
+                'espresso-desc': '使用高壓（9巴左右）將熱水快速壓過細密壓實的咖啡粉。這種方法產生濃縮的咖啡液和特徵性的crema（奶油層）。',
+                'espresso-best-for': '最適合：中至深烘焙的咖啡豆，特別是專為義式濃縮設計的拼配。也是拿鐵、卡布奇諾等咖啡飲品的基底。',
+                'aeropress-title': '愛樂壓',
+                'aeropress-desc': '結合浸泡和加壓原理的創新沖煮裝置。咖啡粉與熱水短時間浸泡後，通過手動加壓使咖啡液通過濾紙。',
+                'aeropress-best-for': '最適合：各種烘焙度的咖啡，非常靈活且便攜，可根據參數調整產生不同風味特徵。',
+                'coldbrew-title': '冷萃咖啡',
+                'coldbrew-desc': '使用常溫或冷水長時間（12-24小時）浸泡咖啡粉。低溫萃取減少了酸度和苦味，同時提取了甜感和風味。',
+                'coldbrew-best-for': '最適合：中至深烘焙的咖啡豆，尤其是具有巧克力和堅果風味的豆子。',
+                'fact-box-title-4': '沖煮參數：影響咖啡風味的關鍵因素',
+                'fact-box-content-4': '無論選擇哪種沖煮方法，以下參數都會顯著影響最終的咖啡風味：',
+                'brewing-parameter-1': '研磨度：影響萃取速率和萃取量。粗磨粒萃取較慢，細磨粒萃取較快。',
+                'brewing-parameter-2': '咖啡粉與水的比例：典型比例為1:15至1:18（咖啡粉:水），影響濃度和風味強度。',
+                'brewing-parameter-3': '水溫：通常為90-96°C，溫度越高萃取越快，但可能增加苦味。',
+                'brewing-parameter-4': '沖煮時間：影響萃取量，時間過短可能導致酸度過高，時間過長則可能增加苦味。',
+                'brewing-parameter-5': '水質：理想的水應該乾淨且含有適量的礦物質，pH值約為7。',
+                'tasting-title': '如何品嚐咖啡',
+                'tasting-intro': '品嚐咖啡是感官評估的過程，涉及視覺、嗅覺和味覺。專業咖啡品鑒（杯測）有特定的方法和詞彙，但普通咖啡愛好者也可以通過以下步驟來深入欣賞咖啡的風味：',
+                'tasting-process-title': '品嚐過程',
+                'tasting-step-1': '觀察：注意咖啡的顏色和透明度。好的咖啡應該有清澈的外觀，不應該渾濁。',
+                'tasting-step-2': '聞香：輕輕吸入咖啡的香氣。先聞熱咖啡，然後等它稍微冷卻後再聞一次，因為香氣會隨溫度變化。',
+                'tasting-step-3': '啜飲：將少量咖啡吸入口中，讓它覆蓋整個舌頭。用力吸氣，讓空氣通過咖啡，這會增強風味感知。',
+                'tasting-step-4': '評估：專注於風味、酸度、甜度、口感和餘韻。風味可能包括水果、堅果、巧克力或花香等。',
+                'flavor-wheel-title': '咖啡風味輪',
+                'flavor-wheel-desc': '風味輪是幫助識別和描述咖啡風味的視覺工具。它從中心向外擴展，從基本類別到具體的風味描述。專業的風味輪由美國特種咖啡協會(SCA)開發，包含數十種風味描述。',
+                'flavor-wheel-caption': '咖啡風味輪，展示主要風味類別, 來源: SCA https://notbadcoffee.com/flavor-wheel-en/',
+                'cupping-title': '專業杯測',
+                'cupping-desc': '杯測是專業評估咖啡的標準化方法，廣泛用於咖啡行業的品質控制和採購。專業杯測師評估以下特性：',
+                'cupping-fragrance': '香氣 (Fragrance/Aroma)：乾燥咖啡粉和沖泡後的香氣',
+                'cupping-flavor': '風味 (Flavor)：綜合的味道和香氣感知',
+                'cupping-aftertaste': '餘韻 (Aftertaste)：咖啡吞下後留在口中的風味持續性',
+                'cupping-acidity': '酸度 (Acidity)：咖啡的亮度或鮮明度',
+                'cupping-body': '口感 (Body)：咖啡在口中的質感和重量感',
+                'cupping-balance': '平衡度 (Balance)：各種風味元素如何協調工作',
+                'cupping-sweetness': '甜度 (Sweetness)：愉悅的甜味感知',
+                'fact-box-title-5': '品嚐溫度的影響',
+                'fact-box-content-5': '咖啡的風味會隨著溫度變化而顯著改變。熱咖啡（70-80°C）往往強調酸度和芳香化合物，而當咖啡冷卻到適宜溫度（50-65°C）時，甜度和更複雜的風味會變得更加明顯。再冷卻一些（40°C以下），苦味和缺陷會更加突出。品嚐時，嘗試在不同溫度下評估同一杯咖啡，可以發現風味的演變過程。',
+                'about-us': '關於我們',
+                'footer-about': '咖啡風味探索器是一個幫助咖啡愛好者發現他們最喜愛咖啡風味的平台。我們致力於連接咖啡愛好者與世界各地的優質咖啡豆。',
+                'quick-links': '快速連結',
+                'home': '首頁',
+                'about': '關於',
+                'coffee-knowledge': '咖啡知識',
+                'contact': '聯絡我們',
+                'sitemap': '網站地圖',
+                'coffee-resources': '咖啡資源',
+                'brewing-guides': '沖煮指南',
+                'origin-stories': '產地故事',
+                'coffee-glossary': '咖啡術語',
+                'privacy-policy': '隱私政策',
+                'terms-of-service': '服務條款'
+            },
+            'en': {
+                'lang-zh': '中文',
+                'lang-en': 'English',
+                'home': 'Home',
+                'about': 'About',
+                'coffee-knowledge': 'Coffee Knowledge',
+                'contact': 'Contact Us',
+                'coffee-knowledge-title': 'Coffee Knowledge: From Bean to Cup',
+                'coffee-knowledge-subtitle': 'Understand the factors that influence coffee flavor, including origin, processing methods, roasting levels, and brewing techniques to become a knowledgeable coffee connoisseur.',
+                'table-of-contents': 'Table of Contents',
+                'toc-origins': 'Coffee Origins & Flavor Profiles',
+                'toc-processing': 'Coffee Processing Methods',
+                'toc-varieties': 'Coffee Bean Varieties',
+                'toc-roasting': 'Roasting Levels & Flavor Changes',
+                'toc-brewing': 'Coffee Brewing Methods',
+                'toc-tasting': 'How to Taste Coffee',
+                'origins-title': 'Coffee Origins & Flavor Profiles',
+                'origins-intro': 'A coffee bean\'s origin has a decisive impact on its flavor. Different growing regions with their unique soil conditions, climate, altitude, and cultivation methods all contribute to the distinctive flavor characteristics. Let\'s explore the main coffee-growing regions of the world and their characteristics:',
+                'origins-image-caption': 'Major coffee-growing regions of the world: Africa, Asia, and the Americas',
+                'africa-title': 'African Regions',
+                'africa-description': 'Africa is considered the birthplace of coffee, particularly Ethiopia. African coffees typically have bright acidity and rich fruit flavors.',
+                'ethiopia': 'Ethiopia: ',
+                'ethiopia-desc': 'Features distinctive floral, citrus, and berry flavors with bright and complex acidity. Famous regions include Yirgacheffe, Sidamo, and Guji.',
+                'kenya': 'Kenya: ',
+                'kenya-desc': 'Known for bright acidity and blackcurrant, grapefruit flavors with a clean, winey character.',
+                'rwanda': 'Rwanda: ',
+                'rwanda-desc': 'Features orange blossom aromas and red fruit flavors with balanced acidity and pronounced sweetness.',
+                'fact-box-title-1': 'Coffee Fact: Ethiopian Coffee Ceremony',
+                'fact-box-content-1': 'In Ethiopia, the coffee ceremony is an important part of social gatherings. The traditional ceremony involves roasting green beans in a small pan, grinding them by hand, and brewing in a special clay pot called a jebena. The entire process can last for hours, symbolizing friendship and respect.',
+                'americas-title': 'The Americas',
+                'americas-description': 'Central and South America comprise the world\'s largest coffee-growing region, especially Brazil and Colombia. Coffees from these regions tend to be balanced with medium acidity.',
+                'colombia': 'Colombia: ',
+                'colombia-desc': 'Known for balanced flavor with mild acidity, caramel sweetness, and medium body with a clean finish.',
+                'brazil': 'Brazil: ',
+                'brazil-desc': 'Full-bodied with nutty and chocolate notes, low acidity, and pronounced sweetness.',
+                'guatemala': 'Guatemala: ',
+                'guatemala-desc': 'Features chocolate notes, full body, and a hint of smokiness with bright but not overwhelming acidity.',
+                'costa-rica': 'Costa Rica: ',
+                'costa-rica-desc': 'Balanced and clean with citrus and caramel notes, featuring a good balance of acidity and sweetness.',
+                'asia-title': 'Asian Regions',
+                'asia-description': 'Asian coffee-growing regions include Indonesia, Vietnam, and India. Coffees from these regions typically have full body and distinctive earthy notes.',
+                'indonesia': 'Indonesia: ',
+                'indonesia-desc': 'Known for unique earthy and spicy notes, full body, and low acidity. Major regions include Sumatra, Java, and Sulawesi.',
+                'vietnam': 'Vietnam: ',
+                'vietnam-desc': 'Primarily grows Robusta coffee, which is full-bodied with bitter notes, ideal for Vietnamese drip coffee.',
+                'india': 'India: ',
+                'india-desc': 'The unique Monsooned Malabar process creates coffees with low acidity, full body, and spicy notes.',
+                'processing-title': 'Coffee Processing Methods',
+                'processing-intro': 'The method used to process coffee cherries after harvesting has a significant impact on the final flavor. Different processing methods create different flavor characteristics. Here are the main processing methods:',
+                'washed-tag': 'Washed',
+                'washed-title': 'Washed Process',
+                'washed-desc': 'The fruit flesh and mucilage of the coffee cherry are completely removed mechanically or by hand, then fermented in water to remove remaining mucilage before drying in the sun. The washed process creates clean, bright flavors that highlight the inherent characteristics of the coffee bean.',
+                'washed-flavors': 'Typical flavors: Bright acidity, clean mouthfeel, more pronounced floral and fruit notes.',
+                'natural-tag': 'Natural',
+                'natural-title': 'Natural Process',
+                'natural-desc': 'The whole coffee cherry (including the flesh and skin) is dried directly in the sun before the outer layers are removed. During this process, the fruit\'s sweetness and flavors seep into the bean, creating more complexity and sweetness.',
+                'natural-flavors': 'Typical flavors: Rich fruit notes, fermented qualities, wine-like character, full body, and lower acidity.',
+                'honey-tag': 'Honey',
+                'honey-title': 'Honey Process',
+                'honey-desc': 'The skin and some of the fruit flesh are removed, but the mucilage (a sticky substance) is left on the beans during drying. Depending on how much mucilage is left, it can be classified as white, yellow, red, or black honey processing.',
+                'honey-flavors': 'Typical flavors: Balanced bright acidity with mild fruit sweetness, honey-like smooth mouthfeel, complexity between washed and natural.',
+                'anaerobic-tag': 'Anaerobic',
+                'anaerobic-title': 'Anaerobic Fermentation',
+                'anaerobic-desc': 'Coffee beans are fermented in sealed containers without oxygen. In this environment, microbial activity creates unique flavor compounds. Adjusting fermentation time and temperature can create various unique flavors.',
+                'anaerobic-flavors': 'Typical flavors: Winey notes, tropical fruit flavors, complex acidity, often with ripe fruit and fermented characteristics.',
+                'fact-box-title-2': 'Why Processing Methods Matter So Much',
+                'fact-box-content-2': 'Processing methods not only affect flavor but also impact the shelf life and stability of coffee beans. Washed coffees tend to be more stable and consistent, while natural and honey processes can bring more flavor variations and complexity. Farmers choose the most suitable method based on climate conditions, available resources, and target markets.',
+                'varieties-title': 'Coffee Bean Varieties',
+                'varieties-intro': 'Coffee is primarily divided into two main species: Arabica and Robusta, with Arabica accounting for about 60% of global coffee production and known for its complex flavors and lower caffeine content. Within these main species, there are many varieties, each with unique characteristics and flavor profiles:',
+                'bourbon-origin': 'Origin: Réunion Island, evolved from Typica',
+                'bourbon-desc': 'Bourbon is an old and popular Arabica variety known for its sweetness and balanced characteristics. It produces about 30% more yield than Typica but less than modern varieties like Caturra. It comes in two variants: Red Bourbon and Yellow Bourbon.',
+                'typica-origin': 'Origin: Ethiopia, one of the oldest Arabica varieties',
+                'typica-desc': 'Typica is one of the oldest Arabica coffee varieties and the ancestor of many modern varieties. It has lower yield but elegant and complex flavors. This variety has given rise to many important subvarieties, including Java and Sumatra varieties in Indonesia.',
+                'caturra-origin': 'Origin: Brazil, natural mutation of Bourbon',
+                'caturra-desc': 'Caturra is a natural mutation of Bourbon that resulted in a shorter plant (dwarf mutation), making it easier to harvest and grow in higher-density environments. It\'s especially popular in Latin America, particularly in Colombia and Central America.',
+                'geisha-origin': 'Origin: Ethiopia\'s Gesha forest, discovered in 1936',
+                'geisha-desc': 'Geisha coffee gained global attention after Panama\'s Hacienda La Esmeralda Geisha won awards in 2004. It\'s known for its exceptional flavor and rarity. It features elegant floral notes, tropical fruit flavors, and tea-like mouthfeel, often described as the champagne of coffees.',
+                'sl-origin': 'Origin: Kenya, developed by Scott Agricultural Laboratories',
+                'sl-desc': 'These two varieties are the backbone of Kenya\'s coffee industry, developed by Scott Agricultural Laboratories during the British colonial period. SL28 is known for its elegant blackcurrant notes, while SL34 offers more winey and fruity characteristics. Together, they create Kenya\'s signature flavor profile.',
+                'pacamara-origin': 'Origin: El Salvador, hybrid of Pacas and Maragogipe',
+                'pacamara-desc': 'Pacamara is a hybrid variety developed in El Salvador in 1958, combining the high yield of Pacas with the large bean size of Maragogipe. It\'s known for its enormous beans and complex flavors, regularly winning awards in specialty coffee competitions.',
+                'flavor-sweet': 'Sweet',
+                'flavor-caramel': 'Caramel',
+                'flavor-fruit': 'Berry',
+                'flavor-chocolate': 'Chocolate',
+                'flavor-clean': 'Clean',
+                'flavor-floral': 'Floral',
+                'flavor-bright': 'Bright',
+                'flavor-citrus': 'Citrus',
+                'flavor-balanced': 'Balanced',
+                'flavor-jasmine': 'Jasmine',
+                'flavor-bergamot': 'Bergamot',
+                'flavor-tropical': 'Tropical',
+                'flavor-tea-like': 'Tea-like',
+                'flavor-blackcurrant': 'Blackcurrant',
+                'flavor-winey': 'Winey',
+                'flavor-tomato': 'Tomato',
+                'flavor-grapefruit': 'Grapefruit',
+                'flavor-complex': 'Complex',
+                'roasting-title': 'Roasting Levels & Flavor Changes',
+                'roasting-intro': 'Roasting is the key process that transforms green coffee beans into brewable coffee. During roasting, coffee beans undergo various chemical changes, including temperature increase, moisture evaporation, Maillard reaction, and caramelization. Different roast levels significantly impact the flavor characteristics of coffee:',
+                'roasting-image-caption': 'Different coffee roast levels: from light to dark roast',
+                'light-roast-title': 'Light Roast',
+                'light-roast-desc': 'Light roasts are typically stopped shortly after the first crack (first audible popping sound). This roast level preserves the original characteristics of the coffee bean, highlighting its unique origin flavors.',
+                'light-roast-characteristics': 'Characteristics: Light brown beans, no oil on surface, higher density',
+                'light-roast-flavors': 'Flavors: High acidity, bright flavors, pronounced floral and fruit notes',
+                'light-roast-best-for': 'Best for: Single-origin high-quality beans, especially from Africa and Central America',
+                'medium-roast-title': 'Medium Roast',
+                'medium-roast-desc': 'Medium roasts continue beyond the first crack but stop before the second crack begins. This roast level balances acidity and sweetness.',
+                'medium-roast-characteristics': 'Characteristics: Medium brown beans, minimal oil on surface, balanced flavors',
+                'medium-roast-flavors': 'Flavors: Balanced acidity and sweetness, more pronounced caramel and nut flavors',
+                'medium-roast-best-for': 'Best for: Latin American coffees like Colombia and Brazil',
+                'dark-roast-title': 'Dark Roast',
+                'dark-roast-desc': 'Dark roasts continue through the second crack. Roast flavors begin to dominate, while the bean\'s origin characteristics become less prominent.',
+                'dark-roast-characteristics': 'Characteristics: Dark brown to black beans, oily surface, low acidity',
+                'dark-roast-flavors': 'Flavors: Bold, pronounced bitterness, chocolate, caramel, and smoky notes',
+                'dark-roast-best-for': 'Best for: Indonesian beans, espresso, bold espresso blends',
+                'fact-box-title-3': 'Roasting and Caffeine: Debunking a Myth',
+                'fact-box-content-3': 'A common misconception is that dark roasted coffee has higher caffeine content than light roasts. In fact, caffeine is extremely stable and doesn\'t break down significantly during roasting. Light roasted coffee actually has slightly more caffeine than dark roasted coffee because dark roasting causes beans to expand in size but lose mass. Therefore, if measured by weight, light roasts have a higher density of caffeine. However, the difference is usually minimal and barely noticeable to the drinker.',
+                'brewing-title': 'Coffee Brewing Methods',
+                'brewing-intro': 'Coffee brewing methods can be broadly categorized into immersion, percolation, and pressure-based techniques. Each method influences the coffee\'s flavor profile, concentration, and mouthfeel. Here are some of the main brewing methods:',
+                'pourover-title': 'Pour Over',
+                'pourover-desc': 'Hot water is manually poured over coffee grounds in a filter, allowing water to flow through the grounds and filter into a container below. This method highlights clean flavors and complex notes in coffee.',
+                'pourover-best-for': 'Best for: Single-origin light to medium roasts, especially complex specialty coffees.',
+                'frenchpress-title': 'French Press',
+                'frenchpress-desc': 'An immersion brewing method where coarsely ground coffee is steeped in hot water in a glass or metal container for 4-5 minutes, then separated from the grounds using a metal mesh filter.',
+                'frenchpress-best-for': 'Best for: Medium to dark roast coffees, bringing out full body and complete flavor oils.',
+                'espresso-title': 'Espresso',
+                'espresso-desc': 'Uses high pressure (about 9 bars) to force hot water quickly through finely ground, tightly packed coffee. This method produces concentrated coffee with a characteristic crema (foam layer).',
+                'espresso-best-for': 'Best for: Medium to dark roast beans, especially blends designed for espresso. Also serves as the base for lattes, cappuccinos, and other coffee drinks.',
+                'aeropress-title': 'AeroPress',
+                'aeropress-desc': 'An innovative brewing device combining immersion and pressure principles. Coffee grounds steep briefly in hot water before being pushed through a filter using manual pressure.',
+                'aeropress-best-for': 'Best for: Any roast level, extremely versatile and portable, can produce different flavor profiles depending on parameters.',
+                'coldbrew-title': 'Cold Brew',
+                'coldbrew-desc': 'Uses room temperature or cold water to steep coffee grounds for an extended period (12-24 hours). The low-temperature extraction reduces acidity and bitterness while drawing out sweetness and flavor.',
+                'coldbrew-best-for': 'Best for: Medium to dark roast beans, especially those with chocolate and nutty notes.',
+                'fact-box-title-4': 'Brewing Parameters: Key Factors Affecting Coffee Flavor',
+                'fact-box-content-4': 'Regardless of which brewing method you choose, the following parameters significantly impact the final coffee flavor:',
+                'brewing-parameter-1': 'Grind Size: Affects extraction rate and amount. Coarser grounds extract slower, finer grounds extract faster.',
+                'brewing-parameter-2': 'Coffee-to-Water Ratio: Typical ratios range from 1:15 to 1:18 (coffee:water), affecting strength and flavor intensity.',
+                'brewing-parameter-3': 'Water Temperature: Usually 90-96°C (194-205°F), with higher temperatures extracting faster but potentially increasing bitterness.',
+                'brewing-parameter-4': 'Brewing Time: Affects extraction amount, with shorter times potentially resulting in higher acidity and longer times increasing bitterness.',
+                'brewing-parameter-5': 'Water Quality: Ideal water should be clean with an appropriate mineral content and a pH around 7.',
+                'tasting-title': 'How to Taste Coffee',
+                'tasting-intro': 'Tasting coffee is a sensory evaluation process involving sight, smell, and taste. Professional coffee cupping follows specific methods and vocabulary, but everyday coffee enthusiasts can appreciate coffee flavors more deeply through these steps:',
+                'tasting-process-title': 'Tasting Process',
+                'tasting-step-1': 'Observe: Note the coffee\'s color and clarity. Good coffee should have a clear appearance, not cloudy.',
+                'tasting-step-2': 'Smell: Gently inhale the coffee\'s aroma. Smell it while hot, then again as it cools, as aromas change with temperature.',
+                'tasting-step-3': 'Slurp: Draw a small amount of coffee into your mouth, letting it cover your entire tongue. Inhale forcefully, allowing air to pass through the coffee, which enhances flavor perception.',
+                'tasting-step-4': 'Evaluate: Focus on flavors, acidity, sweetness, body, and aftertaste. Flavors might include fruit, nuts, chocolate, or floral notes.',
+                'flavor-wheel-title': 'Coffee Flavor Wheel',
+                'flavor-wheel-desc': 'The flavor wheel is a visual tool to help identify and describe coffee flavors. It expands from the center outward, from basic categories to specific flavor descriptions. The professional flavor wheel developed by the Specialty Coffee Association (SCA) includes dozens of flavor descriptors.',
+                'flavor-wheel-caption': 'Coffee flavor wheel showing main flavor categories, Source: SCA https://notbadcoffee.com/flavor-wheel-en/',
+                'cupping-title': 'Professional Cupping',
+                'cupping-desc': 'Cupping is the standardized method for professionally evaluating coffee, widely used for quality control and purchasing in the coffee industry. Professional cuppers evaluate the following characteristics:',
+                'cupping-fragrance': 'Fragrance/Aroma: The smell of dry coffee grounds and after brewing',
+                'cupping-flavor': 'Flavor: The combined perception of taste and aroma',
+                'cupping-aftertaste': 'Aftertaste: The lingering flavor after swallowing',
+                'cupping-acidity': 'Acidity: The brightness or sharpness of coffee',
+                'cupping-body': 'Body: The texture and weight of coffee in the mouth',
+                'cupping-balance': 'Balance: How well the various flavor elements work together',
+                'cupping-sweetness': 'Sweetness: The pleasant sweet perception',
+                'fact-box-title-5': 'The Impact of Tasting Temperature',
+                'fact-box-content-5': 'Coffee flavors change significantly as temperature changes. Hot coffee (70-80°C/158-176°F) tends to emphasize acidity and aromatic compounds, while as coffee cools to drinking temperature (50-65°C/122-149°F), sweetness and more complex flavors become more apparent. Cooler still (below 40°C/104°F), bitterness and defects become more pronounced. When tasting, try evaluating the same cup of coffee at different temperatures to discover how flavors evolve.',
+                'about-us': 'About Us',
+                'footer-about': 'Coffee Explorer is a platform helping coffee enthusiasts discover their favorite coffee flavors. We are dedicated to connecting coffee lovers with quality coffee beans from around the world.',
+                'quick-links': 'Quick Links',
+                'home': 'Home',
+                'about': 'About',
+                'blog': 'Coffee Knowledge',
+                'contact': 'Contact Us',
+                'sitemap': 'Sitemap',
+                'coffee-resources': 'Coffee Resources',
+                'brewing-guides': 'Brewing Guides',
+                'origin-stories': 'Origin Stories',
+                'coffee-glossary': 'Coffee Glossary',
+                'privacy-policy': 'Privacy Policy',
+                'terms-of-service': 'Terms of Service'
+            }
+        };
+        
+        // 設置頁面語言
+        function setLanguage(lang) {
+            document.documentElement.lang = lang === 'zh' ? 'zh-HK' : 'en';
+            
+            // 更新所有文本內容
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // 更新頁面標題和meta標籤
+            document.title = lang === 'zh' ? 
+                '咖啡知識 - 咖啡風味探索器' : 
+                'Coffee Knowledge - Coffee Flavor Explorer';
+                
+            // 更新meta描述
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.content = lang === 'zh' ? 
+                    '探索咖啡的奧秘：從咖啡豆產地、品種、處理方法到沖煮技巧，深入了解影響咖啡風味的關鍵因素。' : 
+                    'Explore the mysteries of coffee: from bean origins, varieties, and processing methods to brewing techniques, learn about the key factors that influence coffee flavor.';
+            }
+            
+            // 更新og:title
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) {
+                ogTitle.content = lang === 'zh' ? 
+                    '咖啡知識 - 探索影響咖啡風味的關鍵因素' : 
+                    'Coffee Knowledge - Exploring Key Factors That Influence Coffee Flavor';
+            }
+            
+            // 更新og:description
+            const ogDescription = document.querySelector('meta[property="og:description"]');
+            if (ogDescription) {
+                ogDescription.content = lang === 'zh' ? 
+                    '了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。成為真正的咖啡專家。' : 
+                    'Learn about the important factors that influence coffee flavor: origin, altitude, processing, roasting, and brewing techniques. Become a true coffee expert.';
+            }
+            
+            // 更新語言切換按鈕狀態
+            document.querySelectorAll('.language-switcher a').forEach(link => {
+                if (link.getAttribute('data-lang') === lang) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
+            // 更新canonical鏈接
+            const canonicalLink = document.getElementById('canonical-link');
+            if (canonicalLink) {
+                canonicalLink.href = lang === 'zh' ? 'https://coffeematcher.me/blog' : 'https://coffeematcher.me/en/blog';
+            }
+        }
+        
+        // 語言切換監聽器
+        document.querySelectorAll('.language-switcher a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                setLanguage(this.getAttribute('data-lang'));
+            });
+        });
+        
+        // 移動版導航菜單開關
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+        
+        // 設置今年年份
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // 初始化頁面語言
+        window.addEventListener('load', function() {
+            // 檢測用戶首選語言
+            let browserLang = 'en';
+            
+            try {
+                browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+            } catch (e) {
+                console.warn('Unable to detect browser language:', e);
+            }
+            
+            // 根據URL路徑判斷當前語言
+            const isEnglishPath = window.location.pathname.includes('/en/');
+            setLanguage(isEnglishPath ? 'en' : 'zh');
+        });
+        function createCoffeeBeans() {
+    const container = document.getElementById('coffee-beans-bg');
+    const numBeans = 40;
+    
+    for (let i = 0; i < numBeans; i++) {
+        const bean = document.createElement('div');
+        bean.className = 'coffee-bean';
+        
+        const size = Math.random() * 30 + 20;
+        const rotation = Math.random() * 360;
+        
+        bean.style.width = `${size}px`;
+        bean.style.height = `${size * 1.6}px`;
+        bean.style.top = `${Math.random() * 100}%`;
+        bean.style.left = `${Math.random() * 100}%`;
+        bean.style.setProperty('--rotation', `${rotation}deg`);
+        
+        container.appendChild(bean);
+    }
+}
+    // 創建背景咖啡豆動畫
+    createCoffeeBeans();
+    </script>
+</body>
+</html>
