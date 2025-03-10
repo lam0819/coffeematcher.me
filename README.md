@@ -1,5 +1,8 @@
 # Coffee Flavor Explorer
 
+![A_sleek_banner_for_a_coffee_website_called_Coffee_Flavor_Explorer_with_rich_coffee_tones_Show_coffee_beans_flavor_wheels_and_brewing_equipment_in_an_elegant_composition_Include_subtle_design_elements_representing_different_coffee_origins_Africa_Ameri](https://github.com/user-attachments/assets/c637fda3-1164-4f37-9ce0-04b2ef902ff4)
+
+
 A web-based tool to help coffee enthusiasts discover their perfect coffee bean based on flavor preferences.
 
 **Website:** [https://coffeematcher.me](https://coffeematcher.me)
