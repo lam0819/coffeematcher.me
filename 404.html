@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頁面未找到 - 咖啡風味探索器</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/coffee-explorer.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .error-text {
+            font-size: 24px;
+            margin: 20px 0 30px;
+            color: var(--primary-dark);
+        }
+        
+        .coffee-spill {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23795548' d='M400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.7;
+            transform: rotate(25deg);
+        }
+        
+        .home-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            margin-right: 15px;
+        }
+        
+        .home-button:hover {
+            background-color: #f57c00;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .suggestions {
+            margin-top: 40px;
+            text-align: left;
+            background-color: rgba(121, 85, 72, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .suggestions h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        
+        .suggestions ul {
+            padding-left: 20px;
+        }
+        
+        .suggestions li {
+            margin-bottom: 10px;
+        }
+        
+        .suggestions a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .suggestions a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        
+        .language-toggle {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <div class="coffee-spill"></div>
+        <h2 class="error-text" id="error-message">啊呀！我們好像找不到你想要的咖啡頁面。</h2>
+        
+        <div>
+            <a href="/" class="home-button" id="home-link">返回首頁</a>
+            <a href="/sitemap.xml" class="home-button" id="sitemap-link">網站地圖</a>
+        </div>
+        
+        <div class="language-toggle">
+            <button id="lang-zh" class="region-btn active">中文</button>
+            <button id="lang-en" class="region-btn">English</button>
+        </div>
+        
+        <div class="suggestions">
+            <h3 id="suggestions-title">您可能想要尋找：</h3>
+            <ul>
+                <li><a href="/" id="home-suggestion">咖啡風味探索器</a></li>
+                <li><a href="/brewing-guides" id="brewing-suggestion">咖啡沖煮指南</a></li>
+                <li><a href="/origin-stories" id="origin-suggestion">咖啡產地故事</a></li>
+                <li><a href="/coffee-glossary" id="glossary-suggestion">咖啡術語詞彙表</a></li>
+                <li><a href="/contact" id="contact-suggestion">聯絡我們</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Language toggle functionality
+        const langZh = document.getElementById('lang-zh');
+        const langEn = document.getElementById('lang-en');
+        
+        const translations = {
+            'zh': {
+                'error-message': '啊呀！我們好像找不到你想要的咖啡頁面。',
+                'home-link': '返回首頁',
+                'sitemap-link': '網站地圖',
+                'suggestions-title': '您可能想要尋找：',
+                'home-suggestion': '咖啡風味探索器',
+                'brewing-suggestion': '咖啡沖煮指南',
+                'origin-suggestion': '咖啡產地故事',
+                'glossary-suggestion': '咖啡術語詞彙表',
+                'contact-suggestion': '聯絡我們'
+            },
+            'en': {
+                'error-message': 'Oops! We couldn\'t find the coffee page you were looking for.',
+                'home-link': 'Back to Home',
+                'sitemap-link': 'Sitemap',
+                'suggestions-title': 'You might be looking for:',
+                'home-suggestion': 'Coffee Flavor Explorer',
+                'brewing-suggestion': 'Coffee Brewing Guides',
+                'origin-suggestion': 'Coffee Origin Stories',
+                'glossary-suggestion': 'Coffee Glossary',
+                'contact-suggestion': 'Contact Us'
+            }
+        };
+        
+        function setLanguage(lang) {
+            document.documentElement.lang = lang === 'zh' ? 'zh-HK' : 'en';
+            document.title = lang === 'zh' ? '頁面未找到 - 咖啡風味探索器' : 'Page Not Found - Coffee Flavor Explorer';
+            
+            Object.keys(translations[lang]).forEach(key => {
+                const element = document.getElementById(key);
+                if (element) {
+                    if (element.tagName === 'A') {
+                        element.textContent = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            if (lang === 'zh') {
+                langZh.classList.add('active');
+                langEn.classList.remove('active');
+            } else {
+                langEn.classList.add('active');
+                langZh.classList.remove('active');
+            }
+        }
+        
+        langZh.addEventListener('click', () => setLanguage('zh'));
+        langEn.addEventListener('click', () => setLanguage('en'));
+        
+        // Auto-detect language
+        const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+        setLanguage(browserLang);
+    </script>
+</body>
+</html>

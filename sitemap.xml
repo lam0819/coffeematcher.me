@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://coffeematcher.me/</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/about</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/about</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/blog</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/blog</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/contact</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/contact</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/brewing-guides</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/brewing-guides</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/origin-stories</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/origin-stories</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/coffee-glossary</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/coffee-glossary</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/privacy-policy</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.40</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/privacy-policy</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.30</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/terms-of-service</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.40</priority>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>https://coffeematcher.me/en/terms-of-service</loc>
+  <lastmod>2025-03-10T12:00:00+00:00</lastmod>
+  <priority>0.30</priority>
+  <changefreq>yearly</changefreq>
+</url>
+</urlset>
