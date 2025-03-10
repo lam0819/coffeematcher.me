@@ -75,7 +75,8 @@ const translations = {
         'coffee-glossary': '咖啡術語',
         'privacy-policy': '隱私政策',
         'terms-of-service': '服務條款',
-        'site-analytics' : '網站分析'
+        'site-analytics' : '網站分析',
+        'github-opensource' : '開源'
     },
     'en': {
         'title': 'Coffee Flavor Explorer',
@@ -152,7 +153,8 @@ const translations = {
         'coffee-glossary': 'Coffee Glossary',
         'privacy-policy': 'Privacy Policy',
         'terms-of-service': 'Terms of Service',
-        'site-analytics' : 'Site Analytics'
+        'site-analytics' : 'Site Analytics',
+        'github-opensource' : 'Open Source'
     }
 };
 // English version coffee beans database
