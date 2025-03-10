@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title data-i18n-title="true">咖啡知識 - 咖啡風味探索器</title>
+    <meta name="description" data-i18n-desc="true" content="探索咖啡的奧秘：從咖啡豆產地、品種、處理方法到沖煮技巧，深入了解影響咖啡風味的關鍵因素。">
+    <meta name="keywords" data-i18n-keywords="true" content="咖啡知識, 咖啡產地, 咖啡處理, 咖啡沖煮, 咖啡豆品種, 咖啡風味, 精品咖啡">
+    <meta name="author" content="Coffee Explorer Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Protocol Tags (Social Media) -->
+    <meta property="og:title" data-i18n-og-title="true" content="咖啡知識 - 探索影響咖啡風味的關鍵因素">
+    <meta property="og:description" data-i18n-og-desc="true" content="了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。成為真正的咖啡專家。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coffeematcher.me/blog">
+    <meta property="og:image" content="https://coffeematcher.me/images/coffee-knowledge-banner.jpg">
+    <meta property="og:site_name" content="Coffee Explorer">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-i18n-twitter-title="true" content="咖啡知識 - 探索影響咖啡風味的關鍵因素">
+    <meta name="twitter:description" data-i18n-twitter-desc="true" content="了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。">
+    <meta name="twitter:image" content="https://coffeematcher.me/images/coffee-knowledge-banner.jpg">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URLs -->
+    <link rel="alternate" hreflang="zh-HK" href="https://coffeematcher.me/blog">
+    <link rel="alternate" hreflang="en" href="https://coffeematcher.me/en/blog">
+    <link rel="canonical" id="canonical-link" href="https://coffeematcher.me/blog">
+    
+    <!-- Preconnect to required origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/coffee-explorer.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    
+    <!-- Structured Data Markup (Schema.org) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Understanding Coffee: From Bean to Cup",
+        "image": "https://coffeematcher.me/images/coffee-knowledge-banner.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Coffee Explorer Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Coffee Explorer",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://coffeematcher.me/images/logo.png"
+            }
+        },
+        "datePublished": "2025-03-01",
+        "dateModified": "2025-03-10"
+    }
+    </script>
+    
+    <!-- Custom CSS for blog page -->
+    <style>
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .blog-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        
+        .blog-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .table-of-contents {
+            background-color: rgba(121, 85, 72, 0.05);
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        .table-of-contents h2 {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        
+        .toc-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .toc-list li {
+            margin-bottom: 12px;
+        }
+        
+        .toc-list a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+            display: inline-block;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .toc-list a:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        
+        .toc-list a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .toc-list a:hover:before {
+            transform: translateY(-50%) scale(1.3);
+        }
+        
+        .blog-section {
+            margin-bottom: 60px;
+        }
+        
+        .blog-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(121, 85, 72, 0.2);
+        }
+        
+        .blog-section h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin: 25px 0 15px;
+        }
+        
+        .blog-section p {
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+        
+        .coffee-image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .coffee-image {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .image-caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .fact-box {
+            background-color: rgba(255, 152, 0, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .fact-box h4 {
+            margin-top: 0;
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+        }
+        
+        .fact-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .flavor-wheel-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            position: relative;
+        }
+        
+        .brewing-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .brewing-method-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .brewing-method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .brewing-method-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .brewing-method-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .brewing-icon {
+            width: 100%;
+            height: 120px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .icon-pourover {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M403.6 77.8c-1-1.8-2.9-2.9-4.9-2.9h-285c-2.1 0-4 1.1-5 2.9-1 1.8-1 4 0 5.8l40.3 72.8c13.1 23.7 37.5 39.8 64.5 42.9v269.2c0 19.5 15.8 35.3 35.3 35.3h50.1c19.5 0 35.3-15.8 35.3-35.3V199.3c27-3.1 51.4-19.2 64.5-42.9l40.3-72.8c1-1.8 1-4 0-5.8zM299.7 173.3h-87.4c-17.5-1.5-33.3-10.7-44.3-24.7h176c-11 14-26.8 23.2-44.3 24.7zm4.1 295.3c0 3.6-2.9 6.5-6.5 6.5h-82.4c-3.6 0-6.5-2.9-6.5-6.5V202h95.3v266.6z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-frenchpress {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M398.6 160H113.4c-9.9 0-17.9 8-17.9 17.9v256c0 9.9 8 17.9 17.9 17.9h285.1c9.9 0 17.9-8 17.9-17.9v-256c.1-9.9-8-17.9-17.8-17.9zm-142.5 256c-61 0-110.7-46.8-110.7-104.3 0-5.9 4.8-10.7 10.7-10.7h200c5.9 0 10.7 4.8 10.7 10.7 0 57.5-49.7 104.3-110.7 104.3zM417.9 128H94.1C88.3 128 83.6 123.3 83.6 117.5s4.7-10.5 10.5-10.5h323.7c5.8 0 10.5 4.7 10.5 10.5 0 5.7-4.7 10.5-10.4 10.5zM352 96H160c-5.5 0-10-4.5-10-10V74.1c0-5.5 4.5-10 10-10h192c5.5 0 10 4.5 10 10V86c0 5.5-4.5 10-10 10z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-espresso {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M399.2 96H112.8c-8.8 0-16 7.2-16 16v48h318.4v-48c0-8.8-7.2-16-16-16zm-17.6 352H130.4c-8.8 0-16-7.2-16-16V224h318.4v208c-.1 8.8-7.2 16-16.1 16zm28.7-288H101.7c-9.7 0-17.7 7.9-17.7 17.7v209.7c0 61.8 50.2 112 112 112h120c61.8 0 112-50.2 112-112V177.7c0-9.8-7.9-17.7-17.7-17.7z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-aeropress {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M425.6 64H86.4C73.6 64 64 73.6 64 86.4v22.4c0 12.8 9.6 22.4 22.4 22.4h4.5v265.6c0 28.3 23 51.2 51.2 51.2h228.8c28.3 0 51.2-23 51.2-51.2V131.2h3.2c12.8 0 22.4-9.6 22.4-22.4V86.4c0-12.8-9.6-22.4-22.4-22.4zm-96 131.2v169.6c0 9.6-8 17.6-17.6 17.6H200c-9.6 0-17.6-8-17.6-17.6V195.2c0-9.6 8-17.6 17.6-17.6h112c9.6 0 17.6 8 17.6 17.6z'/%3E%3C/svg%3E");
+        }
+        
+        .icon-coldbrew {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23795548'%3E%3Cpath d='M384 48H128c-8.8 0-16 7.2-16 16v33.6c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16zM315.7 475.2L286.8 128h-61.6l-28.9 347.2c64.5 10.6 55.9 10.6 119.4 0z'/%3E%3C/svg%3E");
+        }
+        
+        .processing-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .process-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .process-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .process-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .process-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .process-tag {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: white;
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .region-map {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            margin: 30px auto;
+            background-color: #f0e8e0;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coffee-bean-variety {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .variety-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .variety-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .variety-card h4 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+        
+        .variety-card h5 {
+            color: var(--text-light);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        .variety-card p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .flavor-characteristics {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            gap: 8px;
+        }
+        
+        .flavor-characteristic {
+            background-color: rgba(121, 85, 72, 0.1);
+            color: var(--primary-dark);
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-header p {
+                font-size: 1rem;
+            }
+            
+            .blog-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .blog-section h3 {
+                font-size: 1.2rem;
+            }
+            
+            .brewing-methods, .processing-methods, .coffee-bean-variety {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your GA4 measurement ID
+    </script>
+</head>
+<body>
+    <header>
+        <div class="language-switcher">
+            <a href="/blog" class="active" data-lang="zh" data-i18n="lang-zh">中文</a> | 
+            <a href="/en/blog" data-lang="en" data-i18n="lang-en">English</a>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.svg" alt="Coffee Explorer" width="150">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" data-i18n="home">首頁</a></li>
+                <li><a href="/about" data-i18n="about">關於</a></li>
+                <li><a href="/blog" class="active" data-i18n="blog">咖啡知識</a></li>
+                <li><a href="/contact" data-i18n="contact">聯絡我們</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="blog-container">
+        <div class="blog-header">
+            <h1 data-i18n="coffee-knowledge-title">咖啡知識：從咖啡豆到杯中風味</h1>
+            <p data-i18n="coffee-knowledge-subtitle">了解影響咖啡風味的因素，包括產地、處理方法、烘焙程度和沖煮技巧，成為一個精通咖啡的鑑賞家。</p>
+        </div>
+        
+        <div class="table-of-contents">
+            <h2 data-i18n="table-of-contents">目錄</h2>
+            <ul class="toc-list">
+                <li><a href="#coffee-origins" data-i18n="toc-origins">咖啡產地與風味特性</a></li>
+                <li><a href="#processing-methods" data-i18n="toc-processing">咖啡處理方法</a></li>
+                <li><a href="#coffee-varieties" data-i18n="toc-varieties">咖啡豆品種</a></li>
+                <li><a href="#roasting" data-i18n="toc-roasting">烘焙程度與風味變化</a></li>
+                <li><a href="#brewing-methods" data-i18n="toc-brewing">咖啡沖煮方法</a></li>
+                <li><a href="#tasting-coffee" data-i18n="toc-tasting">如何品嚐咖啡</a></li>
+            </ul>
+        </div>
+        
+        <section id="coffee-origins" class="blog-section">
+            <h2 data-i18n="origins-title">咖啡產地與風味特性</h2>
+            <p data-i18n="origins-intro">咖啡豆的產地對其風味有著決定性的影響。不同產區的土壤、氣候、海拔和種植方式都會形成獨特的風味特徵。讓我們探索世界主要咖啡產區及其特色：</p>
+            
+            <div class="coffee-image-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23f0e8e0'/%3E%3Cpath d='M400,80 C560,80 680,140 680,220 C680,300 560,360 400,360 C240,360 120,300 120,220 C120,140 240,80 400,80 Z' fill='%23c4aa92'/%3E%3Cpath d='M180,190 C240,170 320,190 320,230 C320,270 280,320 220,310 C160,300 120,210 180,190 Z' fill='%23654321'/%3E%3Cpath d='M340,130 C390,120 450,150 450,190 C450,230 410,250 360,240 C310,230 290,140 340,130 Z' fill='%23654321'/%3E%3Cpath d='M460,170 C510,160 570,190 570,230 C570,270 530,290 480,280 C430,270 410,180 460,170 Z' fill='%23654321'/%3E%3Ctext x='200' y='230' font-family='Arial' font-size='12' fill='white'%3EAfrica%3C/text%3E%3Ctext x='390' y='180' font-family='Arial' font-size='12' fill='white'%3EAsia%3C/text%3E%3Ctext x='520' y='230' font-family='Arial' font-size='12' fill='white'%3EAmericas%3C/text%3E%3C/svg%3E" alt="世界咖啡產區地圖" class="coffee-image">
+                <p class="image-caption" data-i18n="origins-image-caption">世界主要咖啡產區：非洲、亞洲和美洲</p>
+            </div>
+            
+            <h3 data-i18n="africa-title">非洲產區</h3>
+            <p data-i18n="africa-description">非洲被認為是咖啡的發源地，尤其是衣索比亞。非洲咖啡通常具有明亮的酸度和豐富的水果風味。</p>
+            <ul>
+                <li><strong data-i18n="ethiopia">衣索比亞：</strong> <span data-i18n="ethiopia-desc">具有獨特的花香、柑橘和漿果風味，酸度明亮且複雜。著名產區包括耶加雪菲、西達摩和古吉。</span></li>
+                <li><strong data-i18n="kenya">肯亞：</strong> <span data-i18n="kenya-desc">以明亮的酸度和黑醋栗、葡萄柚風味聞名，口感清爽且酒香濃郁。</span></li>
+                <li><strong data-i18n="rwanda">盧旺達：</strong> <span data-i18n="rwanda-desc">具有橙花香氣和紅色水果風味，酸度平衡且甜感明顯。</span></li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-1">咖啡小知識：衣索比亞的咖啡文化</h4>
+                <p data-i18n="fact-box-content-1">在衣索比亞，咖啡儀式是社交活動的重要部分。傳統儀式包括將生豆在小鍋中烘焙，然後手工研磨並在特殊的陶壺（jebena）中沖煮。整個過程可持續數小時，象徵著友誼和尊重。</p>
+            </div>
+            
+            <h3 data-i18n="americas-title">美洲產區</h3>
+            <p data-i18n="americas-description">中南美洲是世界上最大的咖啡產區，尤其是巴西和哥倫比亞。這些地區的咖啡通常平衡且具有中等酸度。</p>
+            <ul>
+                <li><strong data-i18n="colombia">哥倫比亞：</strong> <span data-i18n="colombia-desc">以平衡的風味著稱，帶有溫和的酸度、焦糖甜感和中等濃郁度，口感乾淨。</span></li>
+                <li><strong data-i18n="brazil">巴西：</strong> <span data-i18n="brazil-desc">口感醇厚，帶有堅果和巧克力風味，酸度低且甜感明顯。</span></li>
+                <li><strong data-i18n="guatemala">瓜地馬拉：</strong> <span data-i18n="guatemala-desc">具有巧克力風味、濃郁的口感和些微的煙燻味，酸度明亮但不過於突出。</span></li>
+                <li><strong data-i18n="costa-rica">哥斯達黎加：</strong> <span data-i18n="costa-rica-desc">平衡且乾淨，帶有柑橘和焦糖風味，酸甜平衡。</span></li>
+            </ul>
+            
+            <h3 data-i18n="asia-title">亞洲產區</h3>
+            <p data-i18n="asia-description">亞洲咖啡產區包括印尼、越南和印度。這些地區的咖啡通常具有濃郁的口感和獨特的土壤風味。</p>
+            <ul>
+                <li><strong data-i18n="indonesia">印尼：</strong> <span data-i18n="indonesia-desc">以獨特的土壤風味和香料味聞名，口感濃郁且酸度低。蘇門答臘、爪哇和蘇拉威西是主要產區。</span></li>
+                <li><strong data-i18n="vietnam">越南：</strong> <span data-i18n="vietnam-desc">主要種植羅布斯塔咖啡，口感濃郁且具苦味，是製作越南滴漏咖啡的理想選擇。</span></li>
+                <li><strong data-i18n="india">印度：</strong> <span data-i18n="india-desc">獨特的季風馬拉巴爾處理法創造出低酸度、濃郁和香料風味的咖啡。</span></li>
+            </ul>
+        </section>
+        
+        <section id="processing-methods" class="blog-section">
+            <h2 data-i18n="processing-title">咖啡處理方法</h2>
+            <p data-i18n="processing-intro">咖啡豆採摘後的處理方法對最終風味有重大影響。不同的處理方法會創造出不同的風味特徵。以下是主要的處理方法：</p>
+            
+            <div class="processing-methods">
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="washed-tag">水洗處理</span>
+                    <h4 data-i18n="washed-title">水洗處理法</h4>
+                    <p data-i18n="washed-desc">咖啡果實的果肉和果膠被機械或手工完全去除，然後在水中發酵移除剩餘的果膠，最後在陽光下乾燥。水洗法創造出乾淨、明亮的風味，突顯咖啡豆的原始風味特徵。</p>
+                    <p data-i18n="washed-flavors"><strong>典型風味：</strong> 明亮的酸度，清爽的口感，花香和水果風味更為突出。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="natural-tag">日曬處理</span>
+                    <h4 data-i18n="natural-title">日曬處理法</h4>
+                    <p data-i18n="natural-desc">整顆咖啡果實（包括果肉和果皮）在陽光下直接乾燥，然後才去除外層。在這個過程中，水果的甜味和風味會滲入豆子，創造出更多的複雜性和甜感。</p>
+                    <p data-i18n="natural-flavors"><strong>典型風味：</strong> 濃郁的水果風味，發酵感，葡萄酒般的特質，醇厚的口感和較低的酸度。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="honey-tag">蜜處理</span>
+                    <h4 data-i18n="honey-title">蜜處理法</h4>
+                    <p data-i18n="honey-desc">果皮和部分果肉被去除，但留下果膠（一種黏性物質）包覆在豆子上，然後進行乾燥。根據留下的果膠量，可分為白蜜、黃蜜、紅蜜和黑蜜處理。</p>
+                    <p data-i18n="honey-flavors"><strong>典型風味：</strong> 明亮的酸度與溫和的水果甜感平衡，口感滑順如蜂蜜，複雜度介於水洗與日曬之間。</p>
+                </div>
+                
+                <div class="process-card">
+                    <span class="process-tag" data-i18n="anaerobic-tag">厭氧發酵</span>
+                    <h4 data-i18n="anaerobic-title">厭氧發酵處理法</h4>
+                    <p data-i18n="anaerobic-desc">咖啡豆在密封容器中發酵，不接觸氧氣。這種環境下，微生物活動創造出獨特的風味化合物。發酵時間和溫度的調整可創造各種獨特風味。</p>
+                    <p data-i18n="anaerobic-flavors"><strong>典型風味：</strong> 酒香濃郁，熱帶水果風味，複雜的酸度，常帶有熟成水果和發酵特性。</p>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-2">為什麼處理方法如此重要？</h4>
+                <p data-i18n="fact-box-content-2">處理方法不僅影響風味，還會影響咖啡豆的保存性和穩定性。水洗處理的咖啡豆通常更加穩定且一致，而日曬和蜜處理則能帶來更多風味變化和複雜性。農民會根據氣候條件、可用資源和目標市場選擇最適合的處理方法。</p>
+            </div>
+        </section>
+        
+        <section id="coffee-varieties" class="blog-section">
+            <h2 data-i18n="varieties-title">咖啡豆品種</h2>
+            <p data-i18n="varieties-intro">咖啡主要分為阿拉比卡（Arabica）和羅布斯塔（Robusta）兩大種，其中阿拉比卡佔全球咖啡產量的約60%，以其複雜的風味和較低的咖啡因含量聞名。在這些主要種類下，還衍生出許多子品種，每種都有獨特的特性和風味：</p>
+            
+            <div class="coffee-bean-variety">
+                <div class="variety-card">
+                    <h4>波旁 (Bourbon)</h4>
+                    <h5 data-i18n="bourbon-origin">起源：留尼旺島，由典型種演變而來</h5>
+                    <p data-i18n="bourbon-desc">波旁是一種古老且受歡迎的阿拉比卡變種，以其甜感和平衡的特性而聞名。它的產量比典型種高約30%，但比現代品種如卡杜拉低。有紅波旁和黃波旁兩種變種。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-sweet">甜感</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-caramel">焦糖</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-fruit">漿果</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-chocolate">巧克力</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>帝比卡 (Typica)</h4>
+                    <h5 data-i18n="typica-origin">起源：衣索比亞，最古老的阿拉比卡品種之一</h5>
+                    <p data-i18n="typica-desc">帝比卡是最古老的阿拉比卡咖啡品種之一，也是許多現代品種的祖先。它的產量較低，但風味優雅且複雜。這個品種培育出了許多重要的子品種，包括印尼中的爪哇和蘇門答臘品種。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-clean">乾淨</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-sweet">甜感</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-floral">花香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-bright">明亮</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>卡杜拉 (Caturra)</h4>
+                    <h5 data-i18n="caturra-origin">起源：巴西，波旁的自然突變種</h5>
+                    <p data-i18n="caturra-desc">卡杜拉是波旁的自然突變種，形成了較矮小的植株（矮化突變），使其更容易採摘和種植在密度較高的環境中。它在拉丁美洲特別受歡迎，尤其是在哥倫比亞和中美洲。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-bright">明亮</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-citrus">柑橘</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-clean">乾淨</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-balanced">平衡</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>藝伎 (Gesha/Geisha)</h4>
+                    <h5 data-i18n="geisha-origin">起源：衣索比亞Gesha森林，1936年被發現</h5>
+                    <p data-i18n="geisha-desc">藝伎咖啡因其卓越的風味和稀有性而聞名，在2004年巴拿馬翡翠莊園的藝伎咖啡獲獎後引起全球關注。它的特點是高雅的花香、熱帶水果風味和茶般的口感，常被形容為咖啡界的香檳。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-jasmine">茉莉花</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-bergamot">佛手柑</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tropical">熱帶水果</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tea-like">茶感</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>SL28 與 SL34</h4>
+                    <h5 data-i18n="sl-origin">起源：肯亞，由Scott農業實驗室開發</h5>
+                    <p data-i18n="sl-desc">這兩個品種是肯亞咖啡產業的核心，由英國殖民時期的Scott農業實驗室選育而來。SL28以其優雅的黑醋栗風味而聞名，而SL34則具有更濃郁的酒香和水果特性。這兩個品種共同造就了肯亞咖啡的標誌性風味。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-blackcurrant">黑醋栗</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-winey">酒香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-tomato">番茄</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-grapefruit">葡萄柚</span>
+                    </div>
+                </div>
+                
+                <div class="variety-card">
+                    <h4>帕卡馬拉 (Pacamara)</h4>
+                    <h5 data-i18n="pacamara-origin">起源：薩爾瓦多，Pacas和Maragogipe的雜交種</h5>
+                    <p data-i18n="pacamara-desc">帕卡馬拉是1958年在薩爾瓦多開發的雜交品種，結合了Pacas的高產量和Maragogipe的大豆型特性。它以其巨大的豆粒和複雜的風味聞名，在專業咖啡比賽中常獲殊榮。</p>
+                    <div class="flavor-characteristics">
+                        <span class="flavor-characteristic" data-i18n="flavor-complex">複雜</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-floral">花香</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-citrus">柑橘</span>
+                        <span class="flavor-characteristic" data-i18n="flavor-chocolate">巧克力</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="roasting" class="blog-section">
+            <h2 data-i18n="roasting-title">烘焙程度與風味變化</h2>
+            <p data-i18n="roasting-intro">烘焙是將生咖啡豆轉變為可沖泡咖啡的關鍵過程。烘焙過程中，咖啡豆經歷溫度上升、豆內水分蒸發、美拉德反應和焦糖化反應等多種化學變化。不同的烘焙程度會顯著影響咖啡的風味特性：</p>
+            
+            <div class="coffee-image-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='220' viewBox='0 0 800 220'%3E%3Crect width='800' height='220' fill='%23f5f5f5'/%3E%3Ccircle cx='150' cy='100' r='60' fill='%23B4846C'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Arial' font-size='16' fill='%23333'%3E%E6%B7%BA%E7%83%98%E7%84%99 (Light)%3C/text%3E%3Ccircle cx='400' cy='100' r='60' fill='%238B5A2B'/%3E%3Ctext x='400' y='170' text-anchor='middle' font-family='Arial' font-size='16' fill='%23333'%3E%E4%B8%AD%E7%83%98%E7%84%99 (Medium)%3C/text%3E%3Ccircle cx='650' cy='100' r='60' fill='%23432616'/%3E%3Ctext x='650' y='170' text-anchor='middle' font-family='Arial' font-size='16' fill='%23333'%3E%E6%B7%B1%E7%83%98%E7%84%99 (Dark)%3C/text%3E%3Cline x1='150' y1='50' x2='650' y2='50' stroke='%23666' stroke-width='2'/%3E%3Ctext x='150' y='40' text-anchor='middle' font-family='Arial' font-size='14' fill='%23333'%3E%E9%85%B8%E5%BA%A6%E9%AB%98 (High Acidity)%3C/text%3E%3Ctext x='650' y='40' text-anchor='middle' font-family='Arial' font-size='14' fill='%23333'%3E%E9%85%B8%E5%BA%A6%E4%BD%8E (Low Acidity)%3C/text%3E%3C/svg%3E" alt="不同烘焙程度的咖啡豆" class="coffee-image">
+                <p class="image-caption" data-i18n="roasting-image-caption">不同烘焙程度的咖啡豆：從淺烘焙到深烘焙</p>
+            </div>
+            
+            <h3 data-i18n="light-roast-title">淺烘焙 (Light Roast)</h3>
+            <p data-i18n="light-roast-desc">淺烘焙通常在第一爆裂（一聲爆）剛結束時停止。這種烘焙保留了咖啡豆的原始特性，突顯其獨特的產地風味。</p>
+            <ul>
+                <li data-i18n="light-roast-characteristics">特徵：淺褐色豆，表面無油脂，密度較高</li>
+                <li data-i18n="light-roast-flavors">風味：高酸度，明亮的風味，花香和水果風味明顯</li>
+                <li data-i18n="light-roast-best-for">最適合：單一產地的高品質咖啡豆，尤其是非洲和中美洲產區</li>
+            </ul>
+            
+            <h3 data-i18n="medium-roast-title">中烘焙 (Medium Roast)</h3>
+            <p data-i18n="medium-roast-desc">中烘焙是在第一爆裂結束後繼續，但在第二爆裂（二聲爆）開始前停止。這種烘焙程度平衡了咖啡的酸度和甜度。</p>
+            <ul>
+                <li data-i18n="medium-roast-characteristics">特徵：中褐色豆，表面開始出現少許油脂，平衡的風味</li>
+                <li data-i18n="medium-roast-flavors">風味：平衡的酸度和甜感，焦糖和堅果風味更為明顯</li>
+                <li data-i18n="medium-roast-best-for">最適合：來自拉丁美洲的咖啡豆，如哥倫比亞、巴西等</li>
+            </ul>
+            
+            <h3 data-i18n="dark-roast-title">深烘焙 (Dark Roast)</h3>
+            <p data-i18n="dark-roast-desc">深烘焙持續到第二爆裂期間或之後。烘焙風味開始主導，而原豆的特性則退居次位。</p>
+            <ul>
+                <li data-i18n="dark-roast-characteristics">特徵：深褐色至黑色豆，表面有明顯油脂，低酸度</li>
+                <li data-i18n="dark-roast-flavors">風味：濃郁、苦味明顯，帶有巧克力、焦糖和煙燻味</li>
+                <li data-i18n="dark-roast-best-for">最適合：印尼咖啡豆，特濃咖啡，濃郁的意式拼配</li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-3">烘焙與咖啡因含量的迷思</h4>
+                <p data-i18n="fact-box-content-3">有一個常見的誤解是深烘焙的咖啡因含量高於淺烘焙。事實上，咖啡因非常穩定，在烘焙過程中基本不會分解。淺烘焙咖啡的咖啡因含量實際上比深烘焙略高，因為深烘焙會使豆子體積增大，但質量減輕。因此，如果按重量計算，淺烘焙的咖啡因密度更高。不過，差異通常很小，對飲用者幾乎無感。</p>
+            </div>
+        </section>
+        
+        <section id="brewing-methods" class="blog-section">
+            <h2 data-i18n="brewing-title">咖啡沖煮方法</h2>
+            <p data-i18n="brewing-intro">咖啡的沖煮方法大致可分為浸泡式、濾過式和加壓式三大類。每種方法都會影響咖啡的風味特徵、濃度和口感。以下是一些主要的沖煮方法：</p>
+            
+            <div class="brewing-methods">
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-pourover"></div>
+                    <h4 data-i18n="pourover-title">手沖咖啡</h4>
+                    <p data-i18n="pourover-desc">手動將熱水倒在放置在濾杯中的咖啡粉上，水透過咖啡粉和濾紙流入底下的容器。這種方法可以突顯咖啡的清爽口感和複雜風味。</p>
+                    <p data-i18n="pourover-best-for"><strong>最適合：</strong> 單一產地的淺烘焙至中烘焙咖啡，尤其是風味複雜的精品咖啡。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-frenchpress"></div>
+                    <h4 data-i18n="frenchpress-title">法式濾壓壺</h4>
+                    <p data-i18n="frenchpress-desc">一種浸泡式沖煮方法，將粗研磨的咖啡粉與熱水一起放入玻璃或金屬容器中，浸泡4-5分鐘後，用金屬濾網將咖啡粉壓下，分離咖啡液。</p>
+                    <p data-i18n="frenchpress-best-for"><strong>最適合：</strong> 中至深烘焙咖啡，可呈現醇厚的口感和完整的風味油脂。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-espresso"></div>
+                    <h4 data-i18n="espresso-title">義式濃縮咖啡</h4>
+                    <p data-i18n="espresso-desc">使用高壓（9巴左右）將熱水快速壓過細密壓實的咖啡粉。這種方法產生濃縮的咖啡液和特徵性的crema（奶油層）。</p>
+                    <p data-i18n="espresso-best-for"><strong>最適合：</strong> 中至深烘焙的咖啡豆，特別是專為義式濃縮設計的拼配。也是拿鐵、卡布奇諾等咖啡飲品的基底。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-aeropress"></div>
+                    <h4 data-i18n="aeropress-title">愛樂壓</h4>
+                    <p data-i18n="aeropress-desc">結合浸泡和加壓原理的創新沖煮裝置。咖啡粉與熱水短時間浸泡後，通過手動加壓使咖啡液通過濾紙。</p>
+                    <p data-i18n="aeropress-best-for"><strong>最適合：</strong> 各種烘焙度的咖啡，非常靈活且便攜，可根據參數調整產生不同風味特徵。</p>
+                </div>
+                
+                <div class="brewing-method-card">
+                    <div class="brewing-icon icon-coldbrew"></div>
+                    <h4 data-i18n="coldbrew-title">冷萃咖啡</h4>
+                    <p data-i18n="coldbrew-desc">使用常溫或冷水長時間（12-24小時）浸泡咖啡粉。低溫萃取減少了酸度和苦味，同時提取了甜感和風味。</p>
+                    <p data-i18n="coldbrew-best-for"><strong>最適合：</strong> 中至深烘焙的咖啡豆，尤其是具有巧克力和堅果風味的豆子。</p>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-4">沖煮參數：影響咖啡風味的關鍵因素</h4>
+                <p data-i18n="fact-box-content-4">無論選擇哪種沖煮方法，以下參數都會顯著影響最終的咖啡風味：</p>
+                <ul>
+                    <li data-i18n="brewing-parameter-1"><strong>研磨度：</strong> 影響萃取速率和萃取量。粗磨粒萃取較慢，細磨粒萃取較快。</li>
+                    <li data-i18n="brewing-parameter-2"><strong>咖啡粉與水的比例：</strong> 典型比例為1:15至1:18（咖啡粉:水），影響濃度和風味強度。</li>
+                    <li data-i18n="brewing-parameter-3"><strong>水溫：</strong> 通常為90-96°C，溫度越高萃取越快，但可能增加苦味。</li>
+                    <li data-i18n="brewing-parameter-4"><strong>沖煮時間：</strong> 影響萃取量，時間過短可能導致酸度過高，時間過長則可能增加苦味。</li>
+                    <li data-i18n="brewing-parameter-5"><strong>水質：</strong> 理想的水應該乾淨且含有適量的礦物質，pH值約為7。</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="tasting-coffee" class="blog-section">
+            <h2 data-i18n="tasting-title">如何品嚐咖啡</h2>
+            <p data-i18n="tasting-intro">品嚐咖啡是感官評估的過程，涉及視覺、嗅覺和味覺。專業咖啡品鑒（杯測）有特定的方法和詞彙，但普通咖啡愛好者也可以通過以下步驟來深入欣賞咖啡的風味：</p>
+            
+            <h3 data-i18n="tasting-process-title">品嚐過程</h3>
+            <ol>
+                <li data-i18n="tasting-step-1"><strong>觀察：</strong> 注意咖啡的顏色和透明度。好的咖啡應該有清澈的外觀，不應該渾濁。</li>
+                <li data-i18n="tasting-step-2"><strong>聞香：</strong> 輕輕吸入咖啡的香氣。先聞熱咖啡，然後等它稍微冷卻後再聞一次，因為香氣會隨溫度變化。</li>
+                <li data-i18n="tasting-step-3"><strong>啜飲：</strong> 將少量咖啡吸入口中，讓它覆蓋整個舌頭。用力吸氣，讓空氣通過咖啡，這會增強風味感知。</li>
+                <li data-i18n="tasting-step-4"><strong>評估：</strong> 專注於風味、酸度、甜度、口感和餘韻。風味可能包括水果、堅果、巧克力或花香等。</li>
+            </ol>
+            
+            <h3 data-i18n="flavor-wheel-title">咖啡風味輪</h3>
+            <p data-i18n="flavor-wheel-desc">風味輪是幫助識別和描述咖啡風味的視覺工具。它從中心向外擴展，從基本類別到具體的風味描述。專業的風味輪由美國特種咖啡協會(SCA)開發，包含數十種風味描述。</p>
+            
+            <div class="flavor-wheel-container">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Ccircle cx='300' cy='300' r='290' fill='%23f9f4e8' stroke='%23d0b27a' stroke-width='2'/%3E%3Ccircle cx='300' cy='300' r='220' fill='%23f0e8d6' stroke='%23d0b27a' stroke-width='2'/%3E%3Ccircle cx='300' cy='300' r='150' fill='%23e6dcc3' stroke='%23d0b27a' stroke-width='2'/%3E%3Ccircle cx='300' cy='300' r='80' fill='%23dbcfb0' stroke='%23d0b27a' stroke-width='2'/%3E%3C!-- Flavor categories --%3E%3Cpath d='M300,300 L300,10 A290,290 0 0,1 550,160 z' fill='%23FFCBA4' stroke='%23d0b27a' stroke-width='1'/%3E%3Cpath d='M300,300 L550,160 A290,290 0 0,1 505,439 z' fill='%23A4C8FF' stroke='%23d0b27a' stroke-width='1'/%3E%3Cpath d='M300,300 L505,439 A290,290 0 0,1 159,505 z' fill='%23C1FF9B' stroke='%23d0b27a' stroke-width='1'/%3E%3Cpath d='M300,300 L159,505 A290,290 0 0,1 94,95 z' fill='%23FFFC9B' stroke='%23d0b27a' stroke-width='1'/%3E%3Cpath d='M300,300 L94,95 A290,290 0 0,1 300,10 z' fill='%23FF9B9B' stroke='%23d0b27a' stroke-width='1'/%3E%3C!-- Text --%3E%3Ctext x='300' y='40' text-anchor='middle' font-family='Arial' font-size='18' fill='%23795548'%3E%E6%B0%B4%E6%9E%9C%E9%A1%9E (Fruity)%3C/text%3E%3Ctext x='500' y='180' text-anchor='middle' font-family='Arial' font-size='18' fill='%23795548'%3E%E8%8A%B1%E9%A6%99%E9%A1%9E (Floral)%3C/text%3E%3Ctext x='470' y='400' text-anchor='middle' font-family='Arial' font-size='18' fill='%23795548'%3E%E7%94%9C%E6%84%9F%E9%A1%9E (Sweet)%3C/text%3E%3Ctext x='180' y='480' text-anchor='middle' font-family='Arial' font-size='18' fill='%23795548'%3E%E5%A0%85%E6%9E%9C%E5%B7%A7%E5%85%8B%E5%8A%9B%E9%A1%9E (Nutty/Cocoa)%3C/text%3E%3Ctext x='120' y='120' text-anchor='middle' font-family='Arial' font-size='18' fill='%23795548'%3E%E9%A6%99%E6%96%99%E7%85%99%E7%87%BB%E9%A1%9E (Spice/Roast)%3C/text%3E%3Ctext x='300' y='300' text-anchor='middle' font-family='Arial' font-size='24' font-weight='bold' fill='%23795548'%3E%E9%A2%A8%E5%91%B3%E8%BC%AA%3C/text%3E%3C/svg%3E" alt="咖啡風味輪" class="coffee-image">
+                <p class="image-caption" data-i18n="flavor-wheel-caption">簡化版咖啡風味輪，展示主要風味類別</p>
+            </div>
+            
+            <h3 data-i18n="cupping-title">專業杯測</h3>
+            <p data-i18n="cupping-desc">杯測是專業評估咖啡的標準化方法，廣泛用於咖啡行業的品質控制和採購。專業杯測師評估以下特性：</p>
+            <ul>
+                <li data-i18n="cupping-fragrance"><strong>香氣 (Fragrance/Aroma)：</strong> 乾燥咖啡粉和沖泡後的香氣</li>
+                <li data-i18n="cupping-flavor"><strong>風味 (Flavor)：</strong> 綜合的味道和香氣感知</li>
+                <li data-i18n="cupping-aftertaste"><strong>餘韻 (Aftertaste)：</strong> 咖啡吞下後留在口中的風味持續性</li>
+                <li data-i18n="cupping-acidity"><strong>酸度 (Acidity)：</strong> 咖啡的亮度或鮮明度</li>
+                <li data-i18n="cupping-body"><strong>口感 (Body)：</strong> 咖啡在口中的質感和重量感</li>
+                <li data-i18n="cupping-balance"><strong>平衡度 (Balance)：</strong> 各種風味元素如何協調工作</li>
+                <li data-i18n="cupping-sweetness"><strong>甜度 (Sweetness)：</strong> 愉悅的甜味感知</li>
+            </ul>
+            
+            <div class="fact-box">
+                <h4 data-i18n="fact-box-title-5">品嚐溫度的影響</h4>
+                <p data-i18n="fact-box-content-5">咖啡的風味會隨著溫度變化而顯著改變。熱咖啡（70-80°C）往往強調酸度和芳香化合物，而當咖啡冷卻到適宜溫度（50-65°C）時，甜度和更複雜的風味會變得更加明顯。再冷卻一些（40°C以下），苦味和缺陷會更加突出。品嚐時，嘗試在不同溫度下評估同一杯咖啡，可以發現風味的演變過程。</p>
+            </div>
+        </section>
+    </div>
+    
+     <!-- Footer with SEO-friendly links -->
+     <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="about-us">關於我們</h3>
+                <p data-i18n="footer-about">咖啡風味探索器是一個幫助咖啡愛好者發現他們最喜愛咖啡風味的平台。我們致力於連接咖啡愛好者與世界各地的優質咖啡豆。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="quick-links">快速連結</h3>
+                <ul>
+                    <li><a href="/" data-i18n="home">首頁</a></li>
+                    <li><a href="/" data-i18n="about">關於</a></li>
+                    <li><a href="/" data-i18n="contact">聯絡我們</a></li>
+                    <li><a href="/sitemap.xml" data-i18n="sitemap">網站地圖</a></li>
+                    <li><a target="_blank" href="https://github.com/lam0819/coffeematcher.me" data-i18n="github-opensource">開源</a></li>
+                    <li><a target="_blank" href="https://dashboard.simpleanalytics.com/coffeematcher.me" data-i18n="site-analytics">網站數據</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-i18n="coffee-resources">咖啡資源</h3>
+                <ul>
+                    <li><a href="/coffee-knowedge" data-i18n="blog">咖啡知識</a></li>
+                    <li><a href="#" data-i18n="brewing-guides">沖煮指南</a></li>
+                    <li><a href="#" data-i18n="origin-stories">產地故事</a></li>
+                    <li><a href="#" data-i18n="coffee-glossary">咖啡術語</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2025</span> Coffee Explorer | <a href="/" data-i18n="privacy-policy">隱私政策</a> | <a href="/" data-i18n="terms-of-service">服務條款</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        // 語言定義
+        const translations = {
+            'zh': {
+                'lang-zh': '中文',
+                'lang-en': 'English',
+                'home': '首頁',
+                'about': '關於',
+                'blog': '咖啡知識',
+                'contact': '聯絡我們',
+                'coffee-knowledge-title': '咖啡知識：從咖啡豆到杯中風味',
+                'coffee-knowledge-subtitle': '了解影響咖啡風味的因素，包括產地、處理方法、烘焙程度和沖煮技巧，成為一個精通咖啡的鑑賞家。',
+                'table-of-contents': '目錄',
+                'toc-origins': '咖啡產地與風味特性',
+                'toc-processing': '咖啡處理方法',
+                'toc-varieties': '咖啡豆品種',
+                'toc-roasting': '烘焙程度與風味變化',
+                'toc-brewing': '咖啡沖煮方法',
+                'toc-tasting': '如何品嚐咖啡',
+                'origins-title': '咖啡產地與風味特性',
+                'origins-intro': '咖啡豆的產地對其風味有著決定性的影響。不同產區的土壤、氣候、海拔和種植方式都會形成獨特的風味特徵。讓我們探索世界主要咖啡產區及其特色：',
+                'origins-image-caption': '世界主要咖啡產區：非洲、亞洲和美洲',
+                'africa-title': '非洲產區',
+                'africa-description': '非洲被認為是咖啡的發源地，尤其是衣索比亞。非洲咖啡通常具有明亮的酸度和豐富的水果風味。',
+                'ethiopia': '衣索比亞：',
+                'ethiopia-desc': '具有獨特的花香、柑橘和漿果風味，酸度明亮且複雜。著名產區包括耶加雪菲、西達摩和古吉。',
+                'kenya': '肯亞：',
+                'kenya-desc': '以明亮的酸度和黑醋栗、葡萄柚風味聞名，口感清爽且酒香濃郁。',
+                'rwanda': '盧旺達：',
+                'rwanda-desc': '具有橙花香氣和紅色水果風味，酸度平衡且甜感明顯。',
+                'fact-box-title-1': '咖啡小知識：衣索比亞的咖啡文化',
+                'fact-box-content-1': '在衣索比亞，咖啡儀式是社交活動的重要部分。傳統儀式包括將生豆在小鍋中烘焙，然後手工研磨並在特殊的陶壺（jebena）中沖煮。整個過程可持續數小時，象徵著友誼和尊重。',
+                'americas-title': '美洲產區',
+                'americas-description': '中南美洲是世界上最大的咖啡產區，尤其是巴西和哥倫比亞。這些地區的咖啡通常平衡且具有中等酸度。',
+                'colombia': '哥倫比亞：',
+                'colombia-desc': '以平衡的風味著稱，帶有溫和的酸度、焦糖甜感和中等濃郁度，口感乾淨。',
+                'brazil': '巴西：',
+                'brazil-desc': '口感醇厚，帶有堅果和巧克力風味，酸度低且甜感明顯。',
+                'guatemala': '瓜地馬拉：',
+                'guatemala-desc': '具有巧克力風味、濃郁的口感和些微的煙燻味，酸度明亮但不過於突出。',
+                'costa-rica': '哥斯達黎加：',
+                'costa-rica-desc': '平衡且乾淨，帶有柑橘和焦糖風味，酸甜平衡。',
+                'asia-title': '亞洲產區',
+                'asia-description': '亞洲咖啡產區包括印尼、越南和印度。這些地區的咖啡通常具有濃郁的口感和獨特的土壤風味。',
+                'indonesia': '印尼：',
+                'indonesia-desc': '以獨特的土壤風味和香料味聞名，口感濃郁且酸度低。蘇門答臘、爪哇和蘇拉威西是主要產區。',
+                'vietnam': '越南：',
+                'vietnam-desc': '主要種植羅布斯塔咖啡，口感濃郁且具苦味，是製作越南滴漏咖啡的理想選擇。',
+                'india': '印度：',
+                'india-desc': '獨特的季風馬拉巴爾處理法創造出低酸度、濃郁和香料風味的咖啡。',
+                'processing-title': '咖啡處理方法',
+                'processing-intro': '咖啡豆採摘後的處理方法對最終風味有重大影響。不同的處理方法會創造出不同的風味特徵。以下是主要的處理方法：',
+                'washed-tag': '水洗處理',
+                'washed-title': '水洗處理法',
+                'washed-desc': '咖啡果實的果肉和果膠被機械或手工完全去除，然後在水中發酵移除剩餘的果膠，最後在陽光下乾燥。水洗法創造出乾淨、明亮的風味，突顯咖啡豆的原始風味特徵。',
+                'washed-flavors': '典型風味：明亮的酸度，清爽的口感，花香和水果風味更為突出。',
+                'natural-tag': '日曬處理',
+                'natural-title': '日曬處理法',
+                'natural-desc': '整顆咖啡果實（包括果肉和果皮）在陽光下直接乾燥，然後才去除外層。在這個過程中，水果的甜味和風味會滲入豆子，創造出更多的複雜性和甜感。',
+                'natural-flavors': '典型風味：濃郁的水果風味，發酵感，葡萄酒般的特質，醇厚的口感和較低的酸度。',
+                'honey-tag': '蜜處理',
+                'honey-title': '蜜處理法',
+                'honey-desc': '果皮和部分果肉被去除，但留下果膠（一種黏性物質）包覆在豆子上，然後進行乾燥。根據留下的果膠量，可分為白蜜、黃蜜、紅蜜和黑蜜處理。',
+                'honey-flavors': '典型風味：明亮的酸度與溫和的水果甜感平衡，口感滑順如蜂蜜，複雜度介於水洗與日曬之間。',
+                'anaerobic-tag': '厭氧發酵',
+                'anaerobic-title': '厭氧發酵處理法',
+                'anaerobic-desc': '咖啡豆在密封容器中發酵，不接觸氧氣。這種環境下，微生物活動創造出獨特的風味化合物。發酵時間和溫度的調整可創造各種獨特風味。',
+                'anaerobic-flavors': '典型風味：酒香濃郁，熱帶水果風味，複雜的酸度，常帶有熟成水果和發酵特性。',
+                'fact-box-title-2': '為什麼處理方法如此重要？',
+                'fact-box-content-2': '處理方法不僅影響風味，還會影響咖啡豆的保存性和穩定性。水洗處理的咖啡豆通常更加穩定且一致，而日曬和蜜處理則能帶來更多風味變化和複雜性。農民會根據氣候條件、可用資源和目標市場選擇最適合的處理方法。',
+                'varieties-title': '咖啡豆品種',
+                'varieties-intro': '咖啡主要分為阿拉比卡（Arabica）和羅布斯塔（Robusta）兩大種，其中阿拉比卡佔全球咖啡產量的約60%，以其複雜的風味和較低的咖啡因含量聞名。在這些主要種類下，還衍生出許多子品種，每種都有獨特的特性和風味：',
+                'bourbon-origin': '起源：留尼旺島，由典型種演變而來',
+                'bourbon-desc': '波旁是一種古老且受歡迎的阿拉比卡變種，以其甜感和平衡的特性而聞名。它的產量比典型種高約30%，但比現代品種如卡杜拉低。有紅波旁和黃波旁兩種變種。',
+                'typica-origin': '起源：衣索比亞，最古老的阿拉比卡品種之一',
+                'typica-desc': '帝比卡是最古老的阿拉比卡咖啡品種之一，也是許多現代品種的祖先。它的產量較低，但風味優雅且複雜。這個品種培育出了許多重要的子品種，包括印尼中的爪哇和蘇門答臘品種。',
+                'caturra-origin': '起源：巴西，波旁的自然突變種',
+                'caturra-desc': '卡杜拉是波旁的自然突變種，形成了較矮小的植株（矮化突變），使其更容易採摘和種植在密度較高的環境中。它在拉丁美洲特別受歡迎，尤其是在哥倫比亞和中美洲。',
+                'geisha-origin': '起源：衣索比亞Gesha森林，1936年被發現',
+                'geisha-desc': '藝伎咖啡因其卓越的風味和稀有性而聞名，在2004年巴拿馬翡翠莊園的藝伎咖啡獲獎後引起全球關注。它的特點是高雅的花香、熱帶水果風味和茶般的口感，常被形容為咖啡界的香檳。',
+                'sl-origin': '起源：肯亞，由Scott農業實驗室開發',
+                'sl-desc': '這兩個品種是肯亞咖啡產業的核心，由英國殖民時期的Scott農業實驗室選育而來。SL28以其優雅的黑醋栗風味而聞名，而SL34則具有更濃郁的酒香和水果特性。這兩個品種共同造就了肯亞咖啡的標誌性風味。',
+                'pacamara-origin': '起源：薩爾瓦多，Pacas和Maragogipe的雜交種',
+                'pacamara-desc': '帕卡馬拉是1958年在薩爾瓦多開發的雜交品種，結合了Pacas的高產量和Maragogipe的大豆型特性。它以其巨大的豆粒和複雜的風味聞名，在專業咖啡比賽中常獲殊榮。',
+                'flavor-sweet': '甜感',
+                'flavor-caramel': '焦糖',
+                'flavor-fruit': '漿果',
+                'flavor-chocolate': '巧克力',
+                'flavor-clean': '乾淨',
+                'flavor-floral': '花香',
+                'flavor-bright': '明亮',
+                'flavor-citrus': '柑橘',
+                'flavor-balanced': '平衡',
+                'flavor-jasmine': '茉莉花',
+                'flavor-bergamot': '佛手柑',
+                'flavor-tropical': '熱帶水果',
+                'flavor-tea-like': '茶感',
+                'flavor-blackcurrant': '黑醋栗',
+                'flavor-winey': '酒香',
+                'flavor-tomato': '番茄',
+                'flavor-grapefruit': '葡萄柚',
+                'flavor-complex': '複雜',
+                'roasting-title': '烘焙程度與風味變化',
+                'roasting-intro': '烘焙是將生咖啡豆轉變為可沖泡咖啡的關鍵過程。烘焙過程中，咖啡豆經歷溫度上升、豆內水分蒸發、美拉德反應和焦糖化反應等多種化學變化。不同的烘焙程度會顯著影響咖啡的風味特性：',
+                'roasting-image-caption': '不同烘焙程度的咖啡豆：從淺烘焙到深烘焙',
+                'light-roast-title': '淺烘焙 (Light Roast)',
+                'light-roast-desc': '淺烘焙通常在第一爆裂（一聲爆）剛結束時停止。這種烘焙保留了咖啡豆的原始特性，突顯其獨特的產地風味。',
+                'light-roast-characteristics': '特徵：淺褐色豆，表面無油脂，密度較高',
+                'light-roast-flavors': '風味：高酸度，明亮的風味，花香和水果風味明顯',
+                'light-roast-best-for': '最適合：單一產地的高品質咖啡豆，尤其是非洲和中美洲產區',
+                'medium-roast-title': '中烘焙 (Medium Roast)',
+                'medium-roast-desc': '中烘焙是在第一爆裂結束後繼續，但在第二爆裂（二聲爆）開始前停止。這種烘焙程度平衡了咖啡的酸度和甜度。',
+                'medium-roast-characteristics': '特徵：中褐色豆，表面開始出現少許油脂，平衡的風味',
+                'medium-roast-flavors': '風味：平衡的酸度和甜感，焦糖和堅果風味更為明顯',
+                'medium-roast-best-for': '最適合：來自拉丁美洲的咖啡豆，如哥倫比亞、巴西等',
+                'dark-roast-title': '深烘焙 (Dark Roast)',
+                'dark-roast-desc': '深烘焙持續到第二爆裂期間或之後。烘焙風味開始主導，而原豆的特性則退居次位。',
+                'dark-roast-characteristics': '特徵：深褐色至黑色豆，表面有明顯油脂，低酸度',
+                'dark-roast-flavors': '風味：濃郁、苦味明顯，帶有巧克力、焦糖和煙燻味',
+                'dark-roast-best-for': '最適合：印尼咖啡豆，特濃咖啡，濃郁的意式拼配',
+                'fact-box-title-3': '烘焙與咖啡因含量的迷思',
+                'fact-box-content-3': '有一個常見的誤解是深烘焙的咖啡因含量高於淺烘焙。事實上，咖啡因非常穩定，在烘焙過程中基本不會分解。淺烘焙咖啡的咖啡因含量實際上比深烘焙略高，因為深烘焙會使豆子體積增大，但質量減輕。因此，如果按重量計算，淺烘焙的咖啡因密度更高。不過，差異通常很小，對飲用者幾乎無感。',
+                'brewing-title': '咖啡沖煮方法',
+                'brewing-intro': '咖啡的沖煮方法大致可分為浸泡式、濾過式和加壓式三大類。每種方法都會影響咖啡的風味特徵、濃度和口感。以下是一些主要的沖煮方法：',
+                'pourover-title': '手沖咖啡',
+                'pourover-desc': '手動將熱水倒在放置在濾杯中的咖啡粉上，水透過咖啡粉和濾紙流入底下的容器。這種方法可以突顯咖啡的清爽口感和複雜風味。',
+                'pourover-best-for': '最適合：單一產地的淺烘焙至中烘焙咖啡，尤其是風味複雜的精品咖啡。',
+                'frenchpress-title': '法式濾壓壺',
+                'frenchpress-desc': '一種浸泡式沖煮方法，將粗研磨的咖啡粉與熱水一起放入玻璃或金屬容器中，浸泡4-5分鐘後，用金屬濾網將咖啡粉壓下，分離咖啡液。',
+                'frenchpress-best-for': '最適合：中至深烘焙咖啡，可呈現醇厚的口感和完整的風味油脂。',
+                'espresso-title': '義式濃縮咖啡',
+                'espresso-desc': '使用高壓（9巴左右）將熱水快速壓過細密壓實的咖啡粉。這種方法產生濃縮的咖啡液和特徵性的crema（奶油層）。',
+                'espresso-best-for': '最適合：中至深烘焙的咖啡豆，特別是專為義式濃縮設計的拼配。也是拿鐵、卡布奇諾等咖啡飲品的基底。',
+                'aeropress-title': '愛樂壓',
+                'aeropress-desc': '結合浸泡和加壓原理的創新沖煮裝置。咖啡粉與熱水短時間浸泡後，通過手動加壓使咖啡液通過濾紙。',
+                'aeropress-best-for': '最適合：各種烘焙度的咖啡，非常靈活且便攜，可根據參數調整產生不同風味特徵。',
+                'coldbrew-title': '冷萃咖啡',
+                'coldbrew-desc': '使用常溫或冷水長時間（12-24小時）浸泡咖啡粉。低溫萃取減少了酸度和苦味，同時提取了甜感和風味。',
+                'coldbrew-best-for': '最適合：中至深烘焙的咖啡豆，尤其是具有巧克力和堅果風味的豆子。',
+                'fact-box-title-4': '沖煮參數：影響咖啡風味的關鍵因素',
+                'fact-box-content-4': '無論選擇哪種沖煮方法，以下參數都會顯著影響最終的咖啡風味：',
+                'brewing-parameter-1': '研磨度：影響萃取速率和萃取量。粗磨粒萃取較慢，細磨粒萃取較快。',
+                'brewing-parameter-2': '咖啡粉與水的比例：典型比例為1:15至1:18（咖啡粉:水），影響濃度和風味強度。',
+                'brewing-parameter-3': '水溫：通常為90-96°C，溫度越高萃取越快，但可能增加苦味。',
+                'brewing-parameter-4': '沖煮時間：影響萃取量，時間過短可能導致酸度過高，時間過長則可能增加苦味。',
+                'brewing-parameter-5': '水質：理想的水應該乾淨且含有適量的礦物質，pH值約為7。',
+                'tasting-title': '如何品嚐咖啡',
+                'tasting-intro': '品嚐咖啡是感官評估的過程，涉及視覺、嗅覺和味覺。專業咖啡品鑒（杯測）有特定的方法和詞彙，但普通咖啡愛好者也可以通過以下步驟來深入欣賞咖啡的風味：',
+                'tasting-process-title': '品嚐過程',
+                'tasting-step-1': '觀察：注意咖啡的顏色和透明度。好的咖啡應該有清澈的外觀，不應該渾濁。',
+                'tasting-step-2': '聞香：輕輕吸入咖啡的香氣。先聞熱咖啡，然後等它稍微冷卻後再聞一次，因為香氣會隨溫度變化。',
+                'tasting-step-3': '啜飲：將少量咖啡吸入口中，讓它覆蓋整個舌頭。用力吸氣，讓空氣通過咖啡，這會增強風味感知。',
+                'tasting-step-4': '評估：專注於風味、酸度、甜度、口感和餘韻。風味可能包括水果、堅果、巧克力或花香等。',
+                'flavor-wheel-title': '咖啡風味輪',
+                'flavor-wheel-desc': '風味輪是幫助識別和描述咖啡風味的視覺工具。它從中心向外擴展，從基本類別到具體的風味描述。專業的風味輪由美國特種咖啡協會(SCA)開發，包含數十種風味描述。',
+                'flavor-wheel-caption': '簡化版咖啡風味輪，展示主要風味類別',
+                'cupping-title': '專業杯測',
+                'cupping-desc': '杯測是專業評估咖啡的標準化方法，廣泛用於咖啡行業的品質控制和採購。專業杯測師評估以下特性：',
+                'cupping-fragrance': '香氣 (Fragrance/Aroma)：乾燥咖啡粉和沖泡後的香氣',
+                'cupping-flavor': '風味 (Flavor)：綜合的味道和香氣感知',
+                'cupping-aftertaste': '餘韻 (Aftertaste)：咖啡吞下後留在口中的風味持續性',
+                'cupping-acidity': '酸度 (Acidity)：咖啡的亮度或鮮明度',
+                'cupping-body': '口感 (Body)：咖啡在口中的質感和重量感',
+                'cupping-balance': '平衡度 (Balance)：各種風味元素如何協調工作',
+                'cupping-sweetness': '甜度 (Sweetness)：愉悅的甜味感知',
+                'fact-box-title-5': '品嚐溫度的影響',
+                'fact-box-content-5': '咖啡的風味會隨著溫度變化而顯著改變。熱咖啡（70-80°C）往往強調酸度和芳香化合物，而當咖啡冷卻到適宜溫度（50-65°C）時，甜度和更複雜的風味會變得更加明顯。再冷卻一些（40°C以下），苦味和缺陷會更加突出。品嚐時，嘗試在不同溫度下評估同一杯咖啡，可以發現風味的演變過程。',
+                'about-us': '關於我們',
+                'footer-about': '咖啡風味探索器是一個幫助咖啡愛好者發現他們最喜愛咖啡風味的平台。我們致力於連接咖啡愛好者與世界各地的優質咖啡豆。',
+                'quick-links': '快速連結',
+                'home': '首頁',
+                'about': '關於',
+                'blog': '咖啡知識',
+                'contact': '聯絡我們',
+                'sitemap': '網站地圖',
+                'coffee-resources': '咖啡資源',
+                'brewing-guides': '沖煮指南',
+                'origin-stories': '產地故事',
+                'coffee-glossary': '咖啡術語',
+                'privacy-policy': '隱私政策',
+                'terms-of-service': '服務條款'
+            },
+            'en': {
+                'lang-zh': '中文',
+                'lang-en': 'English',
+                'home': 'Home',
+                'about': 'About',
+                'blog': 'Coffee Knowledge',
+                'contact': 'Contact Us',
+                'coffee-knowledge-title': 'Coffee Knowledge: From Bean to Cup',
+                'coffee-knowledge-subtitle': 'Understand the factors that influence coffee flavor, including origin, processing methods, roasting levels, and brewing techniques to become a knowledgeable coffee connoisseur.',
+                'table-of-contents': 'Table of Contents',
+                'toc-origins': 'Coffee Origins & Flavor Profiles',
+                'toc-processing': 'Coffee Processing Methods',
+                'toc-varieties': 'Coffee Bean Varieties',
+                'toc-roasting': 'Roasting Levels & Flavor Changes',
+                'toc-brewing': 'Coffee Brewing Methods',
+                'toc-tasting': 'How to Taste Coffee',
+                'origins-title': 'Coffee Origins & Flavor Profiles',
+                'origins-intro': 'A coffee bean\'s origin has a decisive impact on its flavor. Different growing regions with their unique soil conditions, climate, altitude, and cultivation methods all contribute to the distinctive flavor characteristics. Let\'s explore the main coffee-growing regions of the world and their characteristics:',
+                'origins-image-caption': 'Major coffee-growing regions of the world: Africa, Asia, and the Americas',
+                'africa-title': 'African Regions',
+                'africa-description': 'Africa is considered the birthplace of coffee, particularly Ethiopia. African coffees typically have bright acidity and rich fruit flavors.',
+                'ethiopia': 'Ethiopia: ',
+                'ethiopia-desc': 'Features distinctive floral, citrus, and berry flavors with bright and complex acidity. Famous regions include Yirgacheffe, Sidamo, and Guji.',
+                'kenya': 'Kenya: ',
+                'kenya-desc': 'Known for bright acidity and blackcurrant, grapefruit flavors with a clean, winey character.',
+                'rwanda': 'Rwanda: ',
+                'rwanda-desc': 'Features orange blossom aromas and red fruit flavors with balanced acidity and pronounced sweetness.',
+                'fact-box-title-1': 'Coffee Fact: Ethiopian Coffee Ceremony',
+                'fact-box-content-1': 'In Ethiopia, the coffee ceremony is an important part of social gatherings. The traditional ceremony involves roasting green beans in a small pan, grinding them by hand, and brewing in a special clay pot called a jebena. The entire process can last for hours, symbolizing friendship and respect.',
+                'americas-title': 'The Americas',
+                'americas-description': 'Central and South America comprise the world\'s largest coffee-growing region, especially Brazil and Colombia. Coffees from these regions tend to be balanced with medium acidity.',
+                'colombia': 'Colombia: ',
+                'colombia-desc': 'Known for balanced flavor with mild acidity, caramel sweetness, and medium body with a clean finish.',
+                'brazil': 'Brazil: ',
+                'brazil-desc': 'Full-bodied with nutty and chocolate notes, low acidity, and pronounced sweetness.',
+                'guatemala': 'Guatemala: ',
+                'guatemala-desc': 'Features chocolate notes, full body, and a hint of smokiness with bright but not overwhelming acidity.',
+                'costa-rica': 'Costa Rica: ',
+                'costa-rica-desc': 'Balanced and clean with citrus and caramel notes, featuring a good balance of acidity and sweetness.',
+                'asia-title': 'Asian Regions',
+                'asia-description': 'Asian coffee-growing regions include Indonesia, Vietnam, and India. Coffees from these regions typically have full body and distinctive earthy notes.',
+                'indonesia': 'Indonesia: ',
+                'indonesia-desc': 'Known for unique earthy and spicy notes, full body, and low acidity. Major regions include Sumatra, Java, and Sulawesi.',
+                'vietnam': 'Vietnam: ',
+                'vietnam-desc': 'Primarily grows Robusta coffee, which is full-bodied with bitter notes, ideal for Vietnamese drip coffee.',
+                'india': 'India: ',
+                'india-desc': 'The unique Monsooned Malabar process creates coffees with low acidity, full body, and spicy notes.',
+                'processing-title': 'Coffee Processing Methods',
+                'processing-intro': 'The method used to process coffee cherries after harvesting has a significant impact on the final flavor. Different processing methods create different flavor characteristics. Here are the main processing methods:',
+                'washed-tag': 'Washed',
+                'washed-title': 'Washed Process',
+                'washed-desc': 'The fruit flesh and mucilage of the coffee cherry are completely removed mechanically or by hand, then fermented in water to remove remaining mucilage before drying in the sun. The washed process creates clean, bright flavors that highlight the inherent characteristics of the coffee bean.',
+                'washed-flavors': 'Typical flavors: Bright acidity, clean mouthfeel, more pronounced floral and fruit notes.',
+                'natural-tag': 'Natural',
+                'natural-title': 'Natural Process',
+                'natural-desc': 'The whole coffee cherry (including the flesh and skin) is dried directly in the sun before the outer layers are removed. During this process, the fruit\'s sweetness and flavors seep into the bean, creating more complexity and sweetness.',
+                'natural-flavors': 'Typical flavors: Rich fruit notes, fermented qualities, wine-like character, full body, and lower acidity.',
+                'honey-tag': 'Honey',
+                'honey-title': 'Honey Process',
+                'honey-desc': 'The skin and some of the fruit flesh are removed, but the mucilage (a sticky substance) is left on the beans during drying. Depending on how much mucilage is left, it can be classified as white, yellow, red, or black honey processing.',
+                'honey-flavors': 'Typical flavors: Balanced bright acidity with mild fruit sweetness, honey-like smooth mouthfeel, complexity between washed and natural.',
+                'anaerobic-tag': 'Anaerobic',
+                'anaerobic-title': 'Anaerobic Fermentation',
+                'anaerobic-desc': 'Coffee beans are fermented in sealed containers without oxygen. In this environment, microbial activity creates unique flavor compounds. Adjusting fermentation time and temperature can create various unique flavors.',
+                'anaerobic-flavors': 'Typical flavors: Winey notes, tropical fruit flavors, complex acidity, often with ripe fruit and fermented characteristics.',
+                'fact-box-title-2': 'Why Processing Methods Matter So Much',
+                'fact-box-content-2': 'Processing methods not only affect flavor but also impact the shelf life and stability of coffee beans. Washed coffees tend to be more stable and consistent, while natural and honey processes can bring more flavor variations and complexity. Farmers choose the most suitable method based on climate conditions, available resources, and target markets.',
+                'varieties-title': 'Coffee Bean Varieties',
+                'varieties-intro': 'Coffee is primarily divided into two main species: Arabica and Robusta, with Arabica accounting for about 60% of global coffee production and known for its complex flavors and lower caffeine content. Within these main species, there are many varieties, each with unique characteristics and flavor profiles:',
+                'bourbon-origin': 'Origin: Réunion Island, evolved from Typica',
+                'bourbon-desc': 'Bourbon is an old and popular Arabica variety known for its sweetness and balanced characteristics. It produces about 30% more yield than Typica but less than modern varieties like Caturra. It comes in two variants: Red Bourbon and Yellow Bourbon.',
+                'typica-origin': 'Origin: Ethiopia, one of the oldest Arabica varieties',
+                'typica-desc': 'Typica is one of the oldest Arabica coffee varieties and the ancestor of many modern varieties. It has lower yield but elegant and complex flavors. This variety has given rise to many important subvarieties, including Java and Sumatra varieties in Indonesia.',
+                'caturra-origin': 'Origin: Brazil, natural mutation of Bourbon',
+                'caturra-desc': 'Caturra is a natural mutation of Bourbon that resulted in a shorter plant (dwarf mutation), making it easier to harvest and grow in higher-density environments. It\'s especially popular in Latin America, particularly in Colombia and Central America.',
+                'geisha-origin': 'Origin: Ethiopia\'s Gesha forest, discovered in 1936',
+                'geisha-desc': 'Geisha coffee gained global attention after Panama\'s Hacienda La Esmeralda Geisha won awards in 2004. It\'s known for its exceptional flavor and rarity. It features elegant floral notes, tropical fruit flavors, and tea-like mouthfeel, often described as the champagne of coffees.',
+                'sl-origin': 'Origin: Kenya, developed by Scott Agricultural Laboratories',
+                'sl-desc': 'These two varieties are the backbone of Kenya\'s coffee industry, developed by Scott Agricultural Laboratories during the British colonial period. SL28 is known for its elegant blackcurrant notes, while SL34 offers more winey and fruity characteristics. Together, they create Kenya\'s signature flavor profile.',
+                'pacamara-origin': 'Origin: El Salvador, hybrid of Pacas and Maragogipe',
+                'pacamara-desc': 'Pacamara is a hybrid variety developed in El Salvador in 1958, combining the high yield of Pacas with the large bean size of Maragogipe. It\'s known for its enormous beans and complex flavors, regularly winning awards in specialty coffee competitions.',
+                'flavor-sweet': 'Sweet',
+                'flavor-caramel': 'Caramel',
+                'flavor-fruit': 'Berry',
+                'flavor-chocolate': 'Chocolate',
+                'flavor-clean': 'Clean',
+                'flavor-floral': 'Floral',
+                'flavor-bright': 'Bright',
+                'flavor-citrus': 'Citrus',
+                'flavor-balanced': 'Balanced',
+                'flavor-jasmine': 'Jasmine',
+                'flavor-bergamot': 'Bergamot',
+                'flavor-tropical': 'Tropical',
+                'flavor-tea-like': 'Tea-like',
+                'flavor-blackcurrant': 'Blackcurrant',
+                'flavor-winey': 'Winey',
+                'flavor-tomato': 'Tomato',
+                'flavor-grapefruit': 'Grapefruit',
+                'flavor-complex': 'Complex',
+                'roasting-title': 'Roasting Levels & Flavor Changes',
+                'roasting-intro': 'Roasting is the key process that transforms green coffee beans into brewable coffee. During roasting, coffee beans undergo various chemical changes, including temperature increase, moisture evaporation, Maillard reaction, and caramelization. Different roast levels significantly impact the flavor characteristics of coffee:',
+                'roasting-image-caption': 'Different coffee roast levels: from light to dark roast',
+                'light-roast-title': 'Light Roast',
+                'light-roast-desc': 'Light roasts are typically stopped shortly after the first crack (first audible popping sound). This roast level preserves the original characteristics of the coffee bean, highlighting its unique origin flavors.',
+                'light-roast-characteristics': 'Characteristics: Light brown beans, no oil on surface, higher density',
+                'light-roast-flavors': 'Flavors: High acidity, bright flavors, pronounced floral and fruit notes',
+                'light-roast-best-for': 'Best for: Single-origin high-quality beans, especially from Africa and Central America',
+                'medium-roast-title': 'Medium Roast',
+                'medium-roast-desc': 'Medium roasts continue beyond the first crack but stop before the second crack begins. This roast level balances acidity and sweetness.',
+                'medium-roast-characteristics': 'Characteristics: Medium brown beans, minimal oil on surface, balanced flavors',
+                'medium-roast-flavors': 'Flavors: Balanced acidity and sweetness, more pronounced caramel and nut flavors',
+                'medium-roast-best-for': 'Best for: Latin American coffees like Colombia and Brazil',
+                'dark-roast-title': 'Dark Roast',
+                'dark-roast-desc': 'Dark roasts continue through the second crack. Roast flavors begin to dominate, while the bean\'s origin characteristics become less prominent.',
+                'dark-roast-characteristics': 'Characteristics: Dark brown to black beans, oily surface, low acidity',
+                'dark-roast-flavors': 'Flavors: Bold, pronounced bitterness, chocolate, caramel, and smoky notes',
+                'dark-roast-best-for': 'Best for: Indonesian beans, espresso, bold espresso blends',
+                'fact-box-title-3': 'Roasting and Caffeine: Debunking a Myth',
+                'fact-box-content-3': 'A common misconception is that dark roasted coffee has higher caffeine content than light roasts. In fact, caffeine is extremely stable and doesn\'t break down significantly during roasting. Light roasted coffee actually has slightly more caffeine than dark roasted coffee because dark roasting causes beans to expand in size but lose mass. Therefore, if measured by weight, light roasts have a higher density of caffeine. However, the difference is usually minimal and barely noticeable to the drinker.',
+                'brewing-title': 'Coffee Brewing Methods',
+                'brewing-intro': 'Coffee brewing methods can be broadly categorized into immersion, percolation, and pressure-based techniques. Each method influences the coffee\'s flavor profile, concentration, and mouthfeel. Here are some of the main brewing methods:',
+                'pourover-title': 'Pour Over',
+                'pourover-desc': 'Hot water is manually poured over coffee grounds in a filter, allowing water to flow through the grounds and filter into a container below. This method highlights clean flavors and complex notes in coffee.',
+                'pourover-best-for': 'Best for: Single-origin light to medium roasts, especially complex specialty coffees.',
+                'frenchpress-title': 'French Press',
+                'frenchpress-desc': 'An immersion brewing method where coarsely ground coffee is steeped in hot water in a glass or metal container for 4-5 minutes, then separated from the grounds using a metal mesh filter.',
+                'frenchpress-best-for': 'Best for: Medium to dark roast coffees, bringing out full body and complete flavor oils.',
+                'espresso-title': 'Espresso',
+                'espresso-desc': 'Uses high pressure (about 9 bars) to force hot water quickly through finely ground, tightly packed coffee. This method produces concentrated coffee with a characteristic crema (foam layer).',
+                'espresso-best-for': 'Best for: Medium to dark roast beans, especially blends designed for espresso. Also serves as the base for lattes, cappuccinos, and other coffee drinks.',
+                'aeropress-title': 'AeroPress',
+                'aeropress-desc': 'An innovative brewing device combining immersion and pressure principles. Coffee grounds steep briefly in hot water before being pushed through a filter using manual pressure.',
+                'aeropress-best-for': 'Best for: Any roast level, extremely versatile and portable, can produce different flavor profiles depending on parameters.',
+                'coldbrew-title': 'Cold Brew',
+                'coldbrew-desc': 'Uses room temperature or cold water to steep coffee grounds for an extended period (12-24 hours). The low-temperature extraction reduces acidity and bitterness while drawing out sweetness and flavor.',
+                'coldbrew-best-for': 'Best for: Medium to dark roast beans, especially those with chocolate and nutty notes.',
+                'fact-box-title-4': 'Brewing Parameters: Key Factors Affecting Coffee Flavor',
+                'fact-box-content-4': 'Regardless of which brewing method you choose, the following parameters significantly impact the final coffee flavor:',
+                'brewing-parameter-1': 'Grind Size: Affects extraction rate and amount. Coarser grounds extract slower, finer grounds extract faster.',
+                'brewing-parameter-2': 'Coffee-to-Water Ratio: Typical ratios range from 1:15 to 1:18 (coffee:water), affecting strength and flavor intensity.',
+                'brewing-parameter-3': 'Water Temperature: Usually 90-96°C (194-205°F), with higher temperatures extracting faster but potentially increasing bitterness.',
+                'brewing-parameter-4': 'Brewing Time: Affects extraction amount, with shorter times potentially resulting in higher acidity and longer times increasing bitterness.',
+                'brewing-parameter-5': 'Water Quality: Ideal water should be clean with an appropriate mineral content and a pH around 7.',
+                'tasting-title': 'How to Taste Coffee',
+                'tasting-intro': 'Tasting coffee is a sensory evaluation process involving sight, smell, and taste. Professional coffee cupping follows specific methods and vocabulary, but everyday coffee enthusiasts can appreciate coffee flavors more deeply through these steps:',
+                'tasting-process-title': 'Tasting Process',
+                'tasting-step-1': 'Observe: Note the coffee\'s color and clarity. Good coffee should have a clear appearance, not cloudy.',
+                'tasting-step-2': 'Smell: Gently inhale the coffee\'s aroma. Smell it while hot, then again as it cools, as aromas change with temperature.',
+                'tasting-step-3': 'Slurp: Draw a small amount of coffee into your mouth, letting it cover your entire tongue. Inhale forcefully, allowing air to pass through the coffee, which enhances flavor perception.',
+                'tasting-step-4': 'Evaluate: Focus on flavors, acidity, sweetness, body, and aftertaste. Flavors might include fruit, nuts, chocolate, or floral notes.',
+                'flavor-wheel-title': 'Coffee Flavor Wheel',
+                'flavor-wheel-desc': 'The flavor wheel is a visual tool to help identify and describe coffee flavors. It expands from the center outward, from basic categories to specific flavor descriptions. The professional flavor wheel developed by the Specialty Coffee Association (SCA) includes dozens of flavor descriptors.',
+                'flavor-wheel-caption': 'Simplified coffee flavor wheel showing main flavor categories',
+                'cupping-title': 'Professional Cupping',
+                'cupping-desc': 'Cupping is the standardized method for professionally evaluating coffee, widely used for quality control and purchasing in the coffee industry. Professional cuppers evaluate the following characteristics:',
+                'cupping-fragrance': 'Fragrance/Aroma: The smell of dry coffee grounds and after brewing',
+                'cupping-flavor': 'Flavor: The combined perception of taste and aroma',
+                'cupping-aftertaste': 'Aftertaste: The lingering flavor after swallowing',
+                'cupping-acidity': 'Acidity: The brightness or sharpness of coffee',
+                'cupping-body': 'Body: The texture and weight of coffee in the mouth',
+                'cupping-balance': 'Balance: How well the various flavor elements work together',
+                'cupping-sweetness': 'Sweetness: The pleasant sweet perception',
+                'fact-box-title-5': 'The Impact of Tasting Temperature',
+                'fact-box-content-5': 'Coffee flavors change significantly as temperature changes. Hot coffee (70-80°C/158-176°F) tends to emphasize acidity and aromatic compounds, while as coffee cools to drinking temperature (50-65°C/122-149°F), sweetness and more complex flavors become more apparent. Cooler still (below 40°C/104°F), bitterness and defects become more pronounced. When tasting, try evaluating the same cup of coffee at different temperatures to discover how flavors evolve.',
+                'about-us': 'About Us',
+                'footer-about': 'Coffee Explorer is a platform helping coffee enthusiasts discover their favorite coffee flavors. We are dedicated to connecting coffee lovers with quality coffee beans from around the world.',
+                'quick-links': 'Quick Links',
+                'home': 'Home',
+                'about': 'About',
+                'blog': 'Coffee Knowledge',
+                'contact': 'Contact Us',
+                'sitemap': 'Sitemap',
+                'coffee-resources': 'Coffee Resources',
+                'brewing-guides': 'Brewing Guides',
+                'origin-stories': 'Origin Stories',
+                'coffee-glossary': 'Coffee Glossary',
+                'privacy-policy': 'Privacy Policy',
+                'terms-of-service': 'Terms of Service'
+            }
+        };
+        
+        // 設置頁面語言
+        function setLanguage(lang) {
+            document.documentElement.lang = lang === 'zh' ? 'zh-HK' : 'en';
+            
+            // 更新所有文本內容
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // 更新頁面標題和meta標籤
+            document.title = lang === 'zh' ? 
+                '咖啡知識 - 咖啡風味探索器' : 
+                'Coffee Knowledge - Coffee Flavor Explorer';
+                
+            // 更新meta描述
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.content = lang === 'zh' ? 
+                    '探索咖啡的奧秘：從咖啡豆產地、品種、處理方法到沖煮技巧，深入了解影響咖啡風味的關鍵因素。' : 
+                    'Explore the mysteries of coffee: from bean origins, varieties, and processing methods to brewing techniques, learn about the key factors that influence coffee flavor.';
+            }
+            
+            // 更新og:title
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) {
+                ogTitle.content = lang === 'zh' ? 
+                    '咖啡知識 - 探索影響咖啡風味的關鍵因素' : 
+                    'Coffee Knowledge - Exploring Key Factors That Influence Coffee Flavor';
+            }
+            
+            // 更新og:description
+            const ogDescription = document.querySelector('meta[property="og:description"]');
+            if (ogDescription) {
+                ogDescription.content = lang === 'zh' ? 
+                    '了解影響咖啡風味的重要因素：產地、海拔、處理法、烘焙和沖煮手法。成為真正的咖啡專家。' : 
+                    'Learn about the important factors that influence coffee flavor: origin, altitude, processing, roasting, and brewing techniques. Become a true coffee expert.';
+            }
+            
+            // 更新語言切換按鈕狀態
+            document.querySelectorAll('.language-switcher a').forEach(link => {
+                if (link.getAttribute('data-lang') === lang) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+            
+            // 更新canonical鏈接
+            const canonicalLink = document.getElementById('canonical-link');
+            if (canonicalLink) {
+                canonicalLink.href = lang === 'zh' ? 'https://coffeematcher.me/blog' : 'https://coffeematcher.me/en/blog';
+            }
+        }
+        
+        // 語言切換監聽器
+        document.querySelectorAll('.language-switcher a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                setLanguage(this.getAttribute('data-lang'));
+            });
+        });
+        
+        // 移動版導航菜單開關
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+        
+        // 設置今年年份
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // 初始化頁面語言
+        window.addEventListener('load', function() {
+            // 檢測用戶首選語言
+            let browserLang = 'en';
+            
+            try {
+                browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+            } catch (e) {
+                console.warn('Unable to detect browser language:', e);
+            }
+            
+            // 根據URL路徑判斷當前語言
+            const isEnglishPath = window.location.pathname.includes('/en/');
+            setLanguage(isEnglishPath ? 'en' : 'zh');
+        });
+    </script>
+</body>
+</html>
