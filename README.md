@@ -1,5 +1,3 @@
-Here's an updated README.md in English only, reflecting the correct project structure with the brewing-guides folder:
-
 # Coffee Flavor Explorer
 
 ![Coffee Explorer Banner](https://coffeematcher.me/coffee-explorer-preview.jpeg)
