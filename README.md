@@ -2,7 +2,7 @@ Here's an updated README.md in English only, reflecting the correct project stru
 
 # Coffee Flavor Explorer
 
-[Coffee Explorer Banner](https://coffeematcher.me/coffee-explorer-preview.jpeg)
+![Coffee Explorer Banner](https://coffeematcher.me/coffee-explorer-preview.jpeg)
 
 An interactive web tool helping coffee enthusiasts discover their perfect coffee beans based on flavor preferences.
 
